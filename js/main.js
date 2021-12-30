@@ -645,3 +645,6 @@
 // 	var celsius = (temperature - 32) * (5 / 9);
 // 	return celsius;
 // }
+//
+// Grasshopper - Check for factor
+// const checkForFactor = (base, factor) => base % factor === 0
