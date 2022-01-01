@@ -606,3 +606,6 @@
 // function orderOperations() {
 // 	return (2 + 2) * (2 + 2) * 2;
 // }
+//
+// Grasshopper - Array Mean
+// const findAverage = (nums) => nums.reduce((a, b) => a + b) / nums.length;
