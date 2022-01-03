@@ -581,3 +581,22 @@
 // 	buyHealth();
 // 	printStatus();
 // }
+//
+// Grasshopper - Create the rooms
+// var rooms = {
+// 	room1: {
+// 		name: "Room1",
+// 		description: "Description",
+// 		completed: true,
+// 	},
+// 	room2: {
+// 		name: "Room2",
+// 		description: "Description",
+// 		completed: false,
+// 	},
+// 	room3: {
+// 		name: "Room3",
+// 		description: "Description",
+// 		completed: true,
+// 	},
+// };
