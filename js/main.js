@@ -525,3 +525,8 @@
 //
 // Grasshopper - Debug sayHello
 // const sayHello = name => `Hello, ${name}`;
+//
+// Grasshopper - Function syntax debugging
+// function main(verb, noun) {
+// 	return verb + noun;
+// }
