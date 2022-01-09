@@ -612,3 +612,13 @@
 //
 // Grasshopper - Combine strings
 // const combineNames = (a, b) => `${a} ${b}`;
+//
+// Grasshopper - Terminal game combat function
+// function combat(health, damage) {
+// 	if (health - damage > 0) {
+// 		return health - damage;
+// 	}
+// 	if (health - damage <= 0) {
+// 		return 0;
+// 	}
+// }
