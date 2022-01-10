@@ -522,3 +522,6 @@
 //
 // Grasshopper - Personalized Message
 // const greet = (name, owner) => (name === owner ? "Hello boss" : "Hello guest");
+//
+// Grasshopper - Debug sayHello
+// const sayHello = name => `Hello, ${name}`;
