@@ -519,3 +519,6 @@
 //
 // Grasshopper - Terminal game move function
 // const move = (position, roll) => position + 2 * roll;
+//
+// Grasshopper - Personalized Message
+// const greet = (name, owner) => (name === owner ? "Hello boss" : "Hello guest");
