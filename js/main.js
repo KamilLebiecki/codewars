@@ -516,3 +516,6 @@
 // 	sum = Number(a) + Number(b);
 // 	return String(sum);
 // }
+//
+// Grasshopper - Terminal game move function
+// const move = (position, roll) => position + 2 * roll;
