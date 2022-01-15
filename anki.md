@@ -15,3 +15,5 @@ Math.ceil(year/100)
 function century(year) {
 return (year + 99) / 100 | 0;
 }
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
