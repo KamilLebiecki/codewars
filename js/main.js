@@ -186,3 +186,21 @@
 // }
 // You only need one - Beginner
 // const check = (a, x) => a.includes(x);
+
+// Array plus array
+//grab one array, sum the numbers
+//grab two array, sum the numbers
+//sum the numbers of two arrays
+
+// function arrayPlusArray(arr1, arr2) {
+// 	let arr1sum = 0;
+// 	let arr2sum = 0;
+
+// 	for (let i = 0; i < arr1.length; i++) {
+// 		arr1sum += arr1[i];
+// 	}
+// 	for (let j = 0; j < arr2.length; j++) {
+// 		arr2sum += arr2[j];
+// 	}
+// 	return arr1sum + arr2sum;
+// }
