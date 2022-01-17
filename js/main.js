@@ -204,3 +204,13 @@
 // 	}
 // 	return arr1sum + arr2sum;
 // }
+
+// Calculate average
+
+// function find_average(array) {
+// 	return array.reduce((a, b) => a + b) / array.length;
+// }
+// const find_average = (arr) =>
+// 	arr.length === 0 ? 0 : arr.reduce((a, b) => a + b) / arr.length;
+
+//sum all of them, then divide by the number of elements
