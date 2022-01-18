@@ -18,3 +18,5 @@ return (year + 99) / 100 | 0;
 reduce!!!!
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
+Array(n).fill
+Array.from({length}, () => length--)

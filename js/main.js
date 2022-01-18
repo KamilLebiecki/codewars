@@ -214,3 +214,16 @@
 // 	arr.length === 0 ? 0 : arr.reduce((a, b) => a + b) / arr.length;
 
 //sum all of them, then divide by the number of elements
+
+// Reversed sequence
+// create an array
+// go through all elements till 'n'
+// unshift all elements tiii 'n'
+// return array
+// const reverseSeq = (n) => {
+// 	let m = [];
+// 	for (let i = n; i > 0; i--) {
+// 		m.push(i);
+// 	}
+// 	return m;
+// };
