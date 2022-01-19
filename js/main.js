@@ -226,4 +226,24 @@
 // 		m.push(i);
 // 	}
 // 	return m;
-// };
+
+// Opposites Attract
+
+// function lovefunc(flower1, flower2) {
+// 	if (flower1 % 2 === 0 && flower2 !== 0) {
+// 		return true;
+// 	} else if (flower1 % 2 !== 0 && flower2 % 2 === 0) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+
+//check if flower1 is odd and flower2 is even than true
+//check if flower1 is even and flower2 is odd than true
+//othwerise false
+// const lovefunc = (flower1, flower2) =>
+// 	(flower1 % 2 === 0 && flower2 % 2 !== 0) ||
+// 	(flower1 % 2 !== 0 && flower2 % 2 === 0)
+// 		? true
+// 		: false;
