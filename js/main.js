@@ -247,3 +247,12 @@
 // 	(flower1 % 2 !== 0 && flower2 % 2 === 0)
 // 		? true
 // 		: false;
+// Beginner - Reduce but Grow
+
+// function grow(x) {
+// 	let multiple = 0;
+// 	for (let i = 0; i < x.length; i++) {
+// 		multiple *= x[i];
+// 	}
+// 	return multiple;
+// }
