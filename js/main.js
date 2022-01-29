@@ -283,3 +283,9 @@
 //
 // Incorrect division method
 // const solve = (x, y) => x / y;
+//
+// Return to Sanity
+// function mystery() {
+// 	var results = { sanity: "Hello" };
+// 	return results;
+// }
