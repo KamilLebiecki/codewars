@@ -295,3 +295,16 @@
 // 	mm < 40
 // 		? `You need to give your plant ${40 - mm}mm of water`
 // 		: "Your plant has had more than enough water for today!";
+//
+
+// Transportation on vacation
+// function rentalCarCost(d) {
+// 	totalCost = Number(d * 40);
+// 	if (d >= 7) {
+// 		return (totalCost = totalCost - 50);
+// 	} else if (d >= 3) {
+// 		return (totalCost = totalCost - 20);
+// 	} else {
+// 		return totalCost;
+// 	}
+// }
