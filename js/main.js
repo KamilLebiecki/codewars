@@ -308,3 +308,8 @@
 // 		return totalCost;
 // 	}
 // }
+//
+//
+//How good are you really?
+// const betterThanAverage = (classPoints, yourPoints) =>
+// 	yourPoints > classPoints.reduce((a, b) => a + b) / classPoints.length;
