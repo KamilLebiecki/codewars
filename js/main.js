@@ -313,3 +313,6 @@
 //How good are you really?
 // const betterThanAverage = (classPoints, yourPoints) =>
 // 	yourPoints > classPoints.reduce((a, b) => a + b) / classPoints.length;
+//
+// Can we divide it?
+// const isDivideBy = (number, a, b) => number % a === 0 && number % b === 0;
