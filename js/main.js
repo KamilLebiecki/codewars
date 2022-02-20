@@ -316,3 +316,7 @@
 //
 // Can we divide it?
 // const isDivideBy = (number, a, b) => number % a === 0 && number % b === 0;
+//
+//
+// Remove exclamation marks
+// const removeExclamationMarks = s => s.split("!").join("")
