@@ -267,3 +267,67 @@
 // 	}
 // 	return sheeps;
 // };
+// Sentence Smash
+// const smash = (words) => words.join(" ");
+//
+// Sum Mixed Array
+// function sumMix(x) {
+// 	let sum = 0;
+// 	for (let i = 0; i < x.length; i++) {
+// 		sum += Number(x[i]);
+// 	}
+// 	return sum;
+// }
+//
+//
+// Find numbers which are divisible by given number
+
+// function divisibleBy(numbers, divisor) {
+// 	let arr = [];
+// 	for (let i = 0; i < numbers.length; i++) {
+// 		if (numbers[i] % divisor === 0) {
+// 			arr.push(numbers[i]);
+// 		}
+// 	}
+// 	return arr;
+// }
+//
+// Incorrect division method
+// const solve = (x, y) => x / y;
+//
+// Return to Sanity
+// function mystery() {
+// 	var results = { sanity: "Hello" };
+// 	return results;
+// }
+//
+// //Fix your code before the garden dies!
+// const rainAmount = (mm) =>
+// 	mm < 40
+// 		? `You need to give your plant ${40 - mm}mm of water`
+// 		: "Your plant has had more than enough water for today!";
+//
+
+// Transportation on vacation
+// function rentalCarCost(d) {
+// 	totalCost = Number(d * 40);
+// 	if (d >= 7) {
+// 		return (totalCost = totalCost - 50);
+// 	} else if (d >= 3) {
+// 		return (totalCost = totalCost - 20);
+// 	} else {
+// 		return totalCost;
+// 	}
+// }
+//
+//
+//How good are you really?
+// const betterThanAverage = (classPoints, yourPoints) =>
+// 	yourPoints > classPoints.reduce((a, b) => a + b) / classPoints.length;
+//
+// Can we divide it?
+// const isDivideBy = (number, a, b) => number % a === 0 && number % b === 0;
+//
+//
+// Remove exclamation marks
+// const removeExclamationMarks = s => s.split("!").join("")
