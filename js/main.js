@@ -341,3 +341,33 @@
 // 	}
 // 	return Number(result);
 // }
+//
+// // Shortest Word
+// function findShort(s) {
+// 	let strArray = s.split(" ");
+
+// 	let shortest = strArray.reduce((shortestWord, currentWord) => {
+// 		return currentWord.length < shortestWord.length
+// 			? currentWord.length
+// 			: shortestWord.length;
+// 	}, strArray[0]);
+// 	return Number(shortest);
+// }
+
+// function findShort(s) {
+// 	var s = s.split(" ");
+// 	var x = [];
+// 	var y = 0;
+
+// 	for (var i = 0; i < s.length; ++i) {
+// 		x = s[i];
+
+// 		if (y == 0 || x.length < y) {
+// 			y = x.length;
+// 		}
+// 	}
+// 	return y;
+// }
+//
+// Beginner Series #2 Clock
+// const past = (h, m, s) => h*3600000 + m*60000 + s*1000
