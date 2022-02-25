@@ -371,3 +371,6 @@
 //
 // Beginner Series #2 Clock
 // const past = (h, m, s) => h*3600000 + m*60000 + s*1000
+//
+// Is he gonna survive?
+// const hero = (bullets, dragons) => bullets >= dragons * 2;
