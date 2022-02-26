@@ -374,3 +374,7 @@
 //
 // Is he gonna survive?
 // const hero = (bullets, dragons) => bullets >= dragons * 2;
+//
+// Will you make it?
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) =>
+// 	fuelLeft * mpg >= distanceToPump;
