@@ -378,3 +378,6 @@
 // Will you make it?
 // const zeroFuel = (distanceToPump, mpg, fuelLeft) =>
 // 	fuelLeft * mpg >= distanceToPump;
+//
+// Function 3 - multiplying two numbers
+// const multiply = (a, b) => a * b;
