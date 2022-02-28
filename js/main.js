@@ -381,3 +381,6 @@
 //
 // Function 3 - multiplying two numbers
 // const multiply = (a, b) => a * b;
+//
+// Area or Perimeter
+// const areaOrPerimeter = (l, w) => (l === w ? l * w : 2 * l + 2 * w);
