@@ -384,3 +384,6 @@
 //
 // Area or Perimeter
 // const areaOrPerimeter = (l, w) => (l === w ? l * w : 2 * l + 2 * w);
+//
+// Third Angle of a Triangle
+// const otherAngle = (a, b) => 180 - a - b;
