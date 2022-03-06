@@ -387,3 +387,6 @@
 //
 // Third Angle of a Triangle
 // const otherAngle = (a, b) => 180 - a - b;
+//
+// Grasshopper - Messi goals function
+// const goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals) => laLigaGoals + copaDelReyGoals + championsLeagueGoals
