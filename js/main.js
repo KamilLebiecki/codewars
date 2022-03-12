@@ -390,3 +390,7 @@
 //
 // Grasshopper - Messi goals function
 // const goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals) => laLigaGoals + copaDelReyGoals + championsLeagueGoals
+//
+// Will there be enough space?
+// const enough = (cap, on, wait) =>
+// 	cap - on > wait ? 0 : Math.abs(cap - on - wait);
