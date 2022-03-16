@@ -439,3 +439,6 @@
 // function oddCount(n) {
 // 	return Math.floor(n / 2);
 // }
+//
+// Function 2 - squaring an argument
+// const square = (a) => a ** 2;
