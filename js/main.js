@@ -464,3 +464,6 @@
 // Is this a triangle?
 // const isTriangle = (a, b, c) =>
 // 	a < b + c && b < a + c && c < a + b ? true : false;
+//
+// String ends with?
+// const solution = (str, ending) => str.endsWith(ending);
