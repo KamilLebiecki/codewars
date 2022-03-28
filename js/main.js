@@ -467,3 +467,20 @@
 //
 // String ends with?
 // const solution = (str, ending) => str.endsWith(ending);
+//
+// Grasshopper - Grade book
+// function getGrade(s1, s2, s3) {
+// 	let avg = s1 + s2 + s3;
+// 	let sum = avg / 3;
+// 	if (sum <= 100 && sum >= 90) {
+// 		return "A";
+// 	} else if (sum < 90 && sum >= 80) {
+// 		return "B";
+// 	} else if (sum < 80 && sum >= 70) {
+// 		return "C";
+// 	} else if (sum < 70 && sum >= 60) {
+// 		return "D";
+// 	} else if (sum < 60 && sum >= 0) {
+// 		return "F";
+// 	}
+// }

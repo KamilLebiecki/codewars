@@ -20,3 +20,9 @@ reduce!!!!
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
 Array(n).fill
 Array.from({length}, () => length--)
+
+function getCount(str) {
+var vowelsCount = 0;
+vowelsCount = str.match(/[aeiou]/gi).length
+return vowelsCount;
+}
