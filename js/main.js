@@ -503,3 +503,6 @@
 // 			return "green";
 // 	}
 // }
+//
+// Beginner Series #4 Cockroach
+// const cockroachSpeed = (s) => Math.floor(s / 0.036);
