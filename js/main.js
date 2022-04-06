@@ -16,3 +16,16 @@
 // 	}
 // 	return result;
 // }
+
+// Convert number to reversed array of digits
+// const digitize = (n) => n.toString().split("").reverse();
+
+// const digitize = (n) => {
+// 	const nString = String(n);
+// 	return nString
+// 		.split("")
+// 		.map((el) => {
+// 			return +el;
+// 		})
+// 		.reverse();
+// };
