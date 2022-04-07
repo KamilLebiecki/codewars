@@ -5,3 +5,4 @@ return !(n%x||n%y)
 }
 
 filter(Boolean)
+indexOf
