@@ -29,3 +29,34 @@
 // 		})
 // 		.reverse();
 // };
+
+//Abbreviate a Two Word Name
+
+//take first letter
+//go through other letter
+//if space spotted, than grab next one
+
+// function abbrevName(name) {
+// 	let abbv = "";
+// 	abbv.push(name[0]);
+// 	for (i = 1; i < name.length; i++) {
+// 		if (name[i] === " ") {
+// 			abbv.push(name[i]);
+// 			abbv.pusn(name[i + 1]);
+// 		}
+// 	}
+// 	return abbv;
+// }
+
+// function abbrevName(name) {
+// 	let upper = name.toUpperCase();
+// 	let new_name = upper.split(" ", 1);
+// 	// return `${new_name[0][0]}.${new_name[1][0]}`;
+// }
+// function abbrevName(name) {
+// 	return name
+// 		.match(/\b(\w)/g)
+// 		.toString()
+// 		.toUpperCase()
+// 		.replace(",", ".");
+// }
