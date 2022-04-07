@@ -62,3 +62,9 @@
 // }
 // Convert a string to an array
 // const stringToArray = (s) => s.split(" ");
+
+//Reversed Words
+// const reverseWords = (str) => str.split(" ").reverse().join(" ");
+
+//Is n divisible by x and y?
+// const isDivisible = (n, x, y) => (n % x === 0 && n % y === 0 ? true : false);
