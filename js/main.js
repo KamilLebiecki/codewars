@@ -138,3 +138,31 @@
 // 	}
 // 	return Math.floor(average / marks.length);
 // }
+
+// Century From Year
+
+function century(year) {
+	if (year <= 100) {
+		return 1;
+	} else if (year % 100 == 0) {
+		return parseInt(year / 100);
+	} else {
+		return parseInt(year / 100) + 1;
+	}
+}
+
+// function whatCentury(year) {
+// 	// code must go here
+// }
+
+// function century(year) {
+// 	// Finish this :)
+// 	//change to string
+// 	//split
+// 	//check if the last number is 0
+// 	//  if yes, then return first two numbers
+// 	// if higher then return first two numbers increased by one
+// 	//
+
+// 	return;
+// }
