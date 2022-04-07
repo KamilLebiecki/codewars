@@ -68,3 +68,33 @@
 
 //Is n divisible by x and y?
 // const isDivisible = (n, x, y) => (n % x === 0 && n % y === 0 ? true : false);
+
+// Count of positives / sum of negatives
+
+// function countPositivesSumNegatives(input) {
+// 	//if the array is empty or is null, return empty array
+// 	//if the array is not empty, then go through the array
+// 	//if the number is positive - add to varPositive
+// 	//if the number is negative - add to varNegative
+// 	//if the number is 0 - do not anything
+// 	//push varPositive
+// 	//push varNegative
+// 	//return all
+// 	if (input == null || input.length < 1) {
+// 		return [];
+// 	}
+
+// 	let countPositive = 0;
+// 	let sumNegative = 0;
+// 	let array = [];
+// 	for (let i = 0; i < input.length; i++) {
+// 		if (input[i] > 0) {
+// 			countPositive++;
+// 		} else {
+// 			sumNegative += input[i];
+// 		}
+// 	}
+// 	array.push(countPositive);
+// 	array.push(sumNegative);
+// 	return array;
+// }
