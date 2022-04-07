@@ -60,3 +60,5 @@
 // 		.toUpperCase()
 // 		.replace(",", ".");
 // }
+// Convert a string to an array
+// const stringToArray = (s) => s.split(" ");
