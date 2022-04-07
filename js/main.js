@@ -98,3 +98,13 @@
 // 	array.push(sumNegative);
 // 	return array;
 // }
+
+// Counting sheep...
+
+// function countSheeps(arrayOfSheep) {
+// 	let sheepCounter = 0;
+// 	for (let i = 0; i < arrayOfSheep.length; i++) {
+// 		arrayOfSheep[i] === true ? sheepCounter++ : sheepCounter;
+// 	}
+// 	return sheepCounter;
+// }
