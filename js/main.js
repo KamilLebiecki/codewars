@@ -138,3 +138,49 @@
 //go through all array
 // digit below 5 = 0
 //digit greater or equal 5 = 1
+//
+//
+//A Needle in the Haystack
+// function findNeedle(haystack) {
+// 	for (let i = 0; i < haystack.length; i++) {
+// 		if (haystack[i] === "needle") {
+// 			return `found the needle at position ${i}`;
+// 		}
+// 	}
+// }
+// Get the mean of an array
+// function getAverage(marks) {
+// 	let average = 0;
+// 	for (let i = 0; i < marks.length; i++) {
+// 		average += marks[i];
+// 	}
+// 	return Math.floor(average / marks.length);
+// }
+
+// Century From Year
+
+// function century(year) {
+// 	if (year <= 100) {
+// 		return 1;
+// 	} else if (year % 100 == 0) {
+// 		return parseInt(year / 100);
+// 	} else {
+// 		return parseInt(year / 100) + 1;
+// 	}
+// }
+
+// function whatCentury(year) {
+// 	// code must go here
+// }
+
+// function century(year) {
+// 	// Finish this :)
+// 	//change to string
+// 	//split
+// 	//check if the last number is 0
+// 	//  if yes, then return first two numbers
+// 	// if higher then return first two numbers increased by one
+// 	//
+
+// 	return;
+// }

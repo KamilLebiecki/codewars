@@ -5,3 +5,13 @@ return !(n%x||n%y)
 }
 
 filter(Boolean)
+indexOf
+function getAverage(marks){
+return Math.floor(marks.reduce((sum, x) => sum + x) / marks.length);
+}
+
+https://developer.mozilla.org/pl/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+Math.ceil(year/100)
+function century(year) {
+return (year + 99) / 100 | 0;
+}
