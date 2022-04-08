@@ -120,3 +120,21 @@
 // 	}
 // 	return sum;
 // }
+
+// Fake Binary
+// function fakeBin(x) {
+// 	//split the string into array
+// 	let array1 = x.split("");
+// 	let array3 = [];
+// 	let array2 = array1.forEach((e) => {
+// 		if (e >= 5) {
+// 			array3.push(1);
+// 		} else {
+// 			array3.push(0);
+// 		}
+// 	});
+// 	return array3.join("");
+// }
+//go through all array
+// digit below 5 = 0
+//digit greater or equal 5 = 1
