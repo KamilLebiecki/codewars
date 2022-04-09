@@ -506,3 +506,6 @@
 //
 // Beginner Series #4 Cockroach
 // const cockroachSpeed = (s) => Math.floor(s / 0.036);
+//
+//Is it even?
+// const testEven = (n) => n % 2 === 0;
