@@ -509,3 +509,10 @@
 //
 //Is it even?
 // const testEven = (n) => n % 2 === 0;
+//
+// // Sum The Strings
+// function sumStr(a, b) {
+// 	let sum = 0;
+// 	sum = Number(a) + Number(b);
+// 	return String(sum);
+// }
