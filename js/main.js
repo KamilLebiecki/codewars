@@ -661,3 +661,34 @@
 // 	this.damage = 5;
 // 	this.experience = 0;
 // }
+//
+// Total amount of points
+//
+// function points(games) {
+// 	// pseudo code
+// 	// set a variable for tracking results
+// 	let result = 0;
+// 	// go through every element in the array
+// 	let arr = games.split(":");
+// 	console.log(arr);
+// 	// check if the first number is bigger than after sign :
+// 	// if bigger, than add +3 to the points, if the same, add +1 and if lower, then add nothing
+// 	// return the result
+// // }
+
+// Count by X
+//
+//
+// Quarter of the year
+
+// const quarterOf = (month) => {
+// 	return month === 1 || month === 2 || month === 3
+// 		? 1
+// 		: month === 4 || month == 5 || month === 6
+// 		? 2
+// 		: month === 7 || month == 8 || month === 9
+// 		? 3
+// 		: month === 10 || month === 11 || month === 12
+// 		? 4
+// 		: "Try again";
+// };
