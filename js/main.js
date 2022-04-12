@@ -749,3 +749,15 @@
 //
 // BASIC: Making Six Toast.
 // const sixToast = (num) => Math.abs(6 - num);
+//
+//
+//
+
+// TODO: Refactor and shorten the function
+
+// Be Concise I - The Ternary Operator
+
+// var describeAge = (a) =>
+// 	`You're a(n) ${
+// 		a < 13 ? "kid" : a < 18 ? "teenager" : a < 65 ? "adult" : "elderly"
+// 	}`;
