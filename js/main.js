@@ -720,3 +720,18 @@
 // Create a function called _if which takes 3 arguments: a boolean value bool and 2 functions (which do not take any parameters): func1 and func2 When bool is truth-ish, func1 should be called, otherwise call the func2.
 
 // const _if = (bool, func1, func2) => bool ? func1() : func2()
+//
+// How old will I be in 2099?
+// function calculateAge(yearA, yearB) {
+// 	return yearA === yearB
+// 		? "You were born this very year!"
+// 		: yearA === yearB - 1
+// 		? "You are 1 year old."
+// 		: yearB === yearA - 1
+// 		? "You will be born in 1 year."
+// 		: yearA < yearB
+// 		? `You are ${yearB - yearA} years old.`
+// 		: yearA > yearB
+// 		? `You will be born in ${yearA - yearB} years.`
+// 		: "Try again!";
+// }
