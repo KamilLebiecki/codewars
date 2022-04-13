@@ -830,3 +830,21 @@
 // 		return 0;
 // 	}
 // }
+//
+// Reverse words
+// function reverseWords(str) {
+// 	let strSplit = str.split(" ");
+// 	let reversedSplit = [];
+// 	for (let i = 0; i < strSplit.length; i++) {
+// 		reversedSplit.push(strSplit[i].split("").reverse().join(""));
+// 	}
+// 	return reversedSplit.join(" ");
+// }
+
+// take the string
+// split it into words
+// go through the words
+// split it into arrays
+// reverse letters
+// join into words
+// join into sentence
