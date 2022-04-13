@@ -761,3 +761,13 @@
 // 	`You're a(n) ${
 // 		a < 13 ? "kid" : a < 18 ? "teenager" : a < 65 ? "adult" : "elderly"
 // 	}`;
+//
+//
+// Multiplication table for number
+function multiTable(number) {
+	let result = "";
+	for (let i = 1; i <= 10; i++) {
+		result += `${i} * ${number} = ${i * number}`;
+	}
+	return result;
+}
