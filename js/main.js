@@ -802,3 +802,14 @@
 //
 // No Loops 2 - You only need one
 // const check = (a, x) => a.includes(x);
+//
+// No Loops 1 - Small enough?
+
+// function smallEnough(a, limit) {
+// 	const b = a.filter((number) => number <= limit);
+// 	if (a.length === b.length) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
