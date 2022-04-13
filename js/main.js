@@ -817,3 +817,16 @@
 // Keep up the hoop
 // const hoopCount = (n) =>
 // 	n >= 10 ? "Great, now move on to tricks" : "Keep at it until you get it";
+
+// Odd or Even?
+// function oddOrEven(array) {
+// 	if (array !== []) {
+// 		if (array.reduce((a, b) => a + b, 0) % 2 === 0) {
+// 			return "even";
+// 		} else if (array.reduce((a, b) => a + b, 0) % 2 !== 0) {
+// 			return "odd";
+// 		}
+// 	} else {
+// 		return 0;
+// 	}
+// }
