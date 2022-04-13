@@ -26,3 +26,5 @@ var vowelsCount = 0;
 vowelsCount = str.match(/[aeiou]/gi).length
 return vowelsCount;
 }
+
+smallEnough = (a, l) => a.every(e => e <= l);
