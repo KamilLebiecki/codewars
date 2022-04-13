@@ -848,3 +848,19 @@
 // reverse letters
 // join into words
 // join into sentence
+//
+// Make a function that does arithmetic!
+// function arithmetic(a, b, operator) {
+// 	switch (operator) {
+// 		case "add":
+// 			return a + b;
+// 		case "subtract":
+// 			return a - b;
+// 		case "multiply":
+// 			return a * b;
+// 		case "divide":
+// 			return a / b;
+// 		default:
+// 			return "Try again!";
+// 	}
+// }
