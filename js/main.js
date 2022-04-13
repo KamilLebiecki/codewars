@@ -799,3 +799,6 @@
 // function buildString(...template) {
 // 	return `I like ${template.join(", ")}!`;
 // }
+//
+// No Loops 2 - You only need one
+// const check = (a, x) => a.includes(x);
