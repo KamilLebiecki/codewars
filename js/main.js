@@ -794,3 +794,8 @@
 //
 // Reversing Words in a String
 // const reverse = (string) => string.split(" ").reverse().join(" ");
+//
+// String Templates - Bug Fixing #5
+// function buildString(...template) {
+// 	return `I like ${template.join(", ")}!`;
+// }
