@@ -876,3 +876,7 @@
 //
 // DNA to RNA Conversion
 // const DNAtoRNA = (dna) => dna.replace(/T/g, "U");
+//
+//  Find Maximum and Minimum Values of a List
+// const min = (list) => Math.min(...list);
+// const max = (list) => Math.max(...list);
