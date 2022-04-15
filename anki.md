@@ -28,3 +28,5 @@ return vowelsCount;
 }
 
 smallEnough = (a, l) => a.every(e => e <= l);
+
+document.querySelector("ul").appendChild(li);
