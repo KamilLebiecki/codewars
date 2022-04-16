@@ -30,3 +30,18 @@ return vowelsCount;
 smallEnough = (a, l) => a.every(e => e <= l);
 
 document.querySelector("ul").appendChild(li);
+
+apply(null,list);
+
+Array methods to add
+
+.some
+.every
+Arr.from
+Arr.of
+.value
+.entry
+spread
+obj spread
+obj freeze
+obj seal
