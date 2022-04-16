@@ -883,3 +883,14 @@
 //
 // How many lightsabers do you own?
 // const howManyLightsabersDoYouOwn = name => name === "Zach" ? 18 : 0
+//
+// Is it a palindrome?
+// function isPalindrome(x) {
+// 	// if (x.toLowerCase() === x.split("").reverse().join("").toLowerCase()) {
+// 	// 	return true;
+// 	// }
+// 	const isPalindrome = (x) =>
+// 		x.toLowerCase() === x.split("").reverse().join("").toLowerCase()
+// 			? true
+// 			: false;
+// }
