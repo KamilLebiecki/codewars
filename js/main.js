@@ -897,3 +897,30 @@
 //
 // Reverse List Order
 // const reverseList = (list) => list.reverse();
+//
+// Total amount of points
+
+// function points(games) {
+// 	let result = 0;
+// 	// grab the array
+
+// 	for (let i = 0; i < games.length; i++) {
+// 		if (Number(games[i][0]) > Number(games[i][2])) {
+// 			result += 3;
+// 		} else if (Number(games[i][0]) === Number(games[i][2])) {
+// 			result++;
+// 		}
+// 	}
+// 	return result;
+// }
+// const points = (games) => {
+// 	let result = 0;
+// 	games.forEach((element) => {
+// 		if (Number(element[0] > Number(element[2]))) {
+// 			result += 3;
+// 		} else if (Number(element[0]) === Number(element[2])) {
+// 			result++;
+// 		}
+// 	});
+// 	return result;
+// };
