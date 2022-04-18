@@ -6,35 +6,11 @@ return !(n%x||n%y)
 
 filter(Boolean)
 
-https://developer.mozilla.org/pl/docs/Web/JavaScript/Reference/Global_Objects/parseInt
-
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
-Array(n).fill
-Array.from({length}, () => length--)
 
-function getCount(str) {
-var vowelsCount = 0;
-vowelsCount = str.match(/[aeiou]/gi).length
-return vowelsCount;
-}
-
-smallEnough = (a, l) => a.every(e => e <= l);
-
+[aeiou]/gi
 document.querySelector("ul").appendChild(li);
 
-apply(null,list);
-
-Array methods to add
-
-.some
-.every
-Arr.from
-Arr.of
 .value
-.entry
-spread
 obj spread
-obj freeze
-obj seal
-
 tomdailing.com fizzbuzz
