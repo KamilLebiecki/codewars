@@ -964,3 +964,7 @@
 //
 // Twice as old
 // const twiceAsOld = (d, s) => Math.abs(d - s * 2);
+//
+//
+// Parse nice int from char problem
+// const getAge = (inputString) => parseInt(inputString[0]);
