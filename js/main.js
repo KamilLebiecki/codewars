@@ -961,3 +961,6 @@
 // 	Array.isArray(array) && array.length > 1
 // 		? array.reduce((a, b) => a + b) - Math.min(...array) - Math.max(...array)
 // 		: 0;
+//
+// Twice as old
+// const twiceAsOld = (d, s) => Math.abs(d - s * 2);
