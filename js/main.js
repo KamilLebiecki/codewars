@@ -970,5 +970,8 @@
 // const getAge = (inputString) => parseInt(inputString[0]);
 //
 // The Feast of Many Beasts
-const feast = (beast, dish) =>
-	beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1];
+// const feast = (beast, dish) =>
+// 	beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1];
+//
+// Short Long Short
+// const solution = (a, b) => (a.length > b.length ? b + a + b : a + b + a);
