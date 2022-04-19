@@ -978,3 +978,6 @@
 //
 // Name Shuffler
 // const nameShuffler = (str) => str.split(" ").reverse().join(" ");
+//
+// Find the Remainder
+// const remainder = (n, m) => (n > m ? n % m : m % n);
