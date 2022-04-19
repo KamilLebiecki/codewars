@@ -975,3 +975,6 @@
 //
 // Short Long Short
 // const solution = (a, b) => (a.length > b.length ? b + a + b : a + b + a);
+//
+// Name Shuffler
+// const nameShuffler = (str) => str.split(" ").reverse().join(" ");
