@@ -981,3 +981,9 @@
 //
 // Find the Remainder
 // const remainder = (n, m) => (n > m ? n % m : m % n);
+//
+// Highest and Lowest
+// const highAndLow = (numbers) =>
+// 	`${String(Math.max(...numbers.split(" ")))} ${String(
+// 		Math.min(...numbers.split(" "))
+// 	)}`;
