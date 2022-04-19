@@ -987,3 +987,12 @@
 // 	`${String(Math.max(...numbers.split(" ")))} ${String(
 // 		Math.min(...numbers.split(" "))
 // 	)}`;
+//
+// Get the Middle Character
+
+// const getMiddle = (s) =>
+// 	s.length > 1 && s.length % 2 === 0
+// 		? String(`${s[s.length / 2 - 1]}${s[s.length / 2]}`)
+// 		: s.length > 2 && s.length !== 0
+// 		? String(`${s[Math.floor(s.length / 2)]}`)
+// 		: s;
