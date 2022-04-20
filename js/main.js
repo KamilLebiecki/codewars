@@ -1023,5 +1023,13 @@
 // 		: `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
 //
 // Credit Card Mask
-const maskify = (cc) =>
-	cc.length > 4 ? "#".repeat(cc.length - 4) + cc.substr(-4) : cc;
+// const maskify = (cc) =>
+// 	cc.length > 4 ? "#".repeat(cc.length - 4) + cc.substr(-4) : cc;
+//
+// Sum of two lowest positive integers
+// function sumTwoSmallestNumbers(numbers) {
+// 	let firstMin = Math.min(...numbers);
+// 	numbers.splice(numbers.indexOf(Math.min(...numbers)), 1);
+// 	let secondMin = Math.min(...numbers);
+// 	return firstMin + secondMin;
+// }
