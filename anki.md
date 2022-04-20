@@ -24,3 +24,8 @@ return {
 4: `${names[0]}, ${names[1]} and ${names.length - 2} others like this`,
 }[Math.min(4, names.length)]
 }
+
+function sumTwoSmallestNumbers(numbers){  
+ numbers = numbers.sort(function(a, b){return a - b; });
+return numbers[0] + numbers[1];
+};
