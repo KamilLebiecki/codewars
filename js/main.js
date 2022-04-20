@@ -1047,3 +1047,8 @@
 //
 // My head is at the wrong end!
 // const fixTheMeerkat = (arr) => [arr[2], arr[1], arr[0]];
+//
+// Sort and Star
+// function twoSort(s) {
+// 	return s.sort((a, b) => b - a);
+// }
