@@ -1044,3 +1044,6 @@
 // 			.sort((a, b) => b - a)
 // 			.join("")
 // 	);
+//
+// My head is at the wrong end!
+// const fixTheMeerkat = (arr) => [arr[2], arr[1], arr[0]];

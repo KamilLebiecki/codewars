@@ -31,3 +31,7 @@ return numbers[0] + numbers[1];
 };
 
 const findOdd = (xs) => xs.reduce((a, b) => a ^ b);
+
+function findShort(s){
+return Math.min(...s.split(" ").map (s => s.length));
+}
