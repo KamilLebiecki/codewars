@@ -1034,17 +1034,13 @@
 // 	return firstMin + secondMin;
 // }
 //
-// Find the odd int
-// go through an array
-// function findOdd(A) {
-// 	let count = {};
-// 	for (let i = 0; i < A.length; i++) {
-// 		let element = A[i];
-// 		if (count[element]) {
-// 			count[element]++;
-// 		} else {
-// 			count[element] = 1;
-// 		}
-// 		return count;
-// 	}
-// }
+//
+// Descending Order
+// const descendingOrder = (n) =>
+// 	Number(
+// 		n
+// 			.toString()
+// 			.split("")
+// 			.sort((a, b) => b - a)
+// 			.join("")
+// 	);
