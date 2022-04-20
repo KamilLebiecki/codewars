@@ -1052,3 +1052,12 @@
 // function twoSort(s) {
 // 	return s.sort((a, b) => b - a);
 // }
+//
+// Powers of 2
+// const powersOfTwo = (n) => {
+// 	const result = [];
+// 	for (let i = 0; i <= n; i++) {
+// 		result.push(2 ** i);
+// 	}
+// 	return result;
+// };
