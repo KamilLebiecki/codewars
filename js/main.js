@@ -1146,3 +1146,6 @@
 // 	Math.max(...ages),
 // 	Math.max(...ages) - Math.min(...ages),
 // ];
+//
+// Add Length
+// const addLength = (str) => str.split(" ").map((e) => `${e} ${e.length}`);
