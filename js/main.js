@@ -1138,3 +1138,11 @@
 // Palindrome Strings
 // const isPalindrome = (line) =>
 // 	line.toString() === line.toString().split("").reverse().join("");
+//
+//
+// Find the Difference in Age between Oldest and Youngest Family Members
+// const differenceInAges = (ages) => [
+// 	Math.min(...ages),
+// 	Math.max(...ages),
+// 	Math.max(...ages) - Math.min(...ages),
+// ];
