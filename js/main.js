@@ -1120,10 +1120,17 @@
 // +5 dog years for each year after that
 //
 // Generate range of integers
-function generateRange(min, max, step) {
-	let array = [];
-	for (let i = min; i <= max; i += step) {
-		array.push(i);
-	}
-	return array;
-}
+// function generateRange(min, max, step) {
+// 	let array = [];
+// 	for (let i = min; i <= max; i += step) {
+// 		array.push(i);
+// 	}
+// 	return array;
+// }
+//
+// Hello, Name or World!
+//
+const hello = (name) =>
+	name
+		? `Hello, ${name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase()}!`
+		: "Hello, World!";
