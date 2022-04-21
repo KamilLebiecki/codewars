@@ -1130,7 +1130,11 @@
 //
 // Hello, Name or World!
 //
-const hello = (name) =>
-	name
-		? `Hello, ${name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase()}!`
-		: "Hello, World!";
+// const hello = (name) =>
+// 	name
+// 		? `Hello, ${name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase()}!`
+// 		: "Hello, World!";
+//
+// Palindrome Strings
+// const isPalindrome = (line) =>
+// 	line.toString() === line.toString().split("").reverse().join("");
