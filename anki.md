@@ -35,3 +35,27 @@ const findOdd = (xs) => xs.reduce((a, b) => a ^ b);
 function findShort(s){
 return Math.min(...s.split(" ").map (s => s.length));
 }
+
+function greet(lang) {
+return langs[lang]||langs['english'];
+}
+
+var langs = {
+'english': 'Welcome',
+'czech': 'Vitejte',
+'danish': 'Velkomst',
+'dutch': 'Welkom',
+'estonian': 'Tere tulemast',
+'finnish': 'Tervetuloa',
+'flemish': 'Welgekomen',
+'french': 'Bienvenue',
+'german': 'Willkommen',
+'irish': 'Failte',
+'italian': 'Benvenuto',
+'latvian': 'Gaidits',
+'lithuanian': 'Laukiamas',
+'polish': 'Witamy',
+'spanish': 'Bienvenido',
+'swedish': 'Valkommen',
+'welsh': 'Croeso'
+};
