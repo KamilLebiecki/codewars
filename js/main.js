@@ -1228,3 +1228,8 @@
 // }
 // FIXME: Replace all dots
 // const replaceDots = (str) => str.replace(/\./g, "-");
+//
+//
+// Push a hash/an object into array
+// items = [];
+// items.push({ a: "b", c: "d" });
