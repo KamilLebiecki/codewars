@@ -59,3 +59,15 @@ var langs = {
 'swedish': 'Valkommen',
 'welsh': 'Croeso'
 };
+
+// Filling an array (part 1)
+//
+// const arr = (N) => {
+// let arr2 = [];
+// for (let i = 0; i < N; i++) {
+// arr2.push(i);
+// }
+// return arr2;
+// };
+
+const arr = n => Array.from({length: n}, (\_, i) => i);

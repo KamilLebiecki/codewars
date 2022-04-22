@@ -1204,3 +1204,13 @@
 // 	}
 // 	return longest;
 // }
+//
+// Filling an array (part 1)
+//
+// const arr = (N) => {
+// 	let arr2 = [];
+// 	for (let i = 0; i < N; i++) {
+// 		arr2.push(i);
+// 	}
+// 	return arr2;
+// };
