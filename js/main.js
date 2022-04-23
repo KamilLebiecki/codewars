@@ -1254,3 +1254,8 @@
 // 	var str = "Hello World!";
 // 	console.log(str);
 // }
+//
+// Unexpected parsing
+// const getStatus = (isBusy) => {
+// 	return { status: isBusy ? "busy" : "available" };
+// };
