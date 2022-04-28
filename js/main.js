@@ -1423,3 +1423,6 @@
 // function animal(obj) {
 // 	return `This ${obj.color} ${obj["name"]} has ${obj["legs"]} legs.`;
 // }
+//
+// Training JS #6: Basic data types--Boolean and conditional statements if..else
+// const trueOrFalse = (val) => (val ? "true" : "false");
