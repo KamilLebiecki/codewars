@@ -37,3 +37,39 @@ return Math.min(...s.split(" ").map (s => s.length));
 }
 
 reducing from Leon returning video
+
+function greet(lang) {
+return langs[lang]||langs['english'];
+}
+
+var langs = {
+'english': 'Welcome',
+'czech': 'Vitejte',
+'danish': 'Velkomst',
+'dutch': 'Welkom',
+'estonian': 'Tere tulemast',
+'finnish': 'Tervetuloa',
+'flemish': 'Welgekomen',
+'french': 'Bienvenue',
+'german': 'Willkommen',
+'irish': 'Failte',
+'italian': 'Benvenuto',
+'latvian': 'Gaidits',
+'lithuanian': 'Laukiamas',
+'polish': 'Witamy',
+'spanish': 'Bienvenido',
+'swedish': 'Valkommen',
+'welsh': 'Croeso'
+};
+
+// Filling an array (part 1)
+//
+// const arr = (N) => {
+// let arr2 = [];
+// for (let i = 0; i < N; i++) {
+// arr2.push(i);
+// }
+// return arr2;
+// };
+
+const arr = n => Array.from({length: n}, (\_, i) => i);

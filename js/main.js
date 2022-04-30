@@ -1149,3 +1149,285 @@
 //
 // Add Length
 // const addLength = (str) => str.split(" ").map((e) => `${e} ${e.length}`);
+//
+// Welcome!
+// function greet(language) {
+// 	switch (language) {
+// 		case "czech":
+// 			return "Vitejte";
+// 		case "danish":
+// 			return "Velkomst";
+// 		case "dutch":
+// 			return "Welkom";
+// 		case "estonian":
+// 			return "Tere tulemast";
+// 		case "finnish":
+// 			return "Tervetuloa";
+// 		case "flemish":
+// 			return "Welgekomen";
+// 		case "french":
+// 			return "Bienvenue";
+// 		case "german":
+// 			return "Willkommen";
+// 		case "irish":
+// 			return "Failte";
+// 		case "italian":
+// 			return "Benvenuto";
+// 		case "latvian":
+// 			return "Gaidits";
+// 		case "lithuanian":
+// 			return "Laukiamas";
+// 		case "polish":
+// 			return "Witamy";
+// 		case "spanish":
+// 			return "Bienvenido";
+// 		case "swedish":
+// 			return "Valkommen";
+// 		case "welsh":
+// 			return "Croeso";
+// 		case "english":
+// 		default:
+// 			return "Welcome";
+// 	}
+// }
+//
+// Squash the bugs
+//
+// function findLongest(str) {
+// 	var spl = str.split(" ");
+// 	var longest = 0;
+
+// 	for (var i = 0; i < spl.length; i++) {
+// 		if (spl[i].length > longest) {
+// 			longest = spl[i].length;
+// 		}
+// 	}
+// 	return longest;
+// }
+//
+// Filling an array (part 1)
+//
+// const arr = (N) => {
+// 	let arr2 = [];
+// 	for (let i = 0; i < N; i++) {
+// 		arr2.push(i);
+// 	}
+// 	return arr2;
+// };
+//
+//
+// Is this my tail?
+// function correctTail(body, tail) {
+// 	let sub = body.substr(body.length - tail.length);
+
+// 	if (sub == tail) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+// FIXME: Replace all dots
+// const replaceDots = (str) => str.replace(/\./g, "-");
+//
+//
+// Push a hash/an object into array
+// items = [];
+// items.push({ a: "b", c: "d" });
+//
+// A bugs trilogy: Episode 1 - "Let Math.Random(); decide your future"
+//
+// function yourFutureCareer() {
+// 	let career = Math.random();
+// 	if (career <= 0.32) {
+// 		return "FrontEnd Developer";
+// 	} else if (career <= 0.65) {
+// 		return "BackEnd Developer";
+// 	} else {
+// 		return "Full-Stack Developer";
+// 	}
+// }
+
+// yourFutureCareer();
+//
+// Training JS #1: create your first JS function and print "Hello World!"
+// function helloWorld() {
+// 	var str = "Hello World!";
+// 	console.log(str);
+// }
+//
+// Unexpected parsing
+// const getStatus = (isBusy) => {
+// 	return { status: isBusy ? "busy" : "available" };
+// };
+//
+// Max Headroom and JavaScript style
+// function getMax1() {
+// 	var max = {
+// 		name: "Max Headroom",
+// 	};
+// 	return max;
+// }
+// function getMax2() {
+// 	return { name: "Max Headroom" };
+// }
+//
+// 101 Dalmatians - squash the bugs, not the dogs!
+
+// function howManyDalmatians(number) {
+// 	var dogs = [
+// 		"Hardly any",
+// 		"More than a handful!",
+// 		"Woah that's a lot of dogs!",
+// 		"101 DALMATIANS!!!",
+// 	];
+// 	return number <= 10
+// 		? dogs[0]
+// 		: number <= 50
+// 		? dogs[1]
+// 		: number === 101
+// 		? dogs[3]
+// 		: dogs[2];
+// }
+//
+// Training JS #2: Basic data types--Number
+// var v1 = 50;
+// (v2 = 100), (v3 = 150), (v4 = 200), (v5 = 2), (v6 = 250);
+// function equal1() {
+// 	var a = v1;
+// 	var b = v1;
+// 	return a + b;
+// }
+// //Please refer to the example above to complete the following functions
+// function equal2() {
+// 	var a = v4; //set number value to a
+// 	var b = v2; //set number value to b
+// 	return a - b;
+// }
+// function equal3() {
+// 	var a = v1; //set number value to a
+// 	var b = v5; //set number value to b
+// 	return a * b;
+// }
+// function equal4() {
+// 	var a = v4; //set number value to a
+// 	var b = v5; //set number value to b
+// 	return a / b;
+// }
+// function equal5() {
+// 	var a = v6; //set number value to a
+// 	var b = v3; //set number value to b
+// 	return a % b;
+// }
+//
+// Training JS #3: Basic data types--String
+//
+// var a1 = "A",
+// 	a2 = "a",
+// 	b1 = "B",
+// 	b2 = "b",
+// 	c1 = "C",
+// 	c2 = "c",
+// 	d1 = "D",
+// 	d2 = "d",
+// 	e1 = "E",
+// 	e2 = "e",
+// 	n1 = "N",
+// 	n2 = "n";
+// function Dad() {
+// 	//select some variable to combine "Dad"
+// 	return d1 + a2 + d2;
+// }
+// function Bee() {
+// 	//select some variable to combine "Bee"
+// 	return b1 + e2 + e2;
+// }
+// function banana() {
+// 	//select some variable to combine "banana"
+// 	return b2 + a2 + n2 + a2 + n2 + a2;
+// }
+
+// //answer some questions if you finished works above
+// function answer1() {
+// 	//the answer should be "yes" or "no"
+// 	return "no";
+// }
+// function answer2() {
+// 	//the answer should be "yes" or "no"
+// 	return "no";
+// }
+// function answer3() {
+// 	//the answer should be "yes" or "no"
+// 	return "yes";
+// }
+// var a1 = "A",
+// 	a2 = "a",
+// 	b1 = "B",
+// 	b2 = "b",
+// 	c1 = "C",
+// 	c2 = "c",
+// 	d1 = "D",
+// 	d2 = "d",
+// 	e1 = "E",
+// 	e2 = "e",
+// 	n1 = "N",
+// 	n2 = "n";
+// function Dad() {
+// 	//select some variable to combine "Dad"
+// 	return d1 + a2 + d2;
+// }
+// function Bee() {
+// 	//select some variable to combine "Bee"
+// 	return b1 + e2 + e2;
+// }
+// function banana() {
+// 	//select some variable to combine "banana"
+// 	return b2 + a2 + n2 + a2 + n2 + a2;
+// }
+
+// //answer some questions if you finished works above
+// function answer1() {
+// 	//the answer should be "yes" or "no"
+// 	return "no";
+// }
+// function answer2() {
+// 	//the answer should be "yes" or "no"
+// 	return "no";
+// }
+// function answer3() {
+// 	//the answer should be "yes" or "no"
+// 	return "yes";
+// }
+//
+// Training JS #4: Basic data types--Array
+// function getLength(arr) {
+// 	return arr.length;
+// }
+// function getFirst(arr) {
+// 	return arr[0];
+// }
+// function getLast(arr) {
+// 	return arr[arr.length - 1];
+// }
+// function pushElement(arr) {
+// 	var el = 1;
+// 	arr.push(el);
+// 	return arr;
+// }
+// function popElement(arr) {
+// 	arr.pop();
+// 	return arr;
+// }
+//
+// Training JS #5: Basic data types--Object
+//
+// function animal(obj) {
+// 	return `This ${obj.color} ${obj["name"]} has ${obj["legs"]} legs.`;
+// }
+//
+// Training JS #6: Basic data types--Boolean and conditional statements if..else
+// const trueOrFalse = (val) => (val ? "true" : "false");
+// const trueOrFalse = (val) => Boolean(val).toString();
+//
+// Training JS #7: if..else and ternary operator
+const saleHotdogs = (n) =>
+	n < 5 ? n * 100 : n >= 5 && n < 10 ? n * 95 : n * 90;
