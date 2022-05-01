@@ -1429,5 +1429,5 @@
 // const trueOrFalse = (val) => Boolean(val).toString();
 //
 // Training JS #7: if..else and ternary operator
-const saleHotdogs = (n) =>
-	n < 5 ? n * 100 : n >= 5 && n < 10 ? n * 95 : n * 90;
+// const saleHotdogs = (n) =>
+// 	n < 5 ? n * 100 : n >= 5 && n < 10 ? n * 95 : n * 90;
