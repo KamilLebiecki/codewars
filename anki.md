@@ -36,6 +36,8 @@ function findShort(s){
 return Math.min(...s.split(" ").map (s => s.length));
 }
 
+reducing from Leon returning video
+
 function greet(lang) {
 return langs[lang]||langs['english'];
 }
@@ -74,3 +76,6 @@ const arr = n => Array.from({length: n}, (\_, i) => i);
 
 aria hidden
 align-items vs align-content
+labels forms
+
+inner join vs join
