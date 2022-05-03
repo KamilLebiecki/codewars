@@ -80,3 +80,4 @@ labels forms
 
 inner join vs join
 +a = Number(a)
+sql commands
