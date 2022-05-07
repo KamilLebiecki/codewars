@@ -73,3 +73,7 @@ var langs = {
 // };
 
 const arr = n => Array.from({length: n}, (\_, i) => i);
+
+labels forms
+
+inner join vs join
