@@ -84,3 +84,14 @@ sql commands
 
 encapsulation
 abstraction
+
+function padIt(str,n){
+let i = 0;
+do {  
+ if (i % 2 !== 0) str = str + '_';
+else str = '_' + str;
+i++;
+}
+while (i < n)
+return str
+}

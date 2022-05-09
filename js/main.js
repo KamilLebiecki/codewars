@@ -1450,3 +1450,14 @@
 // 	}
 // 	return days;
 // }
+//
+// Training JS #9: loop statement --while and do..while
+// function padIt(str, n) {
+// 	let i = 0;
+// 	do {
+// 		if (i % 2 !== 0) str = str + "*";
+// 		else str = "*" + str;
+// 		i++;
+// 	} while (i < n);
+// 	return str;
+// }
