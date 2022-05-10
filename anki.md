@@ -74,24 +74,4 @@ var langs = {
 
 const arr = n => Array.from({length: n}, (\_, i) => i);
 
-aria hidden
-align-items vs align-content
-labels forms
-
-inner join vs join
-+a = Number(a)
 sql commands
-
-encapsulation
-abstraction
-
-function padIt(str,n){
-let i = 0;
-do {  
- if (i % 2 !== 0) str = str + '_';
-else str = '_' + str;
-i++;
-}
-while (i < n)
-return str
-}
