@@ -1461,3 +1461,43 @@
 // 	} while (i < n);
 // 	return str;
 // }
+//
+// Training JS #11: loop statement --break,continue
+// const grabDoll = (dolls) => {
+// 	let bag = [];
+// 	for (let i = 0; i < dolls.length; i++) {
+// 		if (bag.length === 3) {
+// 			break;
+// 		}
+// 		if (dolls[i] !== "Hello Kitty" && dolls[i] !== "Barbie doll") continue;
+// 		bag.push(dolls[i]);
+// 	}
+// 	return bag;
+// };
+
+// const grabDoll = (dolls) => {
+// 	let bag = [];
+// 	for (let i = 0; i < dolls.length; i++) {
+// 		if (bag.length === 3) {
+// 			break;
+// 		}
+// 		if (dolls[i] !== "Hello Kitty" && dolls[i] !== "Barbie doll") continue;
+// 		bag.push(dolls[i]);
+// 	}
+// 	return bag;
+// };
+
+// console.log(
+// 	grabDoll([
+// 		"Hello Kitty",
+// 		"Barbie doll",
+// 		"Woody",
+// 		"Alien",
+// 		"Hello Kitty",
+// 		"Barbie doll",
+// 		"Buzz Astral",
+// 		"Sid",
+// 		"Hello Kitty",
+// 		"Barbie doll",
+// 	])
+// );
