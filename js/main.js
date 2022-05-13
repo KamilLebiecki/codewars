@@ -1501,3 +1501,14 @@
 // 		"Barbie doll",
 // 	])
 // );
+//
+// Training JS #12: loop statement --for..in and for..of
+
+function giveMeFive(obj) {
+	let array = [];
+	for (var key in obj) {
+		if (key.length === 5) {
+			array.push(key);
+		}
+	}
+}
