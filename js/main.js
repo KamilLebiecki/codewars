@@ -1530,3 +1530,34 @@
 // 	}
 // 	return array;
 // }
+//
+// Training JS #13: Number object and its properties
+
+// function whatNumberIsIt(n) {
+// 	if (n === Number.MAX_VALUE) {
+// 		return `Input number is Number.MAX_VALUE`;
+// 	} else if (n === Number.MIN_VALUE) {
+// 		return `Input number is Number.MIN_VALUE`;
+// 	} else if (isNaN(n)) {
+// 		return `Input number is Number.NaN`;
+// 	} else if (n < -Number.MAX_VALUE) {
+// 		return `Input number is Number.NEGATIVE_INFINITY`;
+// 	} else if (n > Number.MAX_VALUE) {
+// 		return `Input number is Number.POSITIVE_INFINITY`;
+// 	} else {
+// 		return `Input number is ${n}`;
+// 	}
+// }
+
+const whatNumberIsIt = (n) =>
+	n === Number.MAX_VALUE
+		? `Input number is Number.MAX_VALUE`
+		: n === Number.MIN_VALUE
+		? `Input number is Number.MIN_VALUE`
+		: isNaN(n)
+		? `Input number is Number.NaN`
+		: n < -Number.MAX_VALUE
+		? `Input number is Number.NEGATIVE_INFINITY`
+		: n > Number.MAX_VALUE
+		? `Input number is Number.POSITIVE_INFINITY`
+		: `Input number is ${n}`;
