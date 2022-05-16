@@ -1549,15 +1549,29 @@
 // 	}
 // }
 
-const whatNumberIsIt = (n) =>
-	n === Number.MAX_VALUE
-		? `Input number is Number.MAX_VALUE`
-		: n === Number.MIN_VALUE
-		? `Input number is Number.MIN_VALUE`
-		: isNaN(n)
-		? `Input number is Number.NaN`
-		: n < -Number.MAX_VALUE
-		? `Input number is Number.NEGATIVE_INFINITY`
-		: n > Number.MAX_VALUE
-		? `Input number is Number.POSITIVE_INFINITY`
-		: `Input number is ${n}`;
+// const whatNumberIsIt = (n) =>
+// 	n === Number.MAX_VALUE
+// 		? `Input number is Number.MAX_VALUE`
+// 		: n === Number.MIN_VALUE
+// 		? `Input number is Number.MIN_VALUE`
+// 		: isNaN(n)
+// 		? `Input number is Number.NaN`
+// 		: n < -Number.MAX_VALUE
+// 		? `Input number is Number.NEGATIVE_INFINITY`
+// 		: n > Number.MAX_VALUE
+// 		? `Input number is Number.POSITIVE_INFINITY`
+// 		: `Input number is ${n}`;
+//
+// Training JS #14: Methods of Number object--toString() and toLocaleString()
+// colorOf(255,0,0) should return "#ff0000"
+// colorOf(0,111,0) should return "#006f00"
+// colorOf(1, 2 ,3) should return "#010203"
+
+// const colorOf = (r, g, b) => {
+// 	let red = r.toString(16);
+// 	let green = g.toString(16);
+// 	let blue = b.toString(16);
+// 	return `#${red.length === 1 ? "0" + red : red}${
+// 		green.length === 1 ? "0" + green : green
+// 	}${blue.length === 1 ? "0" + blue : blue}`;
+// };
