@@ -1462,6 +1462,20 @@
 // 	return str;
 // }
 //
+//
+// Training JS #10: loop statement --for
+// function pickIt(arr) {
+// 	var odd = [],
+// 		even = [];
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (arr[i] % 2 === 0) {
+// 			even.push(arr[i]);
+// 		} else if (arr[i] % 2 !== 0) {
+// 			odd.push(arr[i]);
+// 		}
+// 	}
+// 	return [odd, even];
+// }
 // Training JS #11: loop statement --break,continue
 // const grabDoll = (dolls) => {
 // 	let bag = [];
