@@ -1561,3 +1561,34 @@
 // 		: n > Number.MAX_VALUE
 // 		? `Input number is Number.POSITIVE_INFINITY`
 // 		: `Input number is ${n}`;
+<<<<<<< HEAD
+=======
+//
+// Training JS #14: Methods of Number object--toString() and toLocaleString()
+// colorOf(255,0,0) should return "#ff0000"
+// colorOf(0,111,0) should return "#006f00"
+// colorOf(1, 2 ,3) should return "#010203"
+
+// const colorOf = (r, g, b) => {
+// 	let red = r.toString(16);
+// 	let green = g.toString(16);
+// 	let blue = b.toString(16);
+// 	return `#${red.length === 1 ? "0" + red : red}${
+// 		green.length === 1 ? "0" + green : green
+// 	}${blue.length === 1 ? "0" + blue : blue}`;
+// };
+//
+// Training JS #15: Methods of Number object--toFixed(), toExponential() and toPrecision()
+// function howManySmaller(arr, n) {
+// 	return (newArr = arr.map((e) => +e.toFixed(2)).filter((e) => e < n).length);
+// }
+
+// howManySmaller([1.234,1.235,1.228],1.24) should return 2
+// howManySmaller([1.1888,1.1868,1.1838],1.19) should return 1
+// howManySmaller([3.1288,3.1212,3.1205],3.1212) should return 2
+//
+// Training JS #16: Methods of String object--slice(), substring() and substr()
+
+// const cutIt = (arr) =>
+// 	arr.map((e) => e.slice(0, Math.min(...arr.map((x) => x.length))));
+>>>>>>> b1167de6ea9f1bf46309e7fc569f433345370504
