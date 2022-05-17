@@ -1561,8 +1561,6 @@
 // 		: n > Number.MAX_VALUE
 // 		? `Input number is Number.POSITIVE_INFINITY`
 // 		: `Input number is ${n}`;
-<<<<<<< HEAD
-=======
 //
 // Training JS #14: Methods of Number object--toString() and toLocaleString()
 // colorOf(255,0,0) should return "#ff0000"
@@ -1591,4 +1589,3 @@
 
 // const cutIt = (arr) =>
 // 	arr.map((e) => e.slice(0, Math.min(...arr.map((x) => x.length))));
->>>>>>> b1167de6ea9f1bf46309e7fc569f433345370504
