@@ -1549,15 +1549,15 @@
 // 	}
 // }
 
-const whatNumberIsIt = (n) =>
-	n === Number.MAX_VALUE
-		? `Input number is Number.MAX_VALUE`
-		: n === Number.MIN_VALUE
-		? `Input number is Number.MIN_VALUE`
-		: isNaN(n)
-		? `Input number is Number.NaN`
-		: n < -Number.MAX_VALUE
-		? `Input number is Number.NEGATIVE_INFINITY`
-		: n > Number.MAX_VALUE
-		? `Input number is Number.POSITIVE_INFINITY`
-		: `Input number is ${n}`;
+// const whatNumberIsIt = (n) =>
+// 	n === Number.MAX_VALUE
+// 		? `Input number is Number.MAX_VALUE`
+// 		: n === Number.MIN_VALUE
+// 		? `Input number is Number.MIN_VALUE`
+// 		: isNaN(n)
+// 		? `Input number is Number.NaN`
+// 		: n < -Number.MAX_VALUE
+// 		? `Input number is Number.NEGATIVE_INFINITY`
+// 		: n > Number.MAX_VALUE
+// 		? `Input number is Number.POSITIVE_INFINITY`
+// 		: `Input number is ${n}`;
