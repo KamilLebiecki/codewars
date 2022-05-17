@@ -1594,3 +1594,10 @@
 
 // const firstToLast = (str, c) =>
 // 	str.search(c) === -1 ? -1 : str.lastIndexOf(c) - str.indexOf(c);
+//
+// Training JS #18: Methods of String object--concat() split() and its good friend join()
+// const splitAndMerge = (string, separator) =>
+// 	string
+// 		.split(" ")
+// 		.map((e) => e.split("").join(separator))
+// 		.join(" ");
