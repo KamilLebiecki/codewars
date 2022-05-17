@@ -1589,3 +1589,8 @@
 
 // const cutIt = (arr) =>
 // 	arr.map((e) => e.slice(0, Math.min(...arr.map((x) => x.length))));
+//
+// Training JS #17: Methods of String object--indexOf(), lastIndexOf() and search()
+
+// const firstToLast = (str, c) =>
+// 	str.search(c) === -1 ? -1 : str.lastIndexOf(c) - str.indexOf(c);
