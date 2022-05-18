@@ -1603,19 +1603,8 @@
 // 		.join(" ");
 //
 // Training JS #19: Methods of String object--toUpperCase() toLowerCase() and replace()
-function alienLanguage(str) {
-	let words = str.toUpperCase().split(" ");
-
-	for (let i = 0; i < str.length; i++) {
-		console.log(words[i][words.length - 1]);
-		// words[i] = words[i][words.length - 1]
-	}
-	return words;
-}
-
-// Each word in the sentence is separated by spaces. The last letter of each word in the sentence turns to lowercase, and the other letters are capitalized. Looks very strange? Because this is the form of alien language ;-)
-
-// alienLanguage("My name is John") should return "My NAMe Is JOHn"
-// alienLanguage("this is an example") should return "THIs Is An EXAMPLe"
-// alienLanguage("Hello World") should return "HELLo WORLd"
-// A small hint: The first conversion of the entire string will make the code easier
+// const alienLanguage = (str) =>
+// 	str
+// 		.split(" ")
+// 		.map((e) => e.slice(0, -1).toUpperCase() + e.slice(-1).toLowerCase())
+// 		.join(" ");
