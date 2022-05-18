@@ -1681,3 +1681,18 @@
 // 		return v;
 // 	});
 // }
+//
+//
+// Training JS #21: Methods of String object--trim() and the string template
+//
+// function fiveLine(s) {
+// 	let result = "";
+// 	for (let i = 1; i < 6; i++) {
+// 		if (i === 5) {
+// 			result += `${s.trim().repeat(i)}`;
+// 			break;
+// 		}
+// 		result += `${s.trim().repeat(i)}\n`;
+// 	}
+// 	return result;
+// }
