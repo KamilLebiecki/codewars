@@ -1696,3 +1696,12 @@
 // 	}
 // 	return result;
 // }
+// let shuffleIt = (arr, ...swap) => {
+// 	let i = 0;
+// 	while (i < swap.length) {
+// 		let [a, b] = [swap[i][0], swap[i][1]];
+// 		[arr[a], arr[b]] = [arr[b], arr[a]];
+// 		i++;
+// 	}
+// 	return arr;
+// };
