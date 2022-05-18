@@ -1608,3 +1608,11 @@
 // 		.split(" ")
 // 		.map((e) => e.slice(0, -1).toUpperCase() + e.slice(-1).toLowerCase())
 // 		.join(" ");
+//
+// Training JS #20: Methods of String object--charAt() charCodeAt() and fromCharCode()
+
+// split the string into words
+// split the words into letters
+// decrypt letters with shift left 3
+// join the letters into words
+// join words into string
