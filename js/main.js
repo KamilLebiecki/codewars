@@ -1,6 +1,3 @@
-// Reversed Strings
-// const solution = (str) => str.split("").reverse().join("");
-
 // String repeat
 // const repeatStr = (n, s) => (n > 0 ? s.repeat(n) : "");
 
@@ -1695,6 +1692,8 @@
 // 		result += `${s.trim().repeat(i)}\n`;
 // 	}
 // 	return result;
+//
+// Training JS #22: Unlock new skills--Arrow function,spread operator and deconstruction
 // }
 // let shuffleIt = (arr, ...swap) => {
 // 	let i = 0;
