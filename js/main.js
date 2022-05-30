@@ -1716,6 +1716,7 @@
 
 // Finally, return arr.
 
+<<<<<<< HEAD
 function infiniteLoop(arr, d, n) {
 	let newArr = [];
 	//
@@ -1736,7 +1737,30 @@ function infiniteLoop(arr, d, n) {
 	}
 	return arr;
 }
+=======
+// function infiniteLoop(arr, d, n) {
+// 	for (let i = 0; i < n; i++) {
+// 		if (d === "right") {
+// 			arr[0].unshift(arr[2].pop());
+// 			arr[1].unshift(arr[0].pop());
+// 			arr[2].unshift(arr[1].pop());
+// 		} else if (d === "left") {
+// 			arr[2].push(arr[0].shift());
+// 			arr[1].push(arr[2].shift());
+// 			arr[0].push(arr[1].shift());
+// 		}
+// 	}
+// 	return arr;
+// }
+//
+// Training JS #24: methods of arrayObject---splice() and slice()
+>>>>>>> b66ee155381b348d8b31c68802737548b34f7332
 
-// infiniteLoop( [[1,2,3],[4,5,6],[7,8,9]],"left",1) //should return [[2,3,4],[5,6,7],[8,9,1]]
-// infiniteLoop( [[1,2,3],[4,5,6],[7,8,9]],"right",1) //should return [[9,1,2],[3,4,5],[6,7,8]]
-// infiniteLoop( [[1,2],[3,4,5,6],[7,8,9,10]],"left",2) //should return [[3,4],[5,6,7,8],[9,10,1,2]]
+// Coding in function threeInOne. function accept 1 parameters arr, it's a 1D number array. Your task is to merge each of the 3 elements into 1 elements (sum value) and return the result.
+// function threeInOne(arr) {
+// 	let newArr = [];
+// 	for (let i = 0; i < arr.length; i += 3) {
+// 		newArr.push(arr[i] + arr[i + 1] + arr[i + 2]);
+// 	}
+// 	return newArr;
+// }
