@@ -1701,43 +1701,41 @@
 // let shuffleIt = (arr, ...swap) => {
 // 	let i = 0;
 // 	while (i < swap.length) {
-// 		let [a, b] = [swap[i][0], swap[i][1]];
-// 		[arr[a], arr[b]] = [arr[b], arr[a]];
-// 		i++;
+// // 		let [a, b] = [swap[i][0], swap[i][1]];
+// // 		[arr[a], arr[b]] = [arr[b], arr[a]];
+// // 		i++;
+// // 	}
+// // 	return arr;
+// // };
+// //
+// //
+// // Training JS #23: methods of arrayObject---push(), pop(), shift() and unshift()
+// // Coding in function infiniteLoop. function accept 3 parameters. The 1st parameter is arr, it's a 2D array, it contains three 1D array. The 2nd parameter is d ，it's a string. The 3rd parameter is n, it's a number.
+
+// // You can think of arr as a moat, the elements of arr like water constantly flow in. The direction of flow is controlled by the parameter d. The value of d can be "left" or "right". "left" means the "river" moves to the left. All elements in the 1D array are to the left moving n position, if beyond the bounds of the array and the element is moved to the tail on the left side of the array; if it exceeds the left boundary element would be moved to the tail of 3rd array(like a circle). Right is also similar to the operation, but it is moving to the right.
+
+// // Finally, return arr.
+
+// function infiniteLoop(arr, d, n) {
+// 	let newArr = [];
+// 	//
+// }
+
+// function infiniteLoop(arr, d, n) {
+// 	for (let i = 1; i <= n; i++) {
+// 		if (d === "left") {
+// 			arr[2].push(arr[0].shift());
+// 			arr[1].push(arr[2].shift());
+// 			arr[0].push(arr[1].shift());
+// 		}
+// 		if (d === "right") {
+// 			arr[0].unshift(arr[2].pop());
+// 			arr[1].unshift(arr[0].pop());
+// 			arr[2].unshift(arr[1].pop());
+// 		}
 // 	}
 // 	return arr;
-// };
-//
-//
-// Training JS #23: methods of arrayObject---push(), pop(), shift() and unshift()
-// Coding in function infiniteLoop. function accept 3 parameters. The 1st parameter is arr, it's a 2D array, it contains three 1D array. The 2nd parameter is d ，it's a string. The 3rd parameter is n, it's a number.
-
-// You can think of arr as a moat, the elements of arr like water constantly flow in. The direction of flow is controlled by the parameter d. The value of d can be "left" or "right". "left" means the "river" moves to the left. All elements in the 1D array are to the left moving n position, if beyond the bounds of the array and the element is moved to the tail on the left side of the array; if it exceeds the left boundary element would be moved to the tail of 3rd array(like a circle). Right is also similar to the operation, but it is moving to the right.
-
-// Finally, return arr.
-
-<<<<<<< HEAD
-function infiniteLoop(arr, d, n) {
-	let newArr = [];
-	//
-}
-
-function infiniteLoop(arr, d, n) {
-	for (let i = 1; i <= n; i++) {
-		if (d === "left") {
-			arr[2].push(arr[0].shift());
-			arr[1].push(arr[2].shift());
-			arr[0].push(arr[1].shift());
-		}
-		if (d === "right") {
-			arr[0].unshift(arr[2].pop());
-			arr[1].unshift(arr[0].pop());
-			arr[2].unshift(arr[1].pop());
-		}
-	}
-	return arr;
-}
-=======
+// }
 // function infiniteLoop(arr, d, n) {
 // 	for (let i = 0; i < n; i++) {
 // 		if (d === "right") {
@@ -1754,7 +1752,6 @@ function infiniteLoop(arr, d, n) {
 // }
 //
 // Training JS #24: methods of arrayObject---splice() and slice()
->>>>>>> b66ee155381b348d8b31c68802737548b34f7332
 
 // Coding in function threeInOne. function accept 1 parameters arr, it's a 1D number array. Your task is to merge each of the 3 elements into 1 elements (sum value) and return the result.
 // function threeInOne(arr) {
@@ -1763,4 +1760,51 @@ function infiniteLoop(arr, d, n) {
 // 		newArr.push(arr[i] + arr[i + 1] + arr[i + 2]);
 // 	}
 // 	return newArr;
+// }
+//
+// Training JS #25: methods of arrayObject---reverse() and sort()
+// Coding in function sortIt. function accept 1 parameters arr, it's a number array.
+
+// function sortIt(arr) {
+// 	return arr.slice().sort((a, b) => {
+// 		let countA = arr.filter((v) => v === a).length;
+// 		let countB = arr.filter((v) => v === b).length;
+// 		if (countA === countB) {
+// 			return a - b;
+// 		} else if (countB > countA) {
+// 			return 1;
+// 		} else {
+// 			return -1;
+// 		}
+// 	});
+// }
+
+// conditions1: according to the number of elements(in ascending order) for example:
+
+// sortIt([1,1,1,2,2,3]) should return [3,2,2,1,1,1]
+// because [1,1,1,2,2,3] has one 3, two 2 and three 1
+// conditions2: If the same number of elements, according to the number values(in descending order) for example:
+
+// sortIt([1,1,1,2,2,2,3,3,3]) should return [3,3,3,2,2,2,1,1,1]
+// because number of 3,2 and 1 both are three, then according to 3>2>1
+// Comprehensive two conditions should be like this:
+
+// sortIt([1,2,3,4,4,5,5,6,6]) should return [3,2,1,6,6,5,5,4,4]
+//
+// Vowel Count
+// function getCount(str) {
+// 	let vowelsCount = 0;
+// 	let arr = str.split("");
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (
+// 			arr[i] === "a" ||
+// 			arr[i] === "e" ||
+// 			arr[i] === "i" ||
+// 			arr[i] === "o" ||
+// 			arr[i] === "u"
+// 		) {
+// 			vowelsCount++;
+// 		}
+// 	}
+// 	return vowelsCount;
 // }
