@@ -1808,3 +1808,35 @@
 // 	}
 // 	return vowelsCount;
 // }
+//
+// Disemvowel Trolls
+// function disemvowel(str) {
+// 	return str
+// 		.split("")
+// 		.filter(
+// 			(e) =>
+// 				e !== "a" &&
+// 				e !== "A" &&
+// 				e !== "e" &&
+// 				e !== "E" &&
+// 				e !== "i" &&
+// 				e !== "I" &&
+// 				e !== "o" &&
+// 				e !== "O" &&
+// 				e !== "u" &&
+// 				e !== "U"
+// 		)
+// 		.join("");
+// }
+//
+//
+// Vowel remover
+
+// function shortcut(string) {
+// 	return string
+// 		.split("")
+// 		.filter(
+// 			(e) => e !== "a" && e !== "e" && e !== "i" && e !== "o" && e !== "u"
+// 		)
+// 		.join("");
+// }
