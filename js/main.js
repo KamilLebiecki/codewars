@@ -1885,5 +1885,5 @@
 //
 //
 // Correct the mistakes of the character recognition software
-const correct = (string) =>
-	string.replace(/1/g, "I").replace(/5/g, "S").replace(/0/g, "O");
+// const correct = (string) =>
+// 	string.replace(/1/g, "I").replace(/5/g, "S").replace(/0/g, "O");
