@@ -1910,3 +1910,6 @@
 // 	}
 // 	return result === 0 ? "Fail!" : result > 2 ? "I smell a series!" : "Publish!";
 // };
+//
+// Plural
+// const plural = n => n === 1 ? false : true
