@@ -1887,3 +1887,15 @@
 // Correct the mistakes of the character recognition software
 // const correct = (string) =>
 // 	string.replace(/1/g, "I").replace(/5/g, "S").replace(/0/g, "O");
+//
+// Cat years, Dog years
+// const humanYearsCatYearsDogYears = (humanYears) => {
+// 	if (humanYears === 1) {
+// 		return [1, 15, 15];
+// 	}
+// 	if (humanYears === 2) {
+// 		return [2, 24, 24];
+// 	}
+
+// 	return [humanYears, 24 + (humanYears - 2) * 4, 24 + (humanYears - 2) * 5];
+// };
