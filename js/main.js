@@ -1913,3 +1913,6 @@
 //
 // Plural
 // const plural = n => n === 1 ? false : true
+//
+// Convert to Binary
+// const toBinary = (n) => Number(n.toString(2));
