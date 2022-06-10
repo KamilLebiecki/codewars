@@ -1937,3 +1937,16 @@
 // 	}
 // 	return countAllExes === countAllOhs;
 // }
+// Stringy Strings
+// function stringy(size) {
+// 	let alternateString = "";
+// 	for (let i = 1; i <= size; i++) {
+// 		if (i % 2 !== 0) {
+// 			alternateString += 1;
+// 		}
+// 		if (i % 2 === 0) {
+// 			alternateString += 0;
+// 		}
+// 	}
+// 	return alternateString;
+// }
