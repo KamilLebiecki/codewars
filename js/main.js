@@ -1958,4 +1958,3 @@
 // 		.map((w) => (w.match(/[A-z]/i) ? `${w.substr(1)}${w.substr(0, 1)}ay` : w))
 // 		.join(" ");
 // };
-1;
