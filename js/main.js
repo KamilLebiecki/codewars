@@ -1966,3 +1966,7 @@
 //
 // N-th Power
 // const index = (arr, n) => (n >= arr.length ? -1 : arr[n] ** n);
+//
+// Super Duper Easy
+//
+// const problem = (x) => (typeof x === "string" ? "Error" : x * 50 + 6);
