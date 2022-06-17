@@ -1970,3 +1970,9 @@
 // Super Duper Easy
 //
 // const problem = (x) => (typeof x === "string" ? "Error" : x * 50 + 6);
+//
+//
+// Hex to Decimal
+// function hexToDec(hexString) {
+// 	return parseInt(hexString, 16);
+// }
