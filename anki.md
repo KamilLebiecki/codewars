@@ -75,3 +75,5 @@ var langs = {
 const arr = n => Array.from({length: n}, (\_, i) => i);
 
 sql commands
+
+test method to check
