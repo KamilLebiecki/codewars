@@ -2081,3 +2081,4 @@
 // }
 //
 // const toBinary = (n) => Number(n.toString(2));
+// let toBinary = (n) => +n.toString(2);
