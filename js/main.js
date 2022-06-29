@@ -2112,3 +2112,15 @@
 //
 // const trueOrFalse = (val) => (val ? "true" : "false");
 // const trueOrFalse = (val) => Boolean(val).toString();
+// function stringy(size) {
+// 	let alternateString = "";
+// 	for (let i = 1; i <= size; i++) {
+// 		if (i % 2 !== 0) {
+// 			alternateString += 1;
+// 		}
+// 		if (i % 2 === 0) {
+// 			alternateString += 0;
+// 		}
+// 	}
+// 	return alternateString;
+// }
