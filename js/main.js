@@ -2131,3 +2131,5 @@
 // const regex = /[A-Z]/g;
 // const found = paragraph.match(regex);
 // console.log(found);
+// const correct = (string) =>
+// 	string.replace(/1/g, "I").replace(/5/g, "S").replace(/0/g, "O");
