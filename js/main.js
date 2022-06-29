@@ -2124,3 +2124,4 @@
 // 	}
 // 	return alternateString;
 // }
+// const stringy = (x) => "".padStart(x, "10");
