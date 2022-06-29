@@ -2125,3 +2125,4 @@
 // 	return alternateString;
 // }
 // const stringy = (x) => "".padStart(x, "10");
+// const stringy = (size = "10".repeat(size).slice(0, size));
