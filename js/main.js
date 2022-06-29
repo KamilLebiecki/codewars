@@ -2109,3 +2109,6 @@
 // }
 
 // let filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+//
+// const trueOrFalse = (val) => (val ? "true" : "false");
+// const trueOrFalse = (val) => Boolean(val).toString();
