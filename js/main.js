@@ -2141,3 +2141,14 @@
 
 // const correct = (string) =>
 // 	string.replace(/[501]/g, (character) => corrections[character]);
+function correct(string) {
+	const map = {
+		0: "0",
+		1: "I",
+		5: "S",
+	};
+	return string
+		.split("")
+		.map((c) => (map.hasOwnProperty(c) ? map[c] : c))
+		.join("");
+}
