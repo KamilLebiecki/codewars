@@ -2127,3 +2127,7 @@
 // const stringy = (x) => "".padStart(x, "10");
 // const stringy = (size = "10".repeat(size).slice(0, size));
 // const stringy = (size = Array.from(Array(size), (v, i) => +!(i % 2)).join(""));
+// const paragraph = "The quick brown fox jumps over the lazy dog. It barked.";
+// const regex = /[A-Z]/g;
+// const found = paragraph.match(regex);
+// console.log(found);
