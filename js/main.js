@@ -2133,3 +2133,11 @@
 // console.log(found);
 // const correct = (string) =>
 // 	string.replace(/1/g, "I").replace(/5/g, "S").replace(/0/g, "O");
+// const corrections = {
+// 	5: "S",
+// 	0: "O",
+// 	1: "I",
+// };
+
+// const correct = (string) =>
+// 	string.replace(/[501]/g, (character) => corrections[character]);
