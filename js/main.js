@@ -2182,3 +2182,10 @@
 // 			return `I smell a series!`;
 // 	}
 // }
+function well(x) {
+	var good = 0;
+	for (var i = 0; i < x.length; i++)
+		if (x[i] == "good" && ++good > 2) return "I smell a series!";
+
+	return good ? "Publish!" : "Fail!";
+}
