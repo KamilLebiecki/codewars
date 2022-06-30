@@ -2220,3 +2220,13 @@
 // function correct(string) {
 // 	return [...string].map((a) => ({ 0: "O", 5: "S", 1: "I" }[a] || a)).join("");
 // }
+
+const well = (x) => {
+	let result = 0;
+	for (let i = 0; i < x.length; i++) {
+		if (x[i] === "good") {
+			result++;
+		}
+	}
+	return result === 0 ? "Fail!" : result > 2 ? "I smell a series!" : "Publish!";
+};
