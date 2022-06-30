@@ -2193,3 +2193,6 @@
 // 	const count = x.reduce((s, v) => s + (v == "good"), 0);
 // 	return count ? (count > 2 ? "I smell a series!" : "Publish!") : "Fail!";
 // }
+
+const correct = (string) =>
+	string.replace(/1/g, "I").replace(/0/g, "O").replace(/5/g, "S");
