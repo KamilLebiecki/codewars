@@ -2263,3 +2263,17 @@
 // 	const count = x.reduce((s, v) => s + (v == "good"), 0);
 // 	return count ? (count > 2 ? "I smell a series!" : "Publish") : "Fail";
 // }
+
+function sortIt(arr) {
+	return arr.slice().sort((a, b) => {
+		let countA = arr.filter((v) => v === a).length;
+		let countB = arr.filter((v) => v === b).length;
+		if (countA === countB) {
+			return b - a;
+		} else if (countA > countB) {
+			return 1;
+		} else {
+			return -1;
+		}
+	});
+}
