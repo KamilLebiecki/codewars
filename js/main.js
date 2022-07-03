@@ -2718,3 +2718,5 @@
 // const toBinary = (n) => Number(n.toString(2));
 
 // let toBinary = (n) => +n.toString(2);
+
+// const toBinary = (n) => parseInt(n.toString(2));
