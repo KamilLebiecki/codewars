@@ -2487,3 +2487,13 @@
 // 		str.filter((x) => x === "x").length === str.filter((x) => x === "o").length
 // 	);
 // };
+
+// function countSheeps(arrayOfSheeps) {
+// 	return arrayOfSheeps.filter(Boolean).length;
+// }
+
+// const words = ["spray", "paint", "umbrella", "aligator", "quake3arena"];
+
+// const result = words.filter((word) => word.length > 6);
+
+// console.log(result);
