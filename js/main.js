@@ -2438,3 +2438,10 @@
 // 	}
 // 	return newArr;
 // }
+
+// function removeEveryOther(arr) {
+// 	for (var i = 0; i < arr.length; i++) {
+// 		arr.splice(i, 1);
+// 	}
+// 	return arr;
+// }
