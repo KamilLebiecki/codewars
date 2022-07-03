@@ -2641,3 +2641,5 @@
 // const stringy = (size) => "10".repeat(size).slice(0, size);
 
 // const stringy = (size) => Array.from(Array(size), (v, i) => +!(i % 2)).join("");
+
+// const index = (arr, n) => (n >= arr.length ? -1 : arr[n] ** n);
