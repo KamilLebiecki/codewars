@@ -2306,20 +2306,20 @@
 // 		n % 6
 // 	];
 //
-function sortIt(arr) {
-	return arr.slice().sort((a, b) => {
-		let counterA = arr.filter((v) => v === a).length;
-		let counterB = arr.filter((v) => v === b).length;
-		if (counterA === counterB) {
-			return b - a;
-		} else if (counterA > counterB) {
-			return 1;
-		} else {
-			return -1;
-		}
-	});
-}
+// function sortIt(arr) {
+// 	return arr.slice().sort((a, b) => {
+// 		let counterA = arr.filter((v) => v === a).length;
+// 		let counterB = arr.filter((v) => v === b).length;
+// 		if (counterA === counterB) {
+// 			return b - a;
+// 		} else if (counterA > counterB) {
+// 			return 1;
+// 		} else {
+// 			return -1;
+// 		}
+// 	});
+// }
 
-console.log(sortIt([1, 1, 1, 2, 2, 3]));
-console.log(sortIt([1, 1, 1, 2, 2, 2, 3, 3, 3]));
-console.log(sortIt([1, 2, 3, 4, 4, 5, 5, 6, 6]));
+// console.log(sortIt([1, 1, 1, 2, 2, 3]));
+// console.log(sortIt([1, 1, 1, 2, 2, 2, 3, 3, 3]));
+// console.log(sortIt([1, 2, 3, 4, 4, 5, 5, 6, 6]));
