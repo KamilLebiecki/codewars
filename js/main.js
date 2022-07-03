@@ -2392,12 +2392,12 @@
 // 		? arr[1]
 // 		: firstNonConsecutive(arr.slice(1));
 //
-function padIt(str, n) {
-	let i = 0;
-	do {
-		if (i % 2 !== 0) str = str + "^";
-		else str = "^" + str;
-		i++;
-	} while (i < n);
-	return str;
-}
+// function padIt(str, n) {
+// 	let i = 0;
+// 	do {
+// 		if (i % 2 !== 0) str = str + "^";
+// 		else str = "^" + str;
+// 		i++;
+// 	} while (i < n);
+// 	return str;
+// }
