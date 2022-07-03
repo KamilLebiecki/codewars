@@ -2374,13 +2374,13 @@
 // 	return Number.isInteger(result) ? result : null;
 // }
 //
-function firstNonConsecutive(arr) {
-	var out = null;
-	for (var i = 1; i < arr.length; i++) {
-		if (arr[i] - arr[i - 1] != 1) {
-			out = arr[i];
-			break;
-		}
-	}
-	return out;
-}
+// function firstNonConsecutive(arr) {
+// 	var out = null;
+// 	for (var i = 1; i < arr.length; i++) {
+// 		if (arr[i] - arr[i - 1] != 1) {
+// 			out = arr[i];
+// 			break;
+// 		}
+// 	}
+// 	return out;
+// }
