@@ -2611,8 +2611,21 @@
 // 	return [humanYears, catYears, dogYears];
 // };
 
-const humanYearsCatYearsDogYears = (humanYears) => [
-	humanYears,
-	(humanYears - 1 ? 16 : 11) + 4 * humanYears,
-	(humanYears - 1 ? 14 : 10) + 5 * humanYears,
-];
+// const humanYearsCatYearsDogYears = (humanYears) => [
+// 	humanYears,
+// 	(humanYears - 1 ? 16 : 11) + 4 * humanYears,
+// 	(humanYears - 1 ? 14 : 10) + 5 * humanYears,
+// ];
+
+// function stringy(size) {
+// 	let alternateString = "";
+// 	for (let i = 1; i <= size; i++) {
+// 		if (i % 2 !== 0) {
+// 			alternateString += 1;
+// 		}
+// 		if (i % 2 == 0) {
+// 			alternateString += 0;
+// 		}
+// 	}
+// 	return alternateString;
+// }
