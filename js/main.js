@@ -2643,3 +2643,7 @@
 // const stringy = (size) => Array.from(Array(size), (v, i) => +!(i % 2)).join("");
 
 // const index = (arr, n) => (n >= arr.length ? -1 : arr[n] ** n);
+
+// function index(array, n) {
+// 	return array[n] ** n || -1;
+// }
