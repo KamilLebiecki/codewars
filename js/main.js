@@ -2635,3 +2635,5 @@
 // 	for (var i = 1; i <= size; i++) str += i % 2;
 // 	return str;
 // }
+
+// const stringy = (x) => "".padStart(x, "10");
