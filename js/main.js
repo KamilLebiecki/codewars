@@ -2385,9 +2385,9 @@
 // 	return out;
 // }
 
-const firstNonConsecutive = (arr) =>
-	arr.length == 1
-		? null
-		: arr[0] + 1 != arr[1]
-		? arr[1]
-		: firstNonConsecutive(arr.slice(1));
+// const firstNonConsecutive = (arr) =>
+// 	arr.length == 1
+// 		? null
+// 		: arr[0] + 1 != arr[1]
+// 		? arr[1]
+// 		: firstNonConsecutive(arr.slice(1));
