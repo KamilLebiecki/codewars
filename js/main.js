@@ -2497,3 +2497,10 @@
 // const result = words.filter((word) => word.length > 6);
 
 // console.log(result);
+
+// const pigIt = (str) => {
+// 	const arr = str.split("");
+// 	return arr
+// 		.map((w) => (w.match(/[A-z]/i) ? `${w.substr(1)}${w.substr(0, 1)}ay` : w))
+// 		.join(" ");
+// };
