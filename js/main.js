@@ -2716,3 +2716,5 @@
 // 	string.replace(/1/g, "I").replace(/0/g, "O").replace(/5/g, "S");
 
 // const toBinary = (n) => Number(n.toString(2));
+
+// let toBinary = (n) => +n.toString(2);
