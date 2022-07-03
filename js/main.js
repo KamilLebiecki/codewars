@@ -2540,6 +2540,16 @@
 // const grabDoll = (dolls) =>
 // 	dolls.filter((i) => i == "Hello Kitty" || i == "Barbie doll").slice(0, 3);
 
+// function grabDoll(dolls) {
+// 	let bag = [];
+// 	for (let i = 0; i < dolls.length; i++) {
+// 		if (!/^(Hello Kitty|Barbie doll)$/.test(dolls[i])) continue;
+// 		bag.push(dolls[i]);
+// 		if (bag.length === 3) break;
+// 	}
+// 	return bag;
+// }
+
 // console.log(
 // 	grabDoll([
 // 		"Hello Kitty",
