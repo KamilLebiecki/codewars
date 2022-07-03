@@ -2536,6 +2536,10 @@
 // 	}
 // 	return bag;
 // };
+
+// const grabDoll = (dolls) =>
+// 	dolls.filter((i) => i == "Hello Kitty" || i == "Barbie doll").slice(0, 3);
+
 // console.log(
 // 	grabDoll([
 // 		"Hello Kitty",
