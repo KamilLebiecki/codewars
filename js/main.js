@@ -2430,3 +2430,11 @@
 // 	["not at all", "I love you", "a little", "a lot", "passionately", "madly"][
 // 		n % 6
 // 	];
+
+// function removeEveryOther(arr) {
+// 	let newArr = [];
+// 	for (let i = 0; i < arr.length; i += 2) {
+// 		newArr.push(arr[i]);
+// 	}
+// 	return newArr;
+// }
