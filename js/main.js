@@ -2793,12 +2793,14 @@
 // 	return bag;
 // }
 
-function padString(str, n) {
-	let i = 0;
-	do {
-		if (i % 2 !== 0) str = str + "*";
-		else str = "*" + str;
-		i++;
-	} while (i < n);
-	return str;
-}
+// function padString(str, n) {
+// 	let i = 0;
+// 	do {
+// 		if (i % 2 !== 0) str = str + "*";
+// 		else str = "*" + str;
+// 		i++;
+// 	} while (i < n);
+// 	return str;
+// }
+
+const index = (arr, n) => (n >= arr.length ? -1 : arr[n] ** n);
