@@ -2754,16 +2754,28 @@
 
 // const countSheeps = (arrayOfSheeps) => arrayOfSheeps.filter(Boolean).length;
 
-function sortIt(arr) {
-	return arr.slice().sort((a, b) => {
-		let countA = arr.filter((v) => v === a).length;
-		let countB = arr.filter((v) => v === b).length;
-		if (countA === countB) {
-			return b - a;
-		} else if (countA > countB) {
-			return 1;
-		} else {
-			return -1;
+// function sortIt(arr) {
+// 	return arr.slice().sort((a, b) => {
+// 		let countA = arr.filter((v) => v === a).length;
+// 		let countB = arr.filter((v) => v === b).length;
+// 		if (countA === countB) {
+// 			return b - a;
+// 		} else if (countA > countB) {
+// 			return 1;
+// 		} else {
+// 			return -1;
+// 		}
+// 	});
+// }
+
+const grabDoll = (dolls) => {
+	let bag = [];
+	for (let i = 0; i < dolls.length; i++) {
+		if (bag.length === 3) {
+			break;
 		}
-	});
-}
+		if (dolls[i] !== "Hello Kitty" && dolls[i] !== "Barbie doll") continue;
+		bag.push(dolls[i]);
+	}
+	return bag;
+};
