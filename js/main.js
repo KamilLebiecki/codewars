@@ -2844,3 +2844,20 @@
 
 // Capitalization and Mutability
 // const capitalizeWord = (word) => word[0].toUpperCase() + word.slice(1);
+
+// A wolf in sheep's clothing
+// [sheep, sheep, sheep, sheep, sheep, wolf, sheep, sheep]
+//  7      6      5      4      3              2      1
+//  0      1      2      3      4      5       6      7
+//  1      2      3      4      5      6       7      8
+
+// function warnTheSheep(queue) {
+// 	const wolfIndex = queue.indexOf("wolf");
+
+// 	if (wolfIndex === queue.length - 1) {
+// 		return "Pls go away and stop eating my sheep";
+// 	}
+// 	const sheepIndex = queue.length - wolfIndex - 1;
+
+// 	return `Oi! Sheep number ${sheepIndex}! You are about to be eaten by a wolf!`;
+// }
