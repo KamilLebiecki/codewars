@@ -2826,8 +2826,18 @@
 // 	return str.replace(/(\w)(\w*)(\s|$)/g, "$2$1ay$3");
 // }
 
+// function pigIt(str) {
+// 	return str.replace(/\w+/g, (w) => {
+// 		return w.slice(1) + w[0] + "ay";
+// 	});
+// }
+
 function pigIt(str) {
-	return str.replace(/\w+/g, (w) => {
-		return w.slice(1) + w[0] + "ay";
-	});
+	var arrayWord = str.split(" ");
+	return arrayWord
+		.map(function (word) {
+			var firstLetter = word.charAt(0);
+			return word.slice(1) + firstLetter + "ay";
+		})
+		.join(" ");
 }
