@@ -2720,3 +2720,36 @@
 // let toBinary = (n) => +n.toString(2);
 
 // const toBinary = (n) => parseInt(n.toString(2));
+
+const arrayOfSheeps = [
+	true,
+	true,
+	true,
+	false,
+	true,
+	true,
+	true,
+	true,
+	true,
+	false,
+	true,
+	false,
+	true,
+	false,
+	false,
+	true,
+	true,
+	true,
+	true,
+	true,
+	false,
+	false,
+	true,
+	true,
+];
+
+function countSheeps(arrayOfSheeps) {
+	return arrayOfSheeps.filter(Boolean).length;
+}
+
+const countSheeps = (arrayOfSheeps) => arrayOfSheeps.filter(Boolean).length;
