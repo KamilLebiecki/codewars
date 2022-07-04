@@ -2768,14 +2768,17 @@
 // 	});
 // }
 
-const grabDoll = (dolls) => {
-	let bag = [];
-	for (let i = 0; i < dolls.length; i++) {
-		if (bag.length === 3) {
-			break;
-		}
-		if (dolls[i] !== "Hello Kitty" && dolls[i] !== "Barbie doll") continue;
-		bag.push(dolls[i]);
-	}
-	return bag;
-};
+// const grabDoll = (dolls) => {
+// 	let bag = [];
+// 	for (let i = 0; i < dolls.length; i++) {
+// 		if (bag.length === 3) {
+// 			break;
+// 		}
+// 		if (dolls[i] !== "Hello Kitty" && dolls[i] !== "Barbie doll") continue;
+// 		bag.push(dolls[i]);
+// 	}
+// 	return bag;
+// };
+
+const grabDoll = (dolls) =>
+	dolls.filter((i) => i === "Hello Kitty" || i === "Barbie doll").slice(0, 3);
