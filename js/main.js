@@ -2811,6 +2811,13 @@
 
 // const index = (array, n) => (array.length > n ? Math.pow(array[n], n) : -1);
 
-function index(array, n) {
-	return Math.pow(array[n], n) || -1;
-}
+// function index(array, n) {
+// 	return Math.pow(array[n], n) || -1;
+// }
+
+const pigIt = (str) => {
+	const arr = str.split(" ");
+	return arr
+		.map((w) => (w.match(/[A-z]/i) ? `$w{w.substr(1)}${w.substr(0, 1)}ay` : w))
+		.join("");
+};
