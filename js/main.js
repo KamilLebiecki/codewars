@@ -2919,11 +2919,25 @@
 // 	return [odd, even];
 // }
 
-function pickIt(arr) {
-	let odd = [];
-	let even = [];
-	for (var x of arr) {
-		(x % 2 ? odd : even).push(x);
+// function pickIt(arr) {
+// 	let odd = [];
+// 	let even = [];
+// 	for (var x of arr) {
+// 		(x % 2 ? odd : even).push(x);
+// 	}
+// 	return [odd, even];
+// }
+
+function XO(str) {
+	countAllExes = 0;
+	countAllOhs = 0;
+	for (let i = 0; i < str.length; i++) {
+		if (str.toLowerCase()[i] === "x") {
+			countAllExes++;
+		}
+		if (str.toLowerCase()[i] === "o") {
+			countAllOhs++;
+		}
 	}
-	return [odd, even];
+	return countAllExes === countAllOhs;
 }
