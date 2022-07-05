@@ -2865,3 +2865,6 @@
 // Bin to Decimal
 
 // const binToDec = (b) => parseInt(b.toString(), 2);
+
+const correct = (string) =>
+	string.replace(/1/g, "I").replace(/5/g, "S").replace(/0/g, "O");
