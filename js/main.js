@@ -2861,3 +2861,7 @@
 
 // 	return `Oi! Sheep number ${sheepIndex}! You are about to be eaten by a wolf!`;
 // }
+
+// Bin to Decimal
+
+// const binToDec = (b) => parseInt(b.toString(), 2);
