@@ -2928,16 +2928,22 @@
 // 	return [odd, even];
 // }
 
+// function XO(str) {
+// 	countAllExes = 0;
+// 	countAllOhs = 0;
+// 	for (let i = 0; i < str.length; i++) {
+// 		if (str.toLowerCase()[i] === "x") {
+// 			countAllExes++;
+// 		}
+// 		if (str.toLowerCase()[i] === "o") {
+// 			countAllOhs++;
+// 		}
+// 	}
+// 	return countAllExes === countAllOhs;
+// }
+
 function XO(str) {
-	countAllExes = 0;
-	countAllOhs = 0;
-	for (let i = 0; i < str.length; i++) {
-		if (str.toLowerCase()[i] === "x") {
-			countAllExes++;
-		}
-		if (str.toLowerCase()[i] === "o") {
-			countAllOhs++;
-		}
-	}
-	return countAllExes === countAllOhs;
+	let x = str.match(/x/gi);
+	let o = str.match(/o/gi);
+	return (x && x.length) === (o && o.length);
 }
