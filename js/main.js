@@ -2964,3 +2964,8 @@
 // 	}
 // 	return result === 0 ? "Fail!" : result > 2 ? "I smell a series!" : "Publish!";
 // };
+
+// Exclamation marks series #1: Remove an exclamation mark from the end of string
+
+const remove = (string) =>
+	string.charAt(string.length - 1) === "!" ? string.slice(0, -1) : string;

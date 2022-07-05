@@ -78,3 +78,4 @@ sql commands
 
 test method to check
 padStart in const stringy = x => ''.padStart(x,'10')
+endsWith('!')
