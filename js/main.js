@@ -2948,9 +2948,19 @@
 // 	return (x && x.length) === (o && o.length);
 // }
 
-const XO = (str) => {
-	str = str.toLowerCase().split("");
-	return (
-		str.filter((x) => x === "x").length === str.filter((x) => x === "o").length
-	);
+// const XO = (str) => {
+// 	str = str.toLowerCase().split("");
+// 	return (
+// 		str.filter((x) => x === "x").length === str.filter((x) => x === "o").length
+// 	);
+// };
+
+const well = (x) => {
+	let result = 0;
+	for (let i = 0; i < x.length; i++) {
+		if (x[i] === "good") {
+			result++;
+		}
+	}
+	return result === 0 ? "Fail!" : result > 2 ? "I smell a series!" : "Publish!";
 };
