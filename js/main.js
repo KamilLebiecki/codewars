@@ -3001,11 +3001,16 @@
 // 	}
 // }
 
-function well(x) {
-	let good_counter = 0;
-	for (let i = 0; i < x.length; i++) {
-		if ((x[i] == "good") & (++good > 2)) return "I smell a series";
+// function well(x) {
+// 	let good_counter = 0;
+// 	for (let i = 0; i < x.length; i++) {
+// 		if ((x[i] == "good") & (++good_counter > 2)) return "I smell a series";
 
-		return good_counter ? "Publish!" : "Fail!";
-	}
-}
+// 		return good_counter ? "Publish!" : "Fail!";
+// 	}
+// }
+
+// function well(x) {
+// 	const count = x.reduce((s, v) => s + (v == "good"), 0);
+// 	return count ? (count > 2 ? "I smell a series!" : "Publish!") : "Fail!";
+// }
