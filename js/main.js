@@ -3086,3 +3086,7 @@ function volume(c) {
 function find_difference(a, b) {
 	return Math.abs(volume(a) - volume(b));
 }
+
+function find_difference([a, b, c], [d, e, f]) {
+	return Math.abs(a * b * c - d * e * f);
+}
