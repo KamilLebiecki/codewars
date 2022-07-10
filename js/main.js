@@ -3059,3 +3059,13 @@
 // const stringy = (size) => "10".repeat(size).slice(0, size);
 
 // const stringy = (size) => Array.from(Array(size), (v, i) => +!(i % 2)).join("");
+
+// const padIt = (str, n) => {
+// 	let i = 0;
+// 	do {
+// 		if (i % 2 !== 0) str = str + "*";
+// 		else str = "*" + str;
+// 		i++;
+// 	} while (i < n);
+// 	return str;
+// };
