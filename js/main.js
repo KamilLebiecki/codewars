@@ -3091,10 +3091,35 @@
 // 	return Math.abs(a * b * c - d * e * f);
 // }
 
-const plural = (n) => (n === 1 ? false : true);
+// const plural = (n) => (n === 1 ? false : true);
 
-function plural(n) {
-	return n !== 1;
-}
+// function plural(n) {
+// 	return n !== 1;
+// }
 
-const plural = (n) => n !== 1;
+// const plural = (n) => n !== 1;
+
+// const grabDoll = (dolls) => {
+// 	let bag = [];
+// 	for (let i = 0; i < dolls.length; i++) {
+// 		if (bag.length === 3) {
+// 			break;
+// 		}
+// 		if ((dolls[i] !== "Hello Kitty") & (dolls[i] !== "Barbie doll")) continue;
+// 		bag.push(dolls[i]);
+// 	}
+// 	return bag;
+// };
+
+// const grabDoll = (dolls) =>
+// 	dolls.filter((i) => i == "Hello Kitty" || i == "Barbie doll").slice(0, 3);
+
+// function grabDoll(dolls) {
+// 	let bag = [];
+// 	for (let i = 0; i < dolls.length; i++) {
+// 		if (!/^(Hello Kitty)|Barbie doll)$/.test(dolls[i])) continue;
+// 		bag.push(dolls[i]);
+// 		if (bag.length === 3) break;
+// 	}
+// 	return bag;
+// }
