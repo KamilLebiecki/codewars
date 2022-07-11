@@ -3070,23 +3070,31 @@
 // 	return str;
 // };
 
-const findDifference = (a, b) =>
-	Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
+// const findDifference = (a, b) =>
+// 	Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
 
-function find_difference(a, b) {
-	return Math.abs(
-		a.reduce((previous, current) => previous * current) -
-			b.reduce((previous, current) => previous * current)
-	);
+// function find_difference(a, b) {
+// 	return Math.abs(
+// 		a.reduce((previous, current) => previous * current) -
+// 			b.reduce((previous, current) => previous * current)
+// 	);
+// }
+
+// function volume(c) {
+// 	return c.reduce((x, y) => x * y);
+// }
+// function find_difference(a, b) {
+// 	return Math.abs(volume(a) - volume(b));
+// }
+
+// function find_difference([a, b, c], [d, e, f]) {
+// 	return Math.abs(a * b * c - d * e * f);
+// }
+
+const plural = (n) => (n === 1 ? false : true);
+
+function plural(n) {
+	return n !== 1;
 }
 
-function volume(c) {
-	return c.reduce((x, y) => x * y);
-}
-function find_difference(a, b) {
-	return Math.abs(volume(a) - volume(b));
-}
-
-function find_difference([a, b, c], [d, e, f]) {
-	return Math.abs(a * b * c - d * e * f);
-}
+const plural = (n) => n !== 1;
