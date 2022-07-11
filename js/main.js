@@ -3187,10 +3187,23 @@
 // 	return sheepsArray.filter(Boolean).length;
 // }
 
+// function removeEveryOther(arr) {
+// 	let newArr = [];
+// 	for (let i = 0; i < arr.length; i += 2) {
+// 		newArr.push(arr[i]);
+// 	}
+// 	return newArr;
+// }
+
+// function removeEveryOther(arr) {
+// 	return arr.filter(function (elem, index) {
+// 		return index % 2 === 0;
+// 	});
+// }
+
 function removeEveryOther(arr) {
-	let newArr = [];
-	for (let i = 0; i < arr.length; i += 2) {
-		newArr.push(arr[i]);
+	for (var i = 1; i < arr.length; i++) {
+		arr.splice(i, 1);
 	}
-	return newArr;
+	return arr;
 }
