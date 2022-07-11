@@ -3210,8 +3210,8 @@
 
 // const removeEveryOther = (arr) => arr.filter((_, i) => !(i % 2));
 
-const removeEveryOther = (arr = arr.filter((item, i) => i % 2 == 0));
+// const removeEveryOther = (arr = arr.filter((item, i) => i % 2 == 0));
 
-function removeEveryOther(arr) {
-	return arr.filter((_, i) => i % 2 == 0);
-}
+// function removeEveryOther(arr) {
+// 	return arr.filter((_, i) => i % 2 == 0);
+// }
