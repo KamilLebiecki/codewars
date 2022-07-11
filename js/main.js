@@ -3183,6 +3183,14 @@
 // 		n % 6
 // 	];
 
-function countSheeps(sheepsArray) {
-	return sheepsArray.filter(Boolean).length;
+// function countSheeps(sheepsArray) {
+// 	return sheepsArray.filter(Boolean).length;
+// }
+
+function removeEveryOther(arr) {
+	let newArr = [];
+	for (let i = 0; i < arr.length; i += 2) {
+		newArr.push(arr[i]);
+	}
+	return newArr;
 }
