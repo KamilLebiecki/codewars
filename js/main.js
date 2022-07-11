@@ -3141,6 +3141,39 @@
 // 	return vowelsCount;
 // }
 
-function getCount(str) {
-	return str.replace(/[^aeiou]/gi, "").length;
+// function getCount(str) {
+// 	return str.replace(/[^aeiou]/gi, "").length;
+// }
+
+// function getCount(str) {
+// 	return (str.match(/[aeiou]/gi) || []).length;
+// }
+
+// function getCount(str) {
+// 	return str.split("").filter((c) => "aeiouAEIOU".includes(c)).length;
+// }
+
+// function howMuchILoveYou(nbPetals) {
+// 	let m = [
+// 		"I love you",
+// 		"a little",
+// 		"a lot",
+// 		"passionately",
+// 		"madly",
+// 		"not at all",
+// 	];
+// 	return m[(nbPetals - 1) % 6];
+// }
+
+const phrases = [
+	"I love you",
+	"a little",
+	"a lot",
+	"passionately",
+	"madly",
+	"not at all",
+];
+
+function howMuchILoveYou(n) {
+	return phrases[(n - 1) % phrases.length];
 }
