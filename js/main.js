@@ -3255,3 +3255,5 @@
 // 	const re = /([a-z]+)/g;
 // 	return !re.test(this);
 // };
+
+const index = (arr, n) => (n >= arr.length ? -1 : arr[n] ** n);
