@@ -3340,21 +3340,35 @@
 // 	(humanYears - 1 ? 14 : 10) + 5 * humanYears,
 // ];
 
+// function disemvowel(str) {
+// 	return str
+// 		.split("")
+// 		.filter(
+// 			(e) =>
+// 				e !== "a" &&
+// 				e !== "A" &&
+// 				e !== "e" &&
+// 				e !== "E" &&
+// 				e !== "i" &&
+// 				e !== "I" &&
+// 				e !== "o" &&
+// 				e !== "O" &&
+// 				e !== "u" &&
+// 				e !== "U"
+// 		)
+// 		.join("");
+// }
+
+// function disemvowel(str) {
+// 	return str.replace(/[aeiou]/gi, "");
+// }
+
 function disemvowel(str) {
+	let vowels = ["a", "e", "i", "o", "u"];
 	return str
 		.split("")
-		.filter(
-			(e) =>
-				e !== "a" &&
-				e !== "A" &&
-				e !== "e" &&
-				e !== "E" &&
-				e !== "i" &&
-				e !== "I" &&
-				e !== "o" &&
-				e !== "O" &&
-				e !== "u" &&
-				e !== "U"
-		)
+		.filter(function (el) {
+			return vowels.indexOf(el.toLowerCase()) == -1;
+		})
 		.join("");
 }
