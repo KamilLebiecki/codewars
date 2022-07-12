@@ -3282,13 +3282,30 @@
 // 	return Number.isInteger(result) ? result : null;
 // }
 
-function firstNonConsecutive(arr) {
-	let out = null;
-	for (let i = 1; i < arr.length; i++) {
-		if (arr[i] - arr[i - 1] != 1) {
-			out = arr[i];
-			break;
-		}
-	}
-	return out;
-}
+// function firstNonConsecutive(arr) {
+// 	let out = null;
+// 	for (let i = 1; i < arr.length; i++) {
+// 		if (arr[i] - arr[i - 1] != 1) {
+// 			out = arr[i];
+// 			break;
+// 		}
+// 	}
+// 	return out;
+// }
+
+// const firstNonConsecutive = (arr =
+// 	arr.length == 1
+// 		? null
+// 		: arr[0] + 1 != arr[1]
+// 		? arr[1]
+// 		: firstNonConsecutive(arr.slice(1)));
+
+// const humanYearsCatYearsDogYears = (humanYears) => {
+// 	if (humanYears === 1) {
+// 		return [1, 15, 15];
+// 	}
+// 	if (humanYears === 2) {
+// 		return [2, 24, 24];
+// 	}
+// 	return [humanYears, 24 + (humanYears - 2) * 4, 24 + (humanYears - 2) * 5];
+// };
