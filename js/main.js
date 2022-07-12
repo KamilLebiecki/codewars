@@ -3251,7 +3251,7 @@
 // 	return this.toUpperCase() === this.toString();
 // };
 
-String.prototype.isUpperCase = function () {
-	const re = /([a-z]+)/g;
-	return !re.test(this);
-};
+// String.prototype.isUpperCase = function () {
+// 	const re = /([a-z]+)/g;
+// 	return !re.test(this);
+// };
