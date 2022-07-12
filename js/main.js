@@ -3215,3 +3215,10 @@
 // function removeEveryOther(arr) {
 // 	return arr.filter((_, i) => i % 2 == 0);
 // }
+
+const pigIt = (str) => {
+	const arr = str.split("");
+	return arr
+		.map((w) => (w.match(/[A-z]/i) ? `${w.substr(1)}${w.substr(0, 1)}ay` : w))
+		.join(" ");
+};
