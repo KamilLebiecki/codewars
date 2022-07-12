@@ -3216,9 +3216,13 @@
 // 	return arr.filter((_, i) => i % 2 == 0);
 // }
 
-const pigIt = (str) => {
-	const arr = str.split("");
-	return arr
-		.map((w) => (w.match(/[A-z]/i) ? `${w.substr(1)}${w.substr(0, 1)}ay` : w))
-		.join(" ");
-};
+// const pigIt = (str) => {
+// 	const arr = str.split("");
+// 	return arr
+// 		.map((w) => (w.match(/[A-z]/i) ? `${w.substr(1)}${w.substr(0, 1)}ay` : w))
+// 		.join(" ");
+// };
+
+function pigIt(str) {
+	return str.replace(/(\w)(\w*)(\s|$)/g, "$2$1ay$3");
+}
