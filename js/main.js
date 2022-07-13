@@ -3363,12 +3363,30 @@
 // 	return str.replace(/[aeiou]/gi, "");
 // }
 
-function disemvowel(str) {
-	let vowels = ["a", "e", "i", "o", "u"];
-	return str
-		.split("")
-		.filter(function (el) {
-			return vowels.indexOf(el.toLowerCase()) == -1;
-		})
-		.join("");
-}
+// function disemvowel(str) {
+// 	let vowels = ["a", "e", "i", "o", "u"];
+// 	return str
+// 		.split("")
+// 		.filter(function (el) {
+// 			return vowels.indexOf(el.toLowerCase()) == -1;
+// 		})
+// 		.join("");
+// }
+
+// function sortIt(arr) {
+// 	return arr.slice().sort((a, b) => {
+// 		let countA = arr.filter((v) => v === a).length;
+//         let countB = arr.filter((v) => v === b).length;
+//         if (countA === countB) {
+//             return b - a;
+//         } else if (countA > countB {
+//             return 1;
+//         } else {
+//             return -1;
+//         }
+// 	});
+// }
+
+// const toBinary = (n) => Number(n.toString(2));
+
+let toBinary = (n) => +n.toString(2);
