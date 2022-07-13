@@ -3510,8 +3510,14 @@
 // 	return alternateString;
 // }
 
-function stringy(size) {
-	let str = "";
-	for (let i = 1; i <= size; i++) str += i % 2;
-	return str;
-}
+// function stringy(size) {
+// 	let str = "";
+// 	for (let i = 1; i <= size; i++) str += i % 2;
+// 	return str;
+// }
+
+const stringy = (x) => "".padStart(x, "10");
+
+const stringy = (size) => "10".repeat(size).slice(0, size);
+
+const stringy = (size) => Array.from(Array(size), (v, i) => +!(i % 2)).join("");
