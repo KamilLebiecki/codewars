@@ -3418,12 +3418,28 @@
 // const correct = (string) =>
 // 	string.replace(/1/g, "I").replace(/5/g, "S").replace(/0/g, "O");
 
-const corrections = {
-	5: "S",
-	0: "O",
-	1: "I",
-};
+// const corrections = {
+// 	5: "S",
+// 	0: "O",
+// 	1: "I",
+// };
 
-const correct = (string) => {
-	string.replace(/[501]/g, (character) => correction[character]);
-};
+// const correct = (string) => {
+// 	string.replace(/[501]/g, (character) => correction[character]);
+// };
+
+function correct(string) {
+	const map = {
+		0: "O",
+		1: "I",
+		5: "S",
+	};
+	return string
+		.split("")
+		.map((c) => (map.hasOwnProperty(c) ? map[c] : c))
+		.join("");
+}
+
+function correct(string) {
+	return [...string].map((a) => ({ 0: "O", 5: "S", 1: "I" }[a] || a)).join("");
+}
