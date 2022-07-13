@@ -3428,18 +3428,32 @@
 // 	string.replace(/[501]/g, (character) => correction[character]);
 // };
 
-function correct(string) {
-	const map = {
-		0: "O",
-		1: "I",
-		5: "S",
-	};
-	return string
-		.split("")
-		.map((c) => (map.hasOwnProperty(c) ? map[c] : c))
-		.join("");
-}
+// function correct(string) {
+// 	const map = {
+// 		0: "O",
+// 		1: "I",
+// 		5: "S",
+// 	};
+// 	return string
+// 		.split("")
+// 		.map((c) => (map.hasOwnProperty(c) ? map[c] : c))
+// 		.join("");
+// }
 
-function correct(string) {
-	return [...string].map((a) => ({ 0: "O", 5: "S", 1: "I" }[a] || a)).join("");
+// function correct(string) {
+// 	return [...string].map((a) => ({ 0: "O", 5: "S", 1: "I" }[a] || a)).join("");
+// }
+
+function XO(str) {
+	countAllExes = 0;
+	countAllOhs = 0;
+	for (let i = 0; i < str.length; i++) {
+		if (str.toLowerCase()[i] === "x") {
+			countAllExes++;
+		}
+		if (str.toLowerCase()[i] === "o") {
+			countAllOhs++;
+		}
+	}
+	return countAllExes === countAllOhs;
 }
