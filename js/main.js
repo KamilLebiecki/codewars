@@ -3516,8 +3516,18 @@
 // 	return str;
 // }
 
-const stringy = (x) => "".padStart(x, "10");
+// const stringy = (x) => "".padStart(x, "10");
 
-const stringy = (size) => "10".repeat(size).slice(0, size);
+// const stringy = (size) => "10".repeat(size).slice(0, size);
 
-const stringy = (size) => Array.from(Array(size), (v, i) => +!(i % 2)).join("");
+// const stringy = (size) => Array.from(Array(size), (v, i) => +!(i % 2)).join("");
+
+const well = (x) => {
+	let result = 0;
+	for (let i = 0; i < x.length; i++) {
+		if (x[i] === "good") {
+			result++;
+		}
+	}
+	return result === 0 ? "Fail" : result > 2 ? "I smell a series" : "Publish!";
+};
