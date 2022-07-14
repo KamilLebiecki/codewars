@@ -3630,3 +3630,5 @@
 // }
 
 // console.log(array.filter(isPrime));
+
+const trueOrFalse = (val) => (val ? "True" : "False");
