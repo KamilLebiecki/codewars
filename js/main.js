@@ -3635,12 +3635,24 @@
 
 // const trueOrFalse = (val) => Boolean(val).toString;
 
-function padIt(str, n) {
-	let i = 0;
-	do {
-		if (i % 2 !== 0) str = str + "*";
-		else str = "*" + str;
-		i++;
-	} while (i < n);
-	return str;
-}
+// function padIt(str, n) {
+// 	let i = 0;
+// 	do {
+// 		if (i % 2 !== 0) str = str + "*";
+// 		else str = "*" + str;
+// 		i++;
+// 	} while (i < n);
+// 	return str;
+// }
+
+const grabDoll = (dolls) => {
+	let bag = [];
+	for (let i = 0; i < dolls.length; i++) {
+		if (bag.length === 3) {
+			break;
+		}
+        if (dolls[i] !== "Hello Kitty" && dolls[i] && !== "Barbie doll") continue;
+        bag.push(dolls[i])
+	}
+    return bag;
+};
