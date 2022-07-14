@@ -3632,3 +3632,5 @@
 // console.log(array.filter(isPrime));
 
 const trueOrFalse = (val) => (val ? "True" : "False");
+
+const trueOrFalse = (val) => Boolean(val).toString;
