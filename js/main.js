@@ -3634,3 +3634,13 @@
 // const trueOrFalse = (val) => (val ? "True" : "False");
 
 // const trueOrFalse = (val) => Boolean(val).toString;
+
+function padIt(str, n) {
+	let i = 0;
+	do {
+		if (i % 2 !== 0) str = str + "*";
+		else str = "*" + str;
+		i++;
+	} while (i < n);
+	return str;
+}
