@@ -3740,4 +3740,13 @@
 //     return arr.filter((_,i) => i % 2 === 0;)
 // }
 
-const plural = (n) => (n === 1 ? false : true);
+// const plural = (n) => (n === 1 ? false : true);
+
+// function plural(n) {
+// 	return n !== 1;
+// }
+
+// const plural = (n) => n !== 1;
+
+const findDifference = (a, b) =>
+	Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
