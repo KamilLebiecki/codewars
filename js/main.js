@@ -3750,3 +3750,15 @@
 
 // const findDifference = (a, b) =>
 // 	Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
+
+function howMuchILoveYou(nbPetals) {
+	let m = [
+		"I love you",
+		"a little",
+		"a lot",
+		"passionately",
+		"madly",
+		"not at all",
+	];
+	return m[(nbPetals - 1) % 6];
+}
