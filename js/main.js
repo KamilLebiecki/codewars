@@ -3711,10 +3711,16 @@
 // 	return Math.pow(array[n], n) || -1;
 // }
 
+// function removeEveryOther(arr) {
+// 	let newArr = [];
+// 	for (let i = 0; i < arr.length; i += 2) {
+// 		newArr.push(arr[i]);
+// 	}
+// 	return newArr;
+// }
+
 function removeEveryOther(arr) {
-	let newArr = [];
-	for (let i = 0; i < arr.length; i += 2) {
-		newArr.push(arr[i]);
-	}
-	return newArr;
+	return arr.filter(function (elem, index) {
+		return index % 2 === 0;
+	});
 }
