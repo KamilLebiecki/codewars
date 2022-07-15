@@ -3776,7 +3776,19 @@
 // 	return phrases[(n - 1) % phrases.length];
 // }
 
-const howMuchILoveYou = (n) =>
-	["not at all", "I love you", "a little", "a lot", "passionately", "madly"][
-		n % 6
-	];
+// const howMuchILoveYou = (n) =>
+// 	["not at all", "I love you", "a little", "a lot", "passionately", "madly"][
+// 		n % 6
+// 	];
+
+// const remove = (string) =>
+// 	string.charAt(string.length - 1) === "!" ? string.slice(0, -1) : string;
+
+// const remove = (s) => s.replace(/!$/, "");
+
+// function remove(s) {
+// 	return s.endsWith("!") ? s.slice(0, -1) : s;
+// }
+
+// const findDifference = (a, b) =>
+// 	Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
