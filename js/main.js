@@ -3808,6 +3808,33 @@
 // 	return Math.abs(volume(a) - volume(b));
 // }
 
-function find_difference([a, b, c], [d, e, f]) {
-	return Math.abs(a * b * c - d * e * f);
+// function find_difference([a, b, c], [d, e, f]) {
+// 	return Math.abs(a * b * c - d * e * f);
+// }
+
+// const pigIt = (str) => {
+// 	const arr = str.split(" ");
+// 	return arr
+// 		.map((w) => (w.match(/[A-z]/i) ? `${w.substr(1)}${w.substr(0, 1)}ay` : w))
+// 		.join(" ");
+// };
+
+// function pigIt(str) {
+// 	return str.replace(/(\w)(\w*)(\s|$)/g, "$2$1ay$3");
+// }
+
+// function pigIt(str) {
+// 	return str.replace(/\w+/g, (w) => {
+// 		return w.slice(1) + w[0] + "ay";
+// 	});
+// }
+
+function pigIt(str) {
+	var arrayWord = str.split(" ");
+	return arrayWord
+		.map(function (word) {
+			var firstLetter = word.charAt(0);
+			return word.slice(1) + firstLetter + "ay";
+		})
+		.join(" ");
 }
