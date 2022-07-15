@@ -3829,12 +3829,33 @@
 // 	});
 // }
 
-function pigIt(str) {
-	var arrayWord = str.split(" ");
-	return arrayWord
-		.map(function (word) {
-			var firstLetter = word.charAt(0);
-			return word.slice(1) + firstLetter + "ay";
-		})
-		.join(" ");
-}
+// function pigIt(str) {
+// 	var arrayWord = str.split(" ");
+// 	return arrayWord
+// 		.map(function (word) {
+// 			var firstLetter = word.charAt(0);
+// 			return word.slice(1) + firstLetter + "ay";
+// 		})
+// 		.join(" ");
+// }
+
+// const strCount = (str, letter) => {
+// 	let result = 0;
+// 	let newArr = str.split("");
+// 	for (let i = 0; i < newArr.length; i++) {
+// 		if (newArr[i] === letter) {
+// 			result++;
+// 		}
+// 	}
+// 	return result;
+// };
+
+// function strCount(str, letter) {
+// 	return str.split(letter).length - 1;
+// }
+
+// function strCount(str, letter) {
+// 	return str.split("").filter((c) => c == letter).length;
+// }
+
+// const strCount = (str, letter) => --str.split(letter).length;
