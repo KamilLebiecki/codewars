@@ -3739,3 +3739,5 @@
 // function removeEveryOther(arr){
 //     return arr.filter((_,i) => i % 2 === 0;)
 // }
+
+const plural = (n) => (n === 1 ? false : true);
