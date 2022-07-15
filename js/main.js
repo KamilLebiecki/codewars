@@ -3719,8 +3719,23 @@
 // 	return newArr;
 // }
 
-function removeEveryOther(arr) {
-	return arr.filter(function (elem, index) {
-		return index % 2 === 0;
-	});
-}
+// function removeEveryOther(arr) {
+// 	return arr.filter(function (elem, index) {
+// 		return index % 2 === 0;
+// 	});
+// }
+
+// function removeEveryOther(arr) {
+// 	for (var i = 1; i < arr.length; i++) {
+// 		arr.splice(i, 1);
+// 	}
+// 	return arr;
+// }
+
+// const removeEveryOther = (arr = arr.filter((_, i) => !(i % 2)));
+
+// const removeEveryOther = arr => arr.filter((item, i) => i % 2 === 0;)
+
+// function removeEveryOther(arr){
+//     return arr.filter((_,i) => i % 2 === 0;)
+// }
