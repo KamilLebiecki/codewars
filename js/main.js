@@ -3873,3 +3873,7 @@
 // Enumerable Magic #25 - Take the First N Elements
 
 // const take = (arr, n) => arr.slice(0, n);
+
+// Dollars and Cents
+
+// const formatMoney = (amount) => "$" + amount.toFixed(2);
