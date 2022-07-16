@@ -3880,15 +3880,19 @@
 
 // Complementary DNA
 
-const DNAStrand = (dna) => {
-	const pairs = {
-		A: "T",
-		T: "A",
-		C: "G",
-		G: "C",
-	};
-	return dna
-		.split("")
-		.map((i) => pairs[i])
-		.join("");
-};
+// const DNAStrand = (dna) => {
+// 	const pairs = {
+// 		A: "T",
+// 		T: "A",
+// 		C: "G",
+// 		G: "C",
+// 	};
+// 	return dna
+// 		.split("")
+// 		.map((i) => pairs[i])
+// 		.join("");
+// };
+
+// Binary Addition
+
+const addBinary = (a, b) => (a + b).toString(2);
