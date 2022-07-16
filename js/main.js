@@ -3859,3 +3859,13 @@
 // }
 
 // const strCount = (str, letter) => --str.split(letter).length;
+
+// The Wide-Mouthed frog!
+const mouthSize = (animal) => {
+	switch (animal.toLowerCase()) {
+		case "alligator":
+			return "small";
+		default:
+			return "wide";
+	}
+};
