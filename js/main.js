@@ -3877,3 +3877,18 @@
 // Dollars and Cents
 
 // const formatMoney = (amount) => "$" + amount.toFixed(2);
+
+// Complementary DNA
+
+const DNAStrand = (dna) => {
+	const pairs = {
+		A: "T",
+		T: "A",
+		C: "G",
+		G: "C",
+	};
+	return dna
+		.split("")
+		.map((i) => pairs[i])
+		.join("");
+};
