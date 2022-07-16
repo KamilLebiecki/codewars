@@ -3861,11 +3861,15 @@
 // const strCount = (str, letter) => --str.split(letter).length;
 
 // The Wide-Mouthed frog!
-const mouthSize = (animal) => {
-	switch (animal.toLowerCase()) {
-		case "alligator":
-			return "small";
-		default:
-			return "wide";
-	}
-};
+// const mouthSize = (animal) => {
+// 	switch (animal.toLowerCase()) {
+// 		case "alligator":
+// 			return "small";
+// 		default:
+// 			return "wide";
+// 	}
+// };
+//
+// Enumerable Magic #25 - Take the First N Elements
+
+const take = (arr, n) => arr.slice(0, n);
