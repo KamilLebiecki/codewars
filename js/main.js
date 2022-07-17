@@ -3895,4 +3895,6 @@
 
 // Binary Addition
 
-const addBinary = (a, b) => (a + b).toString(2);
+// const addBinary = (a, b) => (a + b).toString(2);
+
+const trueOrFalse = (val) => (val ? "True" : "False");
