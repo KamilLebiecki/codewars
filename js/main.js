@@ -3897,4 +3897,6 @@
 
 // const addBinary = (a, b) => (a + b).toString(2);
 
-const trueOrFalse = (val) => (val ? "True" : "False");
+// const trueOrFalse = (val) => (val ? "True" : "False");
+
+const trueOrFalse = (val) => Boolean(val).toString();
