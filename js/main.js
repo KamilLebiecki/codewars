@@ -4028,3 +4028,13 @@
 // 	}
 // 	return result;
 // };
+
+// function strCount(str, letter) {
+// 	return str.split(letter).length - 1;
+// }
+
+// function strCount(str, letter) {
+// 	return str.split("").filter((c) => c == letter).length;
+// }
+
+// const strCount = (str, letter) => --str.split(letter).length;
