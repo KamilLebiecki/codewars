@@ -4144,40 +4144,35 @@
 // 	);
 // };
 
-How this code can be replaced?
- 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-function disemvowel(str) {
-	return str
-		.split("")
-		.filter(
-			(e) =>
-				e !== "a" &&
-				e !== "A" &&
-				e !== "e" &&
-				e !== "E" &&
-				e !== "i" &&
-				e !== "I" &&
-				e !== "o" &&
-				e !== "O" &&
-				e !== "u" &&
-				e !== "U"
-		)
-		.join("");
-}
+// function disemvowel(str) {
+// 	return str
+// 		.split("")
+// 		.filter(
+// 			(e) =>
+// 				e !== "a" &&
+// 				e !== "A" &&
+// 				e !== "e" &&
+// 				e !== "E" &&
+// 				e !== "i" &&
+// 				e !== "I" &&
+// 				e !== "o" &&
+// 				e !== "O" &&
+// 				e !== "u" &&
+// 				e !== "U"
+// 		)
+// 		.join("");
+// }
+
+// function disemvowel(str) {
+// 	return str.replace(/[aeiou]/gi, "");
+// }
+
+// function disemvowel(str) {
+// 	let vowels = ["a", "e", "i", "o", "u"];
+// 	return str
+// 		.split("")
+// 		.filter(function (el) {
+// 			return vowels.indexOf(el.toLowerCase()) == -1;
+// 		})
+// 		.join("");
+// }
