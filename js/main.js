@@ -4131,15 +4131,53 @@
 // 	return countAllExes === countAllOhs;
 // }
 
-function XO(str) {
-	let x = str.match(/x/gi);
-	let o = str.match(/o/gi);
-	return (x && x.length) === (o && o.length);
-}
+// function XO(str) {
+// 	let x = str.match(/x/gi);
+// 	let o = str.match(/o/gi);
+// 	return (x && x.length) === (o && o.length);
+// }
 
-const XO = (str) => {
-	str = str.toLowerCase().split("");
-	return (
-		str.filter((x) => x === "x").length === str.filter((x) => x === "o").length
-	);
-};
+// const XO = (str) => {
+// 	str = str.toLowerCase().split("");
+// 	return (
+// 		str.filter((x) => x === "x").length === str.filter((x) => x === "o").length
+// 	);
+// };
+
+How this code can be replaced?
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+function disemvowel(str) {
+	return str
+		.split("")
+		.filter(
+			(e) =>
+				e !== "a" &&
+				e !== "A" &&
+				e !== "e" &&
+				e !== "E" &&
+				e !== "i" &&
+				e !== "I" &&
+				e !== "o" &&
+				e !== "O" &&
+				e !== "u" &&
+				e !== "U"
+		)
+		.join("");
+}
