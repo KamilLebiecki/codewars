@@ -4176,3 +4176,6 @@
 // 		})
 // 		.join("");
 // }
+
+const correct = (string) =>
+	string.replace(/1/g, "I").replace(/5/g, "5").replace(/0/g, "O");
