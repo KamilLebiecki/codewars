@@ -4116,3 +4116,17 @@
 // 	}
 // 	return [odd, even];
 // }
+
+function XO(str) {
+	let countAllExes = 0;
+	let countAllOhs = 0;
+	for (let i = 0; i < str.length; i++) {
+		if (str.toLowerCase()[i] === "x") {
+			countAllExes++;
+		}
+		if (str.toLowerCase()[i] === "o") {
+			countAllOhs++;
+		}
+	}
+	return countAllExes === countAllOhs;
+}
