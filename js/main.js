@@ -3964,15 +3964,31 @@
 // 		? arr[1]
 // 		: firstNonConsecutive(arr.slice(1));
 
-String.prototype.isUpperCase = function () {
-	return this == this.toUpperCase();
-};
+// String.prototype.isUpperCase = function () {
+// 	return this == this.toUpperCase();
+// };
 
-String.prototype.isUpperCase = function () {
-	return this.toUpperCase() === this.toString();
-};
+// String.prototype.isUpperCase = function () {
+// 	return this.toUpperCase() === this.toString();
+// };
 
-String.prototype.isUpperCase = function () {
-	const re = /([a-z]+)/g;
-	return !re.test(this);
-};
+// String.prototype.isUpperCase = function () {
+// 	const re = /([a-z]+)/g;
+// 	return !re.test(this);
+// };
+
+// const humanYearsCatYearsDogYears = (humanYears) => {
+// 	if (humanYears === 1) {
+// 		return [1, 15, 15];
+// 	}
+// 	if (humanYears === 2) {
+// 		return [2, 24, 24];
+// 	}
+// 	return [humanYears, 24 + (humanYears - 2) * 4, 24 + (humanYears - 2) * 5];
+// };
+
+// let humanYearsCatYearsDogYears = function (y) {
+// 	if (y == 1) return [1, 15, 15];
+// 	if (y == 2) return [2, 24, 24];
+// 	return [y, (y - 2) * 4 + 24, (y - 2) * 5 + 24];
+// };
