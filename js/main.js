@@ -3963,3 +3963,16 @@
 // 		: arr[0] + 1 != arr[1]
 // 		? arr[1]
 // 		: firstNonConsecutive(arr.slice(1));
+
+String.prototype.isUpperCase = function () {
+	return this == this.toUpperCase();
+};
+
+String.prototype.isUpperCase = function () {
+	return this.toUpperCase() === this.toString();
+};
+
+String.prototype.isUpperCase = function () {
+	const re = /([a-z]+)/g;
+	return !re.test(this);
+};
