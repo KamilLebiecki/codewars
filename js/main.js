@@ -4201,3 +4201,5 @@
 // function correct(string){
 //     return [...string].map(a => ({"0": "O", "5": "S", "0": "O"})[a]||a).join("");
 // }
+
+const trueOrFalse = (val) => (val ? "True" : "False");
