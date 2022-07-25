@@ -4189,15 +4189,15 @@
 // const correct = (string) =>
 // 	string.replace(/[501]/g, (character) => corrections[character]);
 
-function correct(string) {
-	const map = {
-		0: "O",
-		1: "I",
-		5: "S",
-	};
-	return string.split("").map(c => (map.hasOwnProperty(c) ? map[c] : c).join("");
-}
+// function correct(string) {
+// 	const map = {
+// 		0: "O",
+// 		1: "I",
+// 		5: "S",
+// 	};
+// 	return string.split("").map(c => (map.hasOwnProperty(c) ? map[c] : c).join("");
+// }
 
-function correct(string){
-    return [...string].map(a => ({"0": "O", "5": "S", "0": "O"})[a]||a).join("");
-}
+// function correct(string){
+//     return [...string].map(a => ({"0": "O", "5": "S", "0": "O"})[a]||a).join("");
+// }
