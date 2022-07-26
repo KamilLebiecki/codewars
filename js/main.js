@@ -4231,31 +4231,45 @@
 //     property: value,
 // }
 
-const sheeps = [
-	true,
-	true,
-	true,
-	false,
-	true,
-	true,
-	true,
-	true,
-	true,
-	false,
-	true,
-	false,
-	true,
-	false,
-	false,
-	true,
-	true,
-	true,
-	true,
-	true,
-	false,
-	false,
-	true,
-	true,
-];
+// const sheeps = [
+// 	true,
+// 	true,
+// 	true,
+// 	false,
+// 	true,
+// 	true,
+// 	true,
+// 	true,
+// 	true,
+// 	false,
+// 	true,
+// 	false,
+// 	true,
+// 	false,
+// 	false,
+// 	true,
+// 	true,
+// 	true,
+// 	true,
+// 	true,
+// 	false,
+// 	false,
+// 	true,
+// 	true,
+// ];
 
-const countSheeps = (arrayOfSheeps) => arrayOfSheeps.filter(Boolean).length;
+// const countSheeps = (arrayOfSheeps) => arrayOfSheeps.filter(Boolean).length;
+
+function sortIt(arr) {
+	return arr.slice().sort((a, b) => {
+		let countA = arr.filter((v) => v === a).length;
+		let countB = arr.filter((v) => v === b).length;
+		if (countA === countB) {
+			return b - a;
+		} else if (countA > countB) {
+			return 1;
+		} else {
+			return -1;
+		}
+	});
+}
