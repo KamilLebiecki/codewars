@@ -4363,31 +4363,58 @@
 
 // }
 
-function removeEveryOther(arr) {
-	let newArr = [];
-	for (let i = 0; i < arr.length; i += 2) {
-		newArr.push(arr[i]);
-	}
-	return newArr;
+// function removeEveryOther(arr) {
+// 	let newArr = [];
+// 	for (let i = 0; i < arr.length; i += 2) {
+// 		newArr.push(arr[i]);
+// 	}
+// 	return newArr;
+// }
+
+// function removeEveryOther(arr) {
+// 	return arr.filter(function (elem, inded) {
+// 		return index % 2 === 0;
+// 	});
+// }
+
+// function removeEveryOther(arr) {
+// 	for (var i = 1; i < arr.length; i++) {
+// 		arr.splice(i, 1);
+// 	}
+// 	return arr;
+// }
+
+// const removeEveryOther = (arr) => arr.filter((_, i) => !(i % 2));
+
+// const removeEveryOther = (arr) => arr.filter((item, index) => index % 2 === 0);
+
+// function removeEveryOther(arr) {
+// 	return arr.filter((_, i) => i % 2 == 0);
+// }
+
+const pigIt = (str) => {
+	const arr = str.split("");
+	return arr.map((w) =>
+		w.match(/[A-z]/i) ? `${w.substr(1)}${w.substr(0, 1)}ay` : w
+	);
+};
+
+function pigIt(string) {
+	return string.replace(/(\w)(\w*)(\s|$)/g, "$2$1ay$3");
 }
 
-function removeEveryOther(arr) {
-	return arr.filter(function (elem, inded) {
-		return index % 2 === 0;
+function pigIt(str) {
+	return str.replace(/\w+/g, (w) => {
+		return w.slice(1) + w[0] + "ay";
 	});
 }
 
-function removeEveryOther(arr) {
-	for (var i = 1; i < arr.length; i++) {
-		arr.splice(i, 1);
-	}
-	return arr;
-}
-
-const removeEveryOther = (arr) => arr.filter((_, i) => !(i % 2));
-
-const removeEveryOther = (arr) => arr.filter((item, index) => index % 2 === 0);
-
-function removeEveryOther(arr) {
-	return arr.filter((_, i) => i % 2 == 0);
+function pigIt(str) {
+	var arrayWord = str.split(" ");
+	return arrayWord
+		.map(function (word) {
+			var firstLetter = word.charAt(0);
+			return word.slice(1) + firstLetter + "ay";
+		})
+		.join(" ");
 }
