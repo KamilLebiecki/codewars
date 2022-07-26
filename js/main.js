@@ -4351,14 +4351,43 @@
 
 // const stringy = (size) => Array.from(Array(size), (v, i) => +!(i % 2)).join("");
 
-const padIt (string,n ) {
-    let i = 0;
-    do {
-        if (i % 2 !==0) str = str + "*";
-        else str = "*" + str;
-        i++;
-    }
-    while (i < n)
-    return str;
+// const padIt (string,n ) {
+//     let i = 0;
+//     do {
+//         if (i % 2 !==0) str = str + "*";
+//         else str = "*" + str;
+//         i++;
+//     }
+//     while (i < n)
+//     return str;
 
+// }
+
+function removeEveryOther(arr) {
+	let newArr = [];
+	for (let i = 0; i < arr.length; i += 2) {
+		newArr.push(arr[i]);
+	}
+	return newArr;
+}
+
+function removeEveryOther(arr) {
+	return arr.filter(function (elem, inded) {
+		return index % 2 === 0;
+	});
+}
+
+function removeEveryOther(arr) {
+	for (var i = 1; i < arr.length; i++) {
+		arr.splice(i, 1);
+	}
+	return arr;
+}
+
+const removeEveryOther = (arr) => arr.filter((_, i) => !(i % 2));
+
+const removeEveryOther = (arr) => arr.filter((item, index) => index % 2 === 0);
+
+function removeEveryOther(arr) {
+	return arr.filter((_, i) => i % 2 == 0);
 }
