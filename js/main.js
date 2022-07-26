@@ -4418,32 +4418,61 @@
 // 		})
 // 		.join(" ");
 // }
-function howMuchILoveYou(nbPetals) {
-	let m = [
-		"I love you",
-		"a little",
-		"a lot",
-		"passionately",
-		"madly",
-		"not at all",
-	];
-	return m[(nbPetals - 1) % 6];
+// function howMuchILoveYou(nbPetals) {
+// 	let m = [
+// 		"I love you",
+// 		"a little",
+// 		"a lot",
+// 		"passionately",
+// 		"madly",
+// 		"not at all",
+// 	];
+// 	return m[(nbPetals - 1) % 6];
+// }
+
+// const phrases = [
+// 	"I love you",
+// 	"A little",
+// 	"A lot",
+// 	"Passionately",
+// 	"Madly",
+// 	"Not at all",
+// ];
+
+// function howMuchILoveYou(n) {
+// 	return phrases[(n - 1) % phrases.length];
+// }
+
+// const howMuchILoveYou = (n) =>
+// 	["Not at all", "I love you", "A little", "A lot", "Passionately", "Madly"][
+// 		n % 6
+// 	];
+
+function getCount(str) {
+	let vowelsCount = 0;
+	let arr = str.split("");
+	for (let i = 0; i < arr.length; i++) {
+		if (
+			arr[i] === "a" ||
+			arr[i] === "e" ||
+			arr[i] === "i" ||
+			arr[i] === "o" ||
+			arr[i] === "u"
+		) {
+			vowelsCount++;
+		}
+	}
+	return vowelsCount;
 }
 
-const phrases = [
-	"I love you",
-	"A little",
-	"A lot",
-	"Passionately",
-	"Madly",
-	"Not at all",
-];
-
-function howMuchILoveYou(n) {
-	return phrases[(n - 1) % phrases.length];
+function getCount(str) {
+	return str.replace(/[^aeiou]/gi, "").length;
 }
 
-const howMuchILoveYou = (n) =>
-	["Not at all", "I love you", "A little", "A lot", "Passionately", "Madly"][
-		n % 6
-	];
+function getCount(str) {
+	return (str.match(/[aeiou]/gi) | []).length;
+}
+
+function getCount(str) {
+	return str.split("").filter((c) => "aeiouAEIOU".includes(c)).length;
+}
