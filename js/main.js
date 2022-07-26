@@ -4274,11 +4274,36 @@
 // 	});
 // }
 
-const remove = (string) =>
-	string.charAt(string.lenght - 1) === "!" ? string.slice(0, -1) : string;
+// const remove = (string) =>
+// 	string.charAt(string.lenght - 1) === "!" ? string.slice(0, -1) : string;
 
-const remove = (s) => s.replace(/!$/, "");
+// const remove = (s) => s.replace(/!$/, "");
 
-function remove(s) {
-	return s.endsWith("!") ? s.slice(0, -1) : s;
+// function remove(s) {
+// 	return s.endsWith("!") ? s.slice(0, -1) : s;
+// }
+
+// const grabDoll = (dolls) => {
+// 	let bag = [];
+// 	for (let i = 0; i < dolls.length; i++) {
+// 		if (bag.length === 3) {
+// 			break;
+// 		}
+// 		if (dolls[i] !== "Hello Kitty" && dolls[i] !== "Barbie doll") continue;
+// 		bag.push(dolls[i]);
+// 	}
+// 	return bag;
+// };
+
+const grabDoll = (dolls) =>
+	dolls.filter((i) => i === "Hello Kitty" || i === "Barbie doll").slice(0, 3);
+
+function grabDoll(dolls) {
+	let bag = [];
+	for (let i = 0; i < dolls.length; i++) {
+		if (!/^(Hello Kitty|Barbie doll)$/.test(dolls[i])) continue;
+		bag.push(dolls[i]);
+		if (bag.length === 3) break;
+	}
+	return bag;
 }
