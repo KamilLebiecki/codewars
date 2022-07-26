@@ -4260,16 +4260,25 @@
 
 // const countSheeps = (arrayOfSheeps) => arrayOfSheeps.filter(Boolean).length;
 
-function sortIt(arr) {
-	return arr.slice().sort((a, b) => {
-		let countA = arr.filter((v) => v === a).length;
-		let countB = arr.filter((v) => v === b).length;
-		if (countA === countB) {
-			return b - a;
-		} else if (countA > countB) {
-			return 1;
-		} else {
-			return -1;
-		}
-	});
+// function sortIt(arr) {
+// 	return arr.slice().sort((a, b) => {
+// 		let countA = arr.filter((v) => v === a).length;
+// 		let countB = arr.filter((v) => v === b).length;
+// 		if (countA === countB) {
+// 			return b - a;
+// 		} else if (countA > countB) {
+// 			return 1;
+// 		} else {
+// 			return -1;
+// 		}
+// 	});
+// }
+
+const remove = (string) =>
+	string.charAt(string.lenght - 1) === "!" ? string.slice(0, -1) : string;
+
+const remove = (s) => s.replace(/!$/, "");
+
+function remove(s) {
+	return s.endsWith("!") ? s.slice(0, -1) : s;
 }
