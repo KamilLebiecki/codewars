@@ -4230,3 +4230,32 @@
 // @media (min-width: 600px){
 //     property: value,
 // }
+
+const sheeps = [
+	true,
+	true,
+	true,
+	false,
+	true,
+	true,
+	true,
+	true,
+	true,
+	false,
+	true,
+	false,
+	true,
+	false,
+	false,
+	true,
+	true,
+	true,
+	true,
+	true,
+	false,
+	false,
+	true,
+	true,
+];
+
+const countSheeps = (arrayOfSheeps) => arrayOfSheeps.filter(Boolean).length;
