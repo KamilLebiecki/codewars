@@ -4448,31 +4448,50 @@
 // 		n % 6
 // 	];
 
-function getCount(str) {
-	let vowelsCount = 0;
-	let arr = str.split("");
-	for (let i = 0; i < arr.length; i++) {
-		if (
-			arr[i] === "a" ||
-			arr[i] === "e" ||
-			arr[i] === "i" ||
-			arr[i] === "o" ||
-			arr[i] === "u"
-		) {
-			vowelsCount++;
-		}
-	}
-	return vowelsCount;
+// function getCount(str) {
+// 	let vowelsCount = 0;
+// 	let arr = str.split("");
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (
+// 			arr[i] === "a" ||
+// 			arr[i] === "e" ||
+// 			arr[i] === "i" ||
+// 			arr[i] === "o" ||
+// 			arr[i] === "u"
+// 		) {
+// 			vowelsCount++;
+// 		}
+// 	}
+// 	return vowelsCount;
+// }
+
+// function getCount(str) {
+// 	return str.replace(/[^aeiou]/gi, "").length;
+// }
+
+// function getCount(str) {
+// 	return (str.match(/[aeiou]/gi) | []).length;
+// }
+
+// function getCount(str) {
+// 	return str.split("").filter((c) => "aeiouAEIOU".includes(c)).length;
+// }
+
+const findDifference = (a, b) =>
+	Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
+
+const findDifference(a,b) {
+    return Math.abs(a.reduce((previous, current) => previous * current) - b.(reduce((previous, current) => previous * current)));
 }
 
-function getCount(str) {
-	return str.replace(/[^aeiou]/gi, "").length;
+function volume(c){
+    return c.reduce((x, y) => x * y)
 }
 
-function getCount(str) {
-	return (str.match(/[aeiou]/gi) | []).length;
+function find_difference(a,b ){
+    return Math.abs(volume(a) - volume(b));
 }
 
-function getCount(str) {
-	return str.split("").filter((c) => "aeiouAEIOU".includes(c)).length;
+function find_difference([a,b,c], [d,e,f]){
+    return Math.abs(a*b*c-d*e*f)
 }
