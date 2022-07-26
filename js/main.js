@@ -4206,13 +4206,23 @@
 
 // const trueOrFalse = (val) => Boolean(val).toString();
 
-const strCount = (str, letter) => {
-	let result = 0;
-	let newArr = str.split("");
-	for (let i = 0; i < newArr.length; i++) {
-		if (newArr[i] === letter) {
-			result++;
-		}
-	}
-	return result;
-};
+// const strCount = (str, letter) => {
+// 	let result = 0;
+// 	let newArr = str.split("");
+// 	for (let i = 0; i < newArr.length; i++) {
+// 		if (newArr[i] === letter) {
+// 			result++;
+// 		}
+// 	}
+// 	return result;
+// };
+
+// function strCount(str, letter) {
+// 	return str.split(letter).length - 1;
+// }
+
+// function strCount(str, letter) {
+// 	return str.split("").filter((c) => c === letter).length;
+// }
+
+// const strCount = (str, letter) => --str.split(letter).length;
