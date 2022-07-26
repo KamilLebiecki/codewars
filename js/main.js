@@ -4226,3 +4226,7 @@
 // }
 
 // const strCount = (str, letter) => --str.split(letter).length;
+
+// @media (min-width: 600px){
+//     property: value,
+// }
