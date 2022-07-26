@@ -4320,8 +4320,33 @@
 // 	return Math.pow(array[n], n) || -1;
 // }
 
-const toBinary = (n) => Number(n.toString(2));
+// const toBinary = (n) => Number(n.toString(2));
 
-const toBinary = (n) => parseInt(n.toString(2));
+// const toBinary = (n) => parseInt(n.toString(2));
 
-let toBinary = (n) => +n.toString(2);
+// let toBinary = (n) => +n.toString(2);
+
+function stringy(size) {
+	let alternateString = "";
+	for (let i = 1; i <= size; i++) {
+		if (i % 2 !== 0) {
+			alternateString += 1;
+		}
+		if (i % 2 === 0) {
+			alternateString += 0;
+		}
+	}
+	return alternateString;
+}
+
+function stringy(size) {
+	let str = "";
+	for (let i = 1; i <= size; i++) str += i % 2;
+	return str;
+}
+
+const stringy = (x) => "".padStart(x, "10");
+
+const stringy = (size) => "10".repeat(size).slice(0, size);
+
+const stringy = (size) => Array.from(Array(size), (v, i) => +!(i % 2)).join("");
