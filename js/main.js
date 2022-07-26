@@ -4392,29 +4392,58 @@
 // 	return arr.filter((_, i) => i % 2 == 0);
 // }
 
-const pigIt = (str) => {
-	const arr = str.split("");
-	return arr.map((w) =>
-		w.match(/[A-z]/i) ? `${w.substr(1)}${w.substr(0, 1)}ay` : w
-	);
-};
+// const pigIt = (str) => {
+// 	const arr = str.split("");
+// 	return arr.map((w) =>
+// 		w.match(/[A-z]/i) ? `${w.substr(1)}${w.substr(0, 1)}ay` : w
+// 	);
+// };
 
-function pigIt(string) {
-	return string.replace(/(\w)(\w*)(\s|$)/g, "$2$1ay$3");
+// function pigIt(string) {
+// 	return string.replace(/(\w)(\w*)(\s|$)/g, "$2$1ay$3");
+// }
+
+// function pigIt(str) {
+// 	return str.replace(/\w+/g, (w) => {
+// 		return w.slice(1) + w[0] + "ay";
+// 	});
+// }
+
+// function pigIt(str) {
+// 	var arrayWord = str.split(" ");
+// 	return arrayWord
+// 		.map(function (word) {
+// 			var firstLetter = word.charAt(0);
+// 			return word.slice(1) + firstLetter + "ay";
+// 		})
+// 		.join(" ");
+// }
+function howMuchILoveYou(nbPetals) {
+	let m = [
+		"I love you",
+		"a little",
+		"a lot",
+		"passionately",
+		"madly",
+		"not at all",
+	];
+	return m[(nbPetals - 1) % 6];
 }
 
-function pigIt(str) {
-	return str.replace(/\w+/g, (w) => {
-		return w.slice(1) + w[0] + "ay";
-	});
+const phrases = [
+	"I love you",
+	"A little",
+	"A lot",
+	"Passionately",
+	"Madly",
+	"Not at all",
+];
+
+function howMuchILoveYou(n) {
+	return phrases[(n - 1) % phrases.length];
 }
 
-function pigIt(str) {
-	var arrayWord = str.split(" ");
-	return arrayWord
-		.map(function (word) {
-			var firstLetter = word.charAt(0);
-			return word.slice(1) + firstLetter + "ay";
-		})
-		.join(" ");
-}
+const howMuchILoveYou = (n) =>
+	["Not at all", "I love you", "A little", "A lot", "Passionately", "Madly"][
+		n % 6
+	];
