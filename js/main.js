@@ -4204,4 +4204,15 @@
 
 // const trueOrFalse = (val) => (val ? "True" : "False");
 
-const trueOrFalse = (val) => Boolean(val).toString();
+// const trueOrFalse = (val) => Boolean(val).toString();
+
+const strCount = (str, letter) => {
+	let result = 0;
+	let newArr = str.split("");
+	for (let i = 0; i < newArr.length; i++) {
+		if (newArr[i] === letter) {
+			result++;
+		}
+	}
+	return result;
+};
