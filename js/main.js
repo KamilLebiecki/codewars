@@ -4709,35 +4709,48 @@
 // 	return [odd, even];
 // }
 
-function disemvowel(str) {
-	return str
-		.split("")
-		.filter(
-			(e) =>
-				e !== "a" &&
-				e !== "A" &&
-				e !== "e" &&
-				e !== "E" &&
-				e !== "i" &&
-				e !== "I" &&
-				e !== "o" &&
-				e !== "O" &&
-				e !== "u" &&
-				e !== "U"
-		)
-		.join("");
-}
+// function disemvowel(str) {
+// 	return str
+// 		.split("")
+// 		.filter(
+// 			(e) =>
+// 				e !== "a" &&
+// 				e !== "A" &&
+// 				e !== "e" &&
+// 				e !== "E" &&
+// 				e !== "i" &&
+// 				e !== "I" &&
+// 				e !== "o" &&
+// 				e !== "O" &&
+// 				e !== "u" &&
+// 				e !== "U"
+// 		)
+// 		.join("");
+// }
 
-function disemvowel(str) {
-	return str.replace(/[aeiou]/gi, "");
-}
+// function disemvowel(str) {
+// 	return str.replace(/[aeiou]/gi, "");
+// }
 
-function disemvowel(str) {
-	let vowels = ["a", "e", "i", "o", "u"];
-	return str
-		.split("")
-		.filter(function (el) {
-			return vowels.indexOf(el.toLowerCase()) == -1;
-		})
-		.join("");
-}
+// function disemvowel(str) {
+// 	let vowels = ["a", "e", "i", "o", "u"];
+// 	return str
+// 		.split("")
+// 		.filter(function (el) {
+// 			return vowels.indexOf(el.toLowerCase()) == -1;
+// 		})
+// 		.join("");
+// }
+
+String.prototype.isUpperCase = function () {
+	return this == this.toUpperCase();
+};
+
+String.prototype.isUpperCase = function () {
+	return this.toUpperCase() === this.toString();
+};
+
+String.prototype.isUpperCase = function () {
+	const re = /([a-z]+)/g;
+	return !re.test(this);
+};
