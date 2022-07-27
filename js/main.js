@@ -4797,4 +4797,16 @@
 
 // Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence
 
-const replace = (s) => s.replace(/[aeiou]/gi, "!");
+// const replace = (s) => s.replace(/[aeiou]/gi, "!");
+
+// Determine offspring sex based on genes XX and XY chromosomes
+const chromosomeCheck = (sperm) =>
+	sperm.includes("Y")
+		? "Congratulations! You're going to have a son."
+		: "Congratulations! You're going to have a daughter.";
+
+function chromosomeCheck(sperm) {
+	return `Congratulations! You're going to have a ${
+		sperm === "YY" ? "son" : "daughter"
+	}.`;
+}
