@@ -4790,3 +4790,7 @@
 // 	let zeroList = arr.filter((num) => num === 0);
 // 	return filteredList.concat(zeroList);
 // };
+
+// 5 without numbers !!
+
+const unusualFive = () => "unusu".length;
