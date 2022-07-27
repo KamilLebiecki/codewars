@@ -4588,29 +4588,69 @@
 
 // console.log(array.filter(isPrime));
 
-function XO(str) {
-	countAllExes = 0;
-	countAllOhs = 0;
-	for (let i = 0; i < str.length; i++) {
-		if (str.toLowerCase()[i] === "x") {
-			countAllExes++;
-		}
-		if (str.toLowerCase()[i] === "o") {
-			countAllOhs++;
+// function XO(str) {
+// 	countAllExes = 0;
+// 	countAllOhs = 0;
+// 	for (let i = 0; i < str.length; i++) {
+// 		if (str.toLowerCase()[i] === "x") {
+// 			countAllExes++;
+// 		}
+// 		if (str.toLowerCase()[i] === "o") {
+// 			countAllOhs++;
+// 		}
+// 	}
+// 	return countAllExes === countAllOhs;
+// }
+
+// function XO(str) {
+// 	let x = str.match(/x/gi);
+// 	let o = str.match(/o/gi);
+// 	return (x && x.length) === (o && o.length);
+// }
+
+// const XO = (str) => {
+// 	str = str.toLowerCase().split("");
+// 	return (
+// 		str.filter((x) => x === "x").length === str.filter((x) => x === "o").length
+// 	);
+// };
+
+const humanYearsCatYearsDogYears = (humanYears) => {
+	if (humanYears === 1) {
+		return [1, 15, 15];
+	}
+	if (humanYears === 2) {
+		return [2, 24, 24];
+	}
+	return [humanYears, 24 + (humanYears - 2) * 4, 24 + (humanYears - 2) * 5];
+};
+
+let humanYearsCatYearsDogYears = function (y) {
+	if (y === 1) return [1, 15, 15];
+	if (y === 2) return [2, 24, 24];
+	return [y, (y - 2) * 4 + 24, (y - 2) * 5 + 24];
+};
+
+const humanYearsCatYearsDogYears = (humanYears) => {
+	let catYears = 0;
+	let dogYears = 0;
+	for (let i = 1; i <= humanYears; i++) {
+		if (i === 1) {
+			catYears += 15;
+			dogYears += 15;
+		} else if (i === 2) {
+			catYears += 9;
+			dogYears += 9;
+		} else {
+			catYears += 4;
+			dogYears += 5;
 		}
 	}
-	return countAllExes === countAllOhs;
-}
-
-function XO(str) {
-	let x = str.match(/x/gi);
-	let o = str.match(/o/gi);
-	return (x && x.length) === (o && o.length);
-}
-
-const XO = (str) => {
-	str = str.toLowerCase().split("");
-	return (
-		str.filter((x) => x === "x").length === str.filter((x) => x === "o").length
-	);
+	return [humanYears, catYears, dogYears];
 };
+
+const humanYearsCatYearsDogYears = (humanYears) => [
+	humanYears,
+	(humanYears - 1 ? 16 : 11) + 4 * humanYears,
+	(humanYears - 1 ? 14 : 10) + 5 * humanYears,
+];
