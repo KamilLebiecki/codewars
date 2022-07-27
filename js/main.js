@@ -4686,3 +4686,25 @@ const firstNonConsecutive = (arr) =>
 		: arr[0] + 1 !== arr[1]
 		? arr[1]
 		: firstNonConsecutive(arr.slice(1));
+
+function pickIt(arr) {
+	var odd = [],
+		even = [];
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i] % 2 === 0) {
+			even.push(arr[i]);
+		} else if (arr[i] % 2 !== 0) {
+			odd.push(arr[i]);
+		}
+	}
+	return [odd, even];
+}
+
+function pickIt(arr) {
+	let odd = [];
+	let even = [];
+	for (var x of arr) {
+		(x % 2 ? odd : even).push(x);
+	}
+	return [odd, even];
+}
