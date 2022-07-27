@@ -4575,15 +4575,42 @@
 // 	return count ? (count > 2 ? "I smell a series!" : "Publish!") : "Fail!";
 // }
 
-const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+// const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
-function isPrime(num) {
-	for (let i = 2; num > i; i++) {
-		if (num % i === 0) {
-			return false;
+// function isPrime(num) {
+// 	for (let i = 2; num > i; i++) {
+// 		if (num % i === 0) {
+// 			return false;
+// 		}
+// 	}
+// 	return num > 1;
+// }
+
+// console.log(array.filter(isPrime));
+
+function XO(str) {
+	countAllExes = 0;
+	countAllOhs = 0;
+	for (let i = 0; i < str.length; i++) {
+		if (str.toLowerCase()[i] === "x") {
+			countAllExes++;
+		}
+		if (str.toLowerCase()[i] === "o") {
+			countAllOhs++;
 		}
 	}
-	return num > 1;
+	return countAllExes === countAllOhs;
 }
 
-console.log(array.filter(isPrime));
+function XO(str) {
+	let x = str.match(/x/gi);
+	let o = str.match(/o/gi);
+	return (x && x.length) === (o && o.length);
+}
+
+const XO = (str) => {
+	str = str.toLowerCase().split("");
+	return (
+		str.filter((x) => x === "x").length === str.filter((x) => x === "o").length
+	);
+};
