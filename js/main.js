@@ -4655,56 +4655,89 @@
 // 	(humanYears - 1 ? 14 : 10) + 5 * humanYears,
 // ];
 
-function firstNonConsecutive(arr) {
-	for (let i = 1; i < arr.length; i++) {
-		if (arr[i] - arr[i - 1] > 1) {
-			return arr[i];
-		}
-	}
-	return null;
+// function firstNonConsecutive(arr) {
+// 	for (let i = 1; i < arr.length; i++) {
+// 		if (arr[i] - arr[i - 1] > 1) {
+// 			return arr[i];
+// 		}
+// 	}
+// 	return null;
+// }
+
+// function firstNonConsecutive(arr) {
+// 	let result = arr.find((val, index) => val !== index + arr[i]);
+// 	return Number.isInteger(result) ? result : null;
+// }
+
+// function firstNonConsecutive(arr) {
+// 	let out = null;
+// 	for (let i = 1; i < arr.length; i++) {
+// 		if (arr[i] - arr[i - 1] != 1) {
+// 			out = arr[i];
+// 			break;
+// 		}
+// 	}
+// 	return out;
+// }
+
+// const firstNonConsecutive = (arr) =>
+// 	arr.length === 1
+// 		? null
+// 		: arr[0] + 1 !== arr[1]
+// 		? arr[1]
+// 		: firstNonConsecutive(arr.slice(1));
+
+// function pickIt(arr) {
+// 	var odd = [],
+// 		even = [];
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (arr[i] % 2 === 0) {
+// 			even.push(arr[i]);
+// 		} else if (arr[i] % 2 !== 0) {
+// 			odd.push(arr[i]);
+// 		}
+// 	}
+// 	return [odd, even];
+// }
+
+// function pickIt(arr) {
+// 	let odd = [];
+// 	let even = [];
+// 	for (var x of arr) {
+// 		(x % 2 ? odd : even).push(x);
+// 	}
+// 	return [odd, even];
+// }
+
+function disemvowel(str) {
+	return str
+		.split("")
+		.filter(
+			(e) =>
+				e !== "a" &&
+				e !== "A" &&
+				e !== "e" &&
+				e !== "E" &&
+				e !== "i" &&
+				e !== "I" &&
+				e !== "o" &&
+				e !== "O" &&
+				e !== "u" &&
+				e !== "U"
+		)
+		.join("");
 }
 
-function firstNonConsecutive(arr) {
-	let result = arr.find((val, index) => val !== index + arr[i]);
-	return Number.isInteger(result) ? result : null;
+function disemvowel(str) {
+	return str.replace(/[aeiou]/gi, "");
 }
 
-function firstNonConsecutive(arr) {
-	let out = null;
-	for (let i = 1; i < arr.length; i++) {
-		if (arr[i] - arr[i - 1] != 1) {
-			out = arr[i];
-			break;
-		}
-	}
-	return out;
-}
-
-const firstNonConsecutive = (arr) =>
-	arr.length === 1
-		? null
-		: arr[0] + 1 !== arr[1]
-		? arr[1]
-		: firstNonConsecutive(arr.slice(1));
-
-function pickIt(arr) {
-	var odd = [],
-		even = [];
-	for (let i = 0; i < arr.length; i++) {
-		if (arr[i] % 2 === 0) {
-			even.push(arr[i]);
-		} else if (arr[i] % 2 !== 0) {
-			odd.push(arr[i]);
-		}
-	}
-	return [odd, even];
-}
-
-function pickIt(arr) {
-	let odd = [];
-	let even = [];
-	for (var x of arr) {
-		(x % 2 ? odd : even).push(x);
-	}
-	return [odd, even];
+function disemvowel(str) {
+	let vowels = ["a", "e", "i", "o", "u"];
+	return str
+		.split("")
+		.filter(function (el) {
+			return vowels.indexOf(el.toLowerCase()) == -1;
+		})
+		.join("");
 }
