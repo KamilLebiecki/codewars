@@ -4742,15 +4742,30 @@
 // 		.join("");
 // }
 
-String.prototype.isUpperCase = function () {
-	return this == this.toUpperCase();
-};
+// String.prototype.isUpperCase = function () {
+// 	return this == this.toUpperCase();
+// };
 
-String.prototype.isUpperCase = function () {
-	return this.toUpperCase() === this.toString();
-};
+// String.prototype.isUpperCase = function () {
+// 	return this.toUpperCase() === this.toString();
+// };
 
-String.prototype.isUpperCase = function () {
-	const re = /([a-z]+)/g;
-	return !re.test(this);
-};
+// String.prototype.isUpperCase = function () {
+// 	const re = /([a-z]+)/g;
+// 	return !re.test(this);
+// };
+
+// Moving Zeros To The End
+
+function moveZeros(arr) {
+	let newArray = [];
+	let countZeros = 0;
+	for (let i = 0; i < arr.length; i++) {
+		arr[i] !== 0 && newArray.push(arr[i]);
+		arr[i] === 0 && countZeros++;
+	}
+	for (let j = 0; j < countZeros; j++) {
+		newArray.push(0);
+	}
+	return newArray;
+}
