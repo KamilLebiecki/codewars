@@ -4920,3 +4920,33 @@
 // 	}
 // 	return bag;
 // }
+
+// function howMuchILoveYou(nbPetals) {
+// 	let m = [
+// 		"I love you",
+// 		"A little",
+// 		"A lot",
+// 		"Passionately",
+// 		"Madly",
+// 		"Not at all",
+// 	];
+// 	return m[(nbPetals - 1) % 6];
+// }
+
+// const phrases = [
+// 	"I love you",
+// 	"A little",
+// 	"A lot",
+// 	"Passionately",
+// 	"Madly",
+// 	"Not at all",
+// ];
+
+// function howMuchILoveYou(n) {
+// 	return phrases[(n - 1) % phrases.length];
+// }
+
+// const howMuchILoveYou = (n) =>
+// 	["not at all", "I love you", "A little", "A lot", "Passionately", "Madly"][
+// 		n % 6
+// 	];
