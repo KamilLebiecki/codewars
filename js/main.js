@@ -4892,3 +4892,6 @@
 // }
 
 // const array = (arr) => arr.split(",").slice(1, -1).join(" ") || null;
+
+// The highest profit wins!
+// const minMax = (arr) => [Math.min(...arr), Math.max(...arr)];
