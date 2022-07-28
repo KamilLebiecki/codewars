@@ -4811,31 +4811,56 @@
 // 	}.`;
 // }
 
-function removeEveryOther(arr) {
-	let newArr = [];
-	for (let i = 0; i < arr.length; i += 2) {
-		newArr.push(arr[i]);
+// function removeEveryOther(arr) {
+// 	let newArr = [];
+// 	for (let i = 0; i < arr.length; i += 2) {
+// 		newArr.push(arr[i]);
+// 	}
+// 	return newArr;
+// }
+
+// function removeEveryOther(arr) {
+// 	return arr.filter(function (elem, index) {
+// 		return index % 2 === 0;
+// 	});
+// }
+
+// function removeEveryOther(arr) {
+// 	for (var i = 1; i < arr.length; i++) {
+// 		arr.splice(i, 1);
+// 	}
+// 	return arr;
+// }
+
+// const removeEveryOther = (arr) => arr.filter((_, i) => !(i % 2));
+
+// const removeEveryOther = (arr) => arr.filter((item, i) => i % 2 == 0);
+
+// function removeEveryOther(arr) {
+// 	return arr.filter((_, i) => i % 2 == 0);
+// }
+
+function stringy(size) {
+	let alternateString = "";
+	for (let i = 1; i <= size; i++) {
+		if (i % 2 !== 0) {
+			alternateString += 1;
+		}
+		if (i % 2 === 0) {
+			alternateString += 0;
+		}
 	}
-	return newArr;
+	return alternateString;
 }
 
-function removeEveryOther(arr) {
-	return arr.filter(function (elem, index) {
-		return index % 2 === 0;
-	});
+function stringy(size) {
+	let str = "";
+	for (let i = 1; i <= size; i++) str += i % 2;
+	return str;
 }
 
-function removeEveryOther(arr) {
-	for (var i = 1; i < arr.length; i++) {
-		arr.splice(i, 1);
-	}
-	return arr;
-}
+const stringy = (x) => "".padStart(x, "10");
 
-const removeEveryOther = (arr) => arr.filter((_, i) => !(i % 2));
+const stringy = (size) => "10".repeat(size).slice(0, size);
 
-const removeEveryOther = (arr) => arr.filter((item, i) => i % 2 == 0);
-
-function removeEveryOther(arr) {
-	return arr.filter((_, i) => i % 2 == 0);
-}
+const stringy = (size) => Array.from(Array(size), (v, i) => +!(i % 2)).join("");
