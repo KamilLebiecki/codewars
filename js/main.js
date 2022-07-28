@@ -4871,4 +4871,24 @@
 // 		: "Congrats! You have a daugher!";
 
 // const chromosomeCheck = (sperm) =>
-// 	// `Congrats! You have a ${sperm.includes("Y") ? "son" : "daughter"}.`;
+// `Congrats! You have a ${sperm.includes("Y") ? "son" : "daughter"}.`;
+
+// Remove First and Last Character Part Two
+
+// const array = (arr) => {
+// 	let newArray = arr.split(",");
+
+// 	if (newArray.length < 3) {
+// 		return null;
+// 	} else {
+// 		newArray.pop();
+// 		newArray.shift();
+// 		return newArray.join(" ");
+// 	}
+// };
+
+// function array(arr) {
+// 	return arr.split(",").slice(1, -1).join(" ") || null;
+// }
+
+// const array = (arr) => arr.split(",").slice(1, -1).join(" ") || null;
