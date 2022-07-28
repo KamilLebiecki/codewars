@@ -4800,13 +4800,42 @@
 // const replace = (s) => s.replace(/[aeiou]/gi, "!");
 
 // Determine offspring sex based on genes XX and XY chromosomes
-const chromosomeCheck = (sperm) =>
-	sperm.includes("Y")
-		? "Congratulations! You're going to have a son."
-		: "Congratulations! You're going to have a daughter.";
+// const chromosomeCheck = (sperm) =>
+// 	sperm.includes("Y")
+// 		? "Congratulations! You're going to have a son."
+// 		: "Congratulations! You're going to have a daughter.";
 
-function chromosomeCheck(sperm) {
-	return `Congratulations! You're going to have a ${
-		sperm === "YY" ? "son" : "daughter"
-	}.`;
+// function chromosomeCheck(sperm) {
+// 	return `Congratulations! You're going to have a ${
+// 		sperm === "YY" ? "son" : "daughter"
+// 	}.`;
+// }
+
+function removeEveryOther(arr) {
+	let newArr = [];
+	for (let i = 0; i < arr.length; i += 2) {
+		newArr.push(arr[i]);
+	}
+	return newArr;
+}
+
+function removeEveryOther(arr) {
+	return arr.filter(function (elem, index) {
+		return index % 2 === 0;
+	});
+}
+
+function removeEveryOther(arr) {
+	for (var i = 1; i < arr.length; i++) {
+		arr.splice(i, 1);
+	}
+	return arr;
+}
+
+const removeEveryOther = (arr) => arr.filter((_, i) => !(i % 2));
+
+const removeEveryOther = (arr) => arr.filter((item, i) => i % 2 == 0);
+
+function removeEveryOther(arr) {
+	return arr.filter((_, i) => i % 2 == 0);
 }
