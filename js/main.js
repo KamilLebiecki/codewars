@@ -4870,5 +4870,5 @@
 // 		? "Congrats, you have a son!"
 // 		: "Congrats! You have a daugher!";
 
-const chromosomeCheck = (sperm) =>
-	// `Congrats! You have a ${sperm.includes("Y") ? "son" : "daughter"}.`;
+// const chromosomeCheck = (sperm) =>
+// 	// `Congrats! You have a ${sperm.includes("Y") ? "son" : "daughter"}.`;
