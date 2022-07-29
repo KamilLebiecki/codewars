@@ -5243,21 +5243,53 @@
 // };
 
 // Counting Duplicates
-function duplicateCount(text) {
-	let result = 0;
-	let tempObject = {};
-	text
-		.toLowerCase()
-		.split("")
-		.map((str) => {
-			if (!tempObject.hasOwnProperty(str)) {
-				tempObject[str] = 0;
-			} else {
-				if (tempObject[str] === 0) {
-					result++;
-				}
-				tempObject[str] = tempObject[str] + 1;
-			}
-		});
-	return result;
+// function duplicateCount(text) {
+// 	let result = 0;
+// 	let tempObject = {};
+// 	text
+// 		.toLowerCase()
+// 		.split("")
+// 		.map((str) => {
+// 			if (!tempObject.hasOwnProperty(str)) {
+// 				tempObject[str] = 0;
+// 			} else {
+// 				if (tempObject[str] === 0) {
+// 					result++;
+// 				}
+// 				tempObject[str] = tempObject[str] + 1;
+// 			}
+// 		});
+// 	return result;
+// }
+
+// Beginner Series #3 Sum of Numbers
+
+function getSum(a, b) {
+	let tempArray = [];
+	if (b > a) {
+		for (let i = a; i <= b; i++) {
+			tempArray.push(i);
+		}
+	} else {
+		for (let i = b; i <= a; i++) {
+			tempArray.push(i);
+		}
+	}
+	return tempArray.reduce((p, c) => p + c);
+}
+
+const getSum = (a, b) => {
+	let min = Math.min(a, b),
+		max = Math.max(a, b);
+	return ((max - min + 1) * (min + max)) / 2;
+};
+
+function getSum(a, b) {
+	if (a == b) return a;
+	else if (a < b) return a + getSum(a + 1, b);
+	else return a + getSum(a - 1, b);
+}
+
+function getSum(a, b) {
+	return ((Math.abs(a - b) + 1) * (a + b)) / 2;
 }
