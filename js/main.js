@@ -5107,34 +5107,51 @@
 // 		.join(" ");
 // }
 
-function getCount(str) {
-	let vowelsCount = 0;
-	let arr = str.split("");
-	for (let i = 0; i < arr.length; i++) {
-		if (
-			arr[i] === "a" ||
-			arr[i] === "e" ||
-			arr[i] === "i" ||
-			arr[i] === "o" ||
-			arr[i] === "u"
-		) {
-			vowelsCount++;
-		}
-	}
-	return vowelsCount;
+// function getCount(str) {
+// 	let vowelsCount = 0;
+// 	let arr = str.split("");
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (
+// 			arr[i] === "a" ||
+// 			arr[i] === "e" ||
+// 			arr[i] === "i" ||
+// 			arr[i] === "o" ||
+// 			arr[i] === "u"
+// 		) {
+// 			vowelsCount++;
+// 		}
+// 	}
+// 	return vowelsCount;
+// }
+
+// function getCount(str) {
+// 	return str.replace(/[^aeiou]/gi, "").length;
+// }
+
+// function getCount(str) {
+// 	return (str.match(/[aeiou]/gi) || []).length;
+// }
+
+// function getCount(str) {
+// 	return str
+// 		.split("")
+// 		.filter((c) => "aeiouAEIOU")
+// 		.includes(c).length;
+// }
+
+const plural = (n) => (n === 1 ? false : true);
+
+function plural(n) {
+	return n !== 1;
 }
 
-function getCount(str) {
-	return str.replace(/[^aeiou]/gi, "").length;
-}
+const plural = (n) => n !== 1;
 
-function getCount(str) {
-	return (str.match(/[aeiou]/gi) || []).length;
-}
+const remove = (string) =>
+	string.charAt(string.length - 1) === "!" ? string.slice(0, -1) : string;
 
-function getCount(str) {
-	return str
-		.split("")
-		.filter((c) => "aeiouAEIOU")
-		.includes(c).length;
+const remove = (s) => s.replace(/!$/, "");
+
+function remove(s) {
+	return s.endsWith("!") ? s.slice(0, -1) : s;
 }
