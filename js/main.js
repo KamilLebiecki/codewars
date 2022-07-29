@@ -5080,29 +5080,61 @@
 // 	return Math.pow(array[n], n) || -1;
 // }
 
-const pigIt = (str) => {
-	const arr = str.split("");
-	return arr.map((w) =>
-		w.match(/[A-z]/i) ? `${w.substr(1)}${w.substr(0, 1)}ay` : w
-	);
-};
+// const pigIt = (str) => {
+// 	const arr = str.split("");
+// 	return arr.map((w) =>
+// 		w.match(/[A-z]/i) ? `${w.substr(1)}${w.substr(0, 1)}ay` : w
+// 	);
+// };
 
-function pigIt(str) {
-	return str.replace(/(\w)(\w*)(\s|$)/g, "$2$1ay$3");
+// function pigIt(str) {
+// 	return str.replace(/(\w)(\w*)(\s|$)/g, "$2$1ay$3");
+// }
+
+// function pigIt(str) {
+// 	return str.replace(/\w+/g, (w) => {
+// 		return w.slice(1) + w[0] + "ay";
+// 	});
+// }
+
+// function pigIt(str) {
+// 	var arrayWord = str.split(" ");
+// 	return arrayWord
+// 		.map(function (word) {
+// 			var firstLetter = word.charAt(0);
+// 			return word.slice(1) + firstLetter + "ay";
+// 		})
+// 		.join(" ");
+// }
+
+function getCount(str) {
+	let vowelsCount = 0;
+	let arr = str.split("");
+	for (let i = 0; i < arr.length; i++) {
+		if (
+			arr[i] === "a" ||
+			arr[i] === "e" ||
+			arr[i] === "i" ||
+			arr[i] === "o" ||
+			arr[i] === "u"
+		) {
+			vowelsCount++;
+		}
+	}
+	return vowelsCount;
 }
 
-function pigIt(str) {
-	return str.replace(/\w+/g, (w) => {
-		return w.slice(1) + w[0] + "ay";
-	});
+function getCount(str) {
+	return str.replace(/[^aeiou]/gi, "").length;
 }
 
-function pigIt(str) {
-	var arrayWord = str.split(" ");
-	return arrayWord
-		.map(function (word) {
-			var firstLetter = word.charAt(0);
-			return word.slice(1) + firstLetter + "ay";
-		})
-		.join(" ");
+function getCount(str) {
+	return (str.match(/[aeiou]/gi) || []).length;
+}
+
+function getCount(str) {
+	return str
+		.split("")
+		.filter((c) => "aeiouAEIOU")
+		.includes(c).length;
 }
