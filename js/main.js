@@ -5156,6 +5156,27 @@
 // 	return s.endsWith("!") ? s.slice(0, -1) : s;
 // }
 
-const countSheeps = (arrayOfSheeps) => {
-	return arrayOfSheeps.filter(Boolean).length;
+// const countSheeps = (arrayOfSheeps) => {
+// 	return arrayOfSheeps.filter(Boolean).length;
+// };
+
+const strCount = (str, letter) => {
+	let result = 0;
+	let newArr = str.split("");
+	for (let i = 0; i < newArr.length; i++) {
+		if (newArr[i] === letter) {
+			result++;
+		}
+	}
+	return result;
 };
+
+function strCount(str, letter) {
+	return str.split(letter).length - 1;
+}
+
+function strCount(str, letter) {
+	return str.split("").filter((c) => c == letter).length;
+}
+
+const strCount = (str, letter) => --str.split(letter).length;
