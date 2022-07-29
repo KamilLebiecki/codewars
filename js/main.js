@@ -5181,6 +5181,21 @@
 
 // const strCount = (str, letter) => --str.split(letter).length;
 
-@media (min-with: 600px){
-	property: value;
+// @media (min-with: 600px){
+// 	property: value;
+// }
+
+const array = (arr) => {
+	let newArray = arr.split(",");
+	if (newArray.length < 3) {
+		return null;
+	} else {
+		newArray.pop();
+		newArray.shift();
+		return newArray.join(" ");
+	}
+};
+
+function array(arr) {
+	return arr.split(",").slice(1, -1).join(" ") || null;
 }
