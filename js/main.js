@@ -4996,3 +4996,9 @@ function correct(string) {
 // function find_difference([a, b, c], [d, e, f]) {
 // 	return Math.abs(a * b * c - d * e * fe);
 // }
+
+// const toBinary = (n) => Number(n.toString(2));
+
+let toBinary = (n) => +n.toString(2);
+
+const toBinary = (n) => parseInt(n.toString(2));
