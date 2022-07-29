@@ -4950,3 +4950,49 @@
 // 	["not at all", "I love you", "A little", "A lot", "Passionately", "Madly"][
 // 		n % 6
 // 	];
+
+// const trueOrFalse = val => ? "True" : "False";
+
+// const trueOrFalse = val => Boolean(val).toString();
+
+const correct = (string) =>
+	string.replace(/1/g, "I").replace(/0/g, "O").replace(/5/g, "5");
+
+const corrections = {
+	5: "S",
+	0: "O",
+	1: "I",
+};
+
+const correct = (string) =>
+	string.replace(/[501]/g, (character) => corrections[character]);
+
+function correct(string) {
+	const map = {
+		0: "O",
+		1: "I",
+		5: "S",
+	};
+	return string.split;
+}
+
+// const findDifference = (a, b) =>
+// 	Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
+
+// function find_difference(a, b) {
+// 	return Math.abs(
+// 		a.reduce((previous, current) => previous * current) -
+// 			b.reduce((previous, current) => previous * current)
+// 	);
+// }
+
+// function volume(c) {
+// 	return c.reduce((x, y) => x * y);
+// }
+// function find_difference(a, b) {
+// 	return Math.abs(volume(a) - volume(b));
+// }
+
+// function find_difference([a, b, c], [d, e, f]) {
+// 	return Math.abs(a * b * c - d * e * fe);
+// }
