@@ -4999,6 +4999,54 @@ function correct(string) {
 
 // const toBinary = (n) => Number(n.toString(2));
 
-let toBinary = (n) => +n.toString(2);
+// let toBinary = (n) => +n.toString(2);
 
-const toBinary = (n) => parseInt(n.toString(2));
+// const toBinary = (n) => parseInt(n.toString(2));
+
+// function sortIt(arr) {
+// 	return arr.slice().sort((a, b) => {
+// 		let countA = arr.filter((v) => v === a).length;
+// 		let countB = arr.filter((v) => v === b).length;
+// 		if (countA === countB) {
+// 			return b - a;
+// 		} else if (countA > countB) {
+// 			return 1;
+// 		} else {
+// 			return -1;
+// 		}
+// 	});
+// }
+
+function moveZeros(arr) {
+	let newArray = [];
+	let countZeros = 0;
+	for (let i = 0; i < arr.length; i++) {
+		arr[i] !== 0 && newArray.push(arr);
+		arr[i] === 0 && countZeros++;
+	}
+	for (let j = 0; j < countZeros; j++) {
+		newArray.push(0);
+	}
+	return newArray;
+}
+
+let moveZeros = (arr) =>
+	arr.filter((i) => i !== 0).concat(arr.filter((i) => i === 0));
+
+let moveZeros = function (arr) {
+	return arr
+		.filter(function (x) {
+			return x !== 0;
+		})
+		.concat(
+			arr.filter(function (x) {
+				return x === 0;
+			})
+		);
+};
+
+let moveZeros = (arr) => {
+	let filteredList = arr.filter((num) => num !== 0);
+	let zeroList = arr.filter((num) => num === 0);
+	return filteredList.concat(zeroList);
+};
