@@ -5139,19 +5139,23 @@
 // 		.includes(c).length;
 // }
 
-const plural = (n) => (n === 1 ? false : true);
+// const plural = (n) => (n === 1 ? false : true);
 
-function plural(n) {
-	return n !== 1;
-}
+// function plural(n) {
+// 	return n !== 1;
+// }
 
-const plural = (n) => n !== 1;
+// const plural = (n) => n !== 1;
 
-const remove = (string) =>
-	string.charAt(string.length - 1) === "!" ? string.slice(0, -1) : string;
+// const remove = (string) =>
+// 	string.charAt(string.length - 1) === "!" ? string.slice(0, -1) : string;
 
-const remove = (s) => s.replace(/!$/, "");
+// const remove = (s) => s.replace(/!$/, "");
 
-function remove(s) {
-	return s.endsWith("!") ? s.slice(0, -1) : s;
-}
+// function remove(s) {
+// 	return s.endsWith("!") ? s.slice(0, -1) : s;
+// }
+
+const countSheeps = (arrayOfSheeps) => {
+	return arrayOfSheeps.filter(Boolean).length;
+};
