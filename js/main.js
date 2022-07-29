@@ -4955,33 +4955,33 @@
 
 // const trueOrFalse = val => Boolean(val).toString();
 
-const correct = (string) =>
-	string.replace(/1/g, "I").replace(/0/g, "O").replace(/5/g, "5");
+// const correct = (string) =>
+// 	string.replace(/1/g, "I").replace(/0/g, "O").replace(/5/g, "5");
 
-const corrections = {
-	5: "S",
-	0: "O",
-	1: "I",
-};
+// const corrections = {
+// 	5: "S",
+// 	0: "O",
+// 	1: "I",
+// };
 
-const correct = (string) =>
-	string.replace(/[501]/g, (character) => corrections[character]);
+// const correct = (string) =>
+// 	string.replace(/[501]/g, (character) => corrections[character]);
 
-function correct(string) {
-	const map = {
-		0: "O",
-		1: "I",
-		5: "S",
-	};
-	return string
-		.split("")
-		.map((c) => (map.hasOwnProperty(c) ? map[c] : c))
-		.join("");
-}
+// function correct(string) {
+// 	const map = {
+// 		0: "O",
+// 		1: "I",
+// 		5: "S",
+// 	};
+// 	return string
+// 		.split("")
+// 		.map((c) => (map.hasOwnProperty(c) ? map[c] : c))
+// 		.join("");
+// }
 
-function correct(string) {
-	return [...string].map((a) => ({ 0: "O", 5: "S", 1: "I" }));
-}
+// function correct(string) {
+// 	return [...string].map((a) => ({ 0: "O", 5: "S", 1: "I" }));
+// }
 
 // const findDifference = (a, b) =>
 // 	Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
@@ -5079,3 +5079,30 @@ function correct(string) {
 // function index(array, n) {
 // 	return Math.pow(array[n], n) || -1;
 // }
+
+const pigIt = (str) => {
+	const arr = str.split("");
+	return arr.map((w) =>
+		w.match(/[A-z]/i) ? `${w.substr(1)}${w.substr(0, 1)}ay` : w
+	);
+};
+
+function pigIt(str) {
+	return str.replace(/(\w)(\w*)(\s|$)/g, "$2$1ay$3");
+}
+
+function pigIt(str) {
+	return str.replace(/\w+/g, (w) => {
+		return w.slice(1) + w[0] + "ay";
+	});
+}
+
+function pigIt(str) {
+	var arrayWord = str.split(" ");
+	return arrayWord
+		.map(function (word) {
+			var firstLetter = word.charAt(0);
+			return word.slice(1) + firstLetter + "ay";
+		})
+		.join(" ");
+}
