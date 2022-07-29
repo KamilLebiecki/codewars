@@ -5185,17 +5185,49 @@
 // 	property: value;
 // }
 
-const array = (arr) => {
-	let newArray = arr.split(",");
-	if (newArray.length < 3) {
-		return null;
+// const array = (arr) => {
+// 	let newArray = arr.split(",");
+// 	if (newArray.length < 3) {
+// 		return null;
+// 	} else {
+// 		newArray.pop();
+// 		newArray.shift();
+// 		return newArray.join(" ");
+// 	}
+// };
+
+// function array(arr) {
+// 	return arr.split(",").slice(1, -1).join(" ") || null;
+// }
+
+// Split Strings
+// check what is the length of the string
+// if the length is odd, then add _ as a last char
+// then split the string into to doublechars arr
+
+const solution = (str) => {
+	let tempArray = [];
+	let newArray = [];
+	if (str.length % 2 === 0) {
+		tempArray = str.split("");
 	} else {
-		newArray.pop();
-		newArray.shift();
-		return newArray.join(" ");
+		tempArray = str.concat("_").split("");
 	}
+	for (let i = 0; i < tempArray.length; i += 2) {
+		newArray.push(tempArray[i] + tempArray[i + 1]);
+	}
+	return newArray;
 };
 
-function array(arr) {
-	return arr.split(",").slice(1, -1).join(" ") || null;
+function solutions(s) {
+	return (s + "_").match(/.{2}/g) || [];
+}
+
+function solution(str) {
+	arr = [];
+	for (let i = 0; i < str.length; i += 2) {
+		second = str[i + 1] || "_";
+		arr.push(str[i] + second);
+	}
+	return arr;
 }
