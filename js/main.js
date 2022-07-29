@@ -5205,29 +5205,39 @@
 // if the length is odd, then add _ as a last char
 // then split the string into to doublechars arr
 
-const solution = (str) => {
-	let tempArray = [];
-	let newArray = [];
-	if (str.length % 2 === 0) {
-		tempArray = str.split("");
-	} else {
-		tempArray = str.concat("_").split("");
-	}
-	for (let i = 0; i < tempArray.length; i += 2) {
-		newArray.push(tempArray[i] + tempArray[i + 1]);
-	}
-	return newArray;
+// const solution = (str) => {
+// 	let tempArray = [];
+// 	let newArray = [];
+// 	if (str.length % 2 === 0) {
+// 		tempArray = str.split("");
+// 	} else {
+// 		tempArray = str.concat("_").split("");
+// 	}
+// 	for (let i = 0; i < tempArray.length; i += 2) {
+// 		newArray.push(tempArray[i] + tempArray[i + 1]);
+// 	}
+// 	return newArray;
+// };
+
+// function solutions(s) {
+// 	return (s + "_").match(/.{2}/g) || [];
+// }
+
+// function solution(str) {
+// 	arr = [];
+// 	for (let i = 0; i < str.length; i += 2) {
+// 		second = str[i + 1] || "_";
+// 		arr.push(str[i] + second);
+// 	}
+// 	return arr;
+// }
+
+// Jaden Casing Strings
+
+String.prototype.toJadenCase = function () {
+	return this.split(" ")
+		.map(function (w) {
+			return w.charAt(0).toUpperCase() + w.slice(1);
+		})
+		.join(" ");
 };
-
-function solutions(s) {
-	return (s + "_").match(/.{2}/g) || [];
-}
-
-function solution(str) {
-	arr = [];
-	for (let i = 0; i < str.length; i += 2) {
-		second = str[i + 1] || "_";
-		arr.push(str[i] + second);
-	}
-	return arr;
-}
