@@ -5234,10 +5234,30 @@
 
 // Jaden Casing Strings
 
-String.prototype.toJadenCase = function () {
-	return this.split(" ")
-		.map(function (w) {
-			return w.charAt(0).toUpperCase() + w.slice(1);
-		})
-		.join(" ");
-};
+// String.prototype.toJadenCase = function () {
+// 	return this.split(" ")
+// 		.map(function (w) {
+// 			return w.charAt(0).toUpperCase() + w.slice(1);
+// 		})
+// 		.join(" ");
+// };
+
+// Counting Duplicates
+function duplicateCount(text) {
+	let result = 0;
+	let tempObject = {};
+	text
+		.toLowerCase()
+		.split("")
+		.map((str) => {
+			if (!tempObject.hasOwnProperty(str)) {
+				tempObject[str] = 0;
+			} else {
+				if (tempObject[str] === 0) {
+					result++;
+				}
+				tempObject[str] = tempObject[str] + 1;
+			}
+		});
+	return result;
+}
