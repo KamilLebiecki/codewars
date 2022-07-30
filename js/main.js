@@ -5422,29 +5422,75 @@
 // const chromosomeCheck = (s) =>
 // 	`Congrats! You'll have a ${s.includes("Y") ? "son" : "girl"}.`;
 
-const solution = (s) => {
-	let tempArray = [];
-	let newArray = [];
-	if (s.length % 2 === 0) {
-		tempArray = s.split("");
-	} else {
-		tempArray = s.concat("_").split("");
-	}
-	for (let i = 0; i < tempArray.length; i += 2) {
-		newArray.push(tempArray[i] + tempArray[i + 1]);
-	}
-	return newArray;
-};
+// const solution = (s) => {
+// 	let tempArray = [];
+// 	let newArray = [];
+// 	if (s.length % 2 === 0) {
+// 		tempArray = s.split("");
+// 	} else {
+// 		tempArray = s.concat("_").split("");
+// 	}
+// 	for (let i = 0; i < tempArray.length; i += 2) {
+// 		newArray.push(tempArray[i] + tempArray[i + 1]);
+// 	}
+// 	return newArray;
+// };
 
-function solution(s) {
-	return (s + "_").match(/.{2}/g) || [];
+// function solution(s) {
+// 	return (s + "_").match(/.{2}/g) || [];
+// }
+
+// function solution(s){
+// 	let arr = [];
+// 	for (let i = 0; i < s.length; i += 2){
+// 		let second = str.[i + 1] || "_";
+// 		arr.push(s[i] + second);
+// 	}
+// 	return arr;e
+// }
+
+function pickIt(arr) {
+	let odd = [];
+	let even = [];
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i] % 2 === 0) {
+			even.push(arr[i]);
+		} else if (arr[i] % 2 !== 0) {
+			odd.push(arr[i]);
+		}
+	}
+	return [odd, even];
 }
 
-function solution(s){
-	let arr = [];
-	for (let i = 0; i < s.length; i += 2){
-		let second = str.[i + 1] || "_";
-		arr.push(s[i] + second);
-	}
-	return arr;e
+function disemvowel(str) {
+	return str
+		.split("")
+		.filter(
+			(e) =>
+				e !== "a" &&
+				e !== "A" &&
+				e !== "e" &&
+				e !== "E" &&
+				e !== "i" &&
+				e !== "I" &&
+				e !== "o" &&
+				e !== "O" &&
+				e !== "u" &&
+				e !== "U"
+		)
+		.join("");
 }
+
+// function disemvowel(str) {
+// 	return str.replace(/[aeiou]/gi, "");
+// }
+
+// function disemvowel(str) {
+// 	let vowels = ["a", "e", "i", "o", "u"];
+// 	return str
+// 		.split("")
+// 		.filter(function (el) {
+// 			return vowels.indexOf(el.toLowerCase()) == -1;
+// 		})
+// 		.join("");
+// }
