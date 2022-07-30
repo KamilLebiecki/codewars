@@ -5414,10 +5414,37 @@
 
 // const strCount( str, letter) => --str.split(letter).length;
 
-const chromosomeCheck = (sperm) =>
-	sperm.includes("Y")
-		? "Congrats. You'll have a son"
-		: "Congrats. You'll have a girl";
+// const chromosomeCheck = (sperm) =>
+// 	sperm.includes("Y")
+// 		? "Congrats. You'll have a son"
+// 		: "Congrats. You'll have a girl";
 
-const chromosomeCheck = (s) =>
-	`Congrats! You'll have a ${s.includes("Y") ? "son" : "girl"}.`;
+// const chromosomeCheck = (s) =>
+// 	`Congrats! You'll have a ${s.includes("Y") ? "son" : "girl"}.`;
+
+const solution = (s) => {
+	let tempArray = [];
+	let newArray = [];
+	if (s.length % 2 === 0) {
+		tempArray = s.split("");
+	} else {
+		tempArray = s.concat("_").split("");
+	}
+	for (let i = 0; i < tempArray.length; i += 2) {
+		newArray.push(tempArray[i] + tempArray[i + 1]);
+	}
+	return newArray;
+};
+
+function solution(s) {
+	return (s + "_").match(/.{2}/g) || [];
+}
+
+function solution(s){
+	let arr = [];
+	for (let i = 0; i < s.length; i += 2){
+		let second = str.[i + 1] || "_";
+		arr.push(s[i] + second);
+	}
+	return arr;e
+}
