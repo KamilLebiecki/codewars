@@ -5589,3 +5589,12 @@
 // 		: arr[0] + 1 != arr[1]
 // 		? arr[1]
 // 		: firstNonConsecutive(arr.slice(1)));
+
+// The museum of incredible dull things
+function removeSmallest(numbers) {
+	let arr = [...numbers];
+	let min = Math.min(...numbers);
+	let index = arr.indexOf(min);
+	arr.splice(index, 1);
+	return arr;
+}
