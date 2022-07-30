@@ -5532,3 +5532,18 @@ function disemvowel(str) {
 // function getSum(a, b) {
 // 	return ((Math.abs(a - b) + 1) * (a + b)) / 2;
 // }
+
+const array = (arr) => {
+	let newArray = arr.split(",");
+	if (newArray.length < 3) {
+		return null;
+	} else {
+		newArray.pop();
+		newArray.shift();
+		return newArray.join(" ");
+	}
+};
+
+function array(arr) {
+	return arr.split(",").slice(1, -1).join(" ") || null;
+}
