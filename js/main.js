@@ -5591,10 +5591,14 @@
 // 		: firstNonConsecutive(arr.slice(1)));
 
 // The museum of incredible dull things
-function removeSmallest(numbers) {
-	let arr = [...numbers];
-	let min = Math.min(...numbers);
-	let index = arr.indexOf(min);
-	arr.splice(index, 1);
-	return arr;
-}
+// function removeSmallest(numbers) {
+// 	let arr = [...numbers];
+// 	let min = Math.min(...numbers);
+// 	let index = arr.indexOf(min);
+// 	arr.splice(index, 1);
+// 	return arr;
+// }
+
+// Testing 1-2-3
+
+const number = (a) => a.map((e, i) => `${i + 1}: ${e}`);
