@@ -5601,4 +5601,4 @@
 
 // Testing 1-2-3
 
-const number = (a) => a.map((e, i) => `${i + 1}: ${e}`);
+// const number = (a) => a.map((e, i) => `${i + 1}: ${e}`);
