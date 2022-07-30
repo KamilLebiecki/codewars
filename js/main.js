@@ -5404,12 +5404,20 @@
 // 	return result;
 // }
 
-function strCount(str, letter) {
-	return str.split(letter).length - 1;
-}
+// function strCount(str, letter) {
+// 	return str.split(letter).length - 1;
+// }
 
-function strCount(str, letter) {
-	return str.split("").filter((c) => c == letter).length;
-}
+// function strCount(str, letter) {
+// 	return str.split("").filter((c) => c == letter).length;
+// }
 
-const strCount( str, letter) => --str.split(letter).length;
+// const strCount( str, letter) => --str.split(letter).length;
+
+const chromosomeCheck = (sperm) =>
+	sperm.includes("Y")
+		? "Congrats. You'll have a son"
+		: "Congrats. You'll have a girl";
+
+const chromosomeCheck = (s) =>
+	`Congrats! You'll have a ${s.includes("Y") ? "son" : "girl"}.`;
