@@ -5294,21 +5294,34 @@
 // 	return ((Math.abs(a - b) + 1) * (a + b)) / 2;
 // }
 
-function duplicateCount(text) {
-	let result = 0;
-	let tempObject = {};
-	text
-		.toLowerCase()
-		.split("")
-		.map((string) => {
-			if (!tempObject.hasOwnProperty(string)) {
-				tempObject[string] = 0;
-			} else {
-				if (tempObject[string] === 0) {
-					result++;
-				}
-				tempObject[string] = tempObject[string] + 1;
-			}
-		});
-	return result;
-}
+// function duplicateCount(text) {
+// 	let result = 0;
+// 	let tempObject = {};
+// 	text
+// 		.toLowerCase()
+// 		.split("")
+// 		.map((string) => {
+// 			if (!tempObject.hasOwnProperty(string)) {
+// 				tempObject[string] = 0;
+// 			} else {
+// 				if (tempObject[string] === 0) {
+// 					result++;
+// 				}
+// 				tempObject[string] = tempObject[string] + 1;
+// 			}
+// 		});
+// 	return result;
+// }
+
+String.prototype.isUpperCase = function () {
+	return this == this.toUpperCase();
+};
+
+String.prototype.isUpperCase = function () {
+	return this.toUpperCase() === this.toString();
+};
+
+String.prototype.isUpperCase = function () {
+	const re = /([a-z]+)/g;
+	return !re.test(this);
+};
