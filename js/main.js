@@ -5668,47 +5668,76 @@
 // 	return bag;
 // }
 
-const well = (x) => {
-	let result = 0;
-	for (let i = 0; i < x.length; i++) {
-		if (x[i] === "good") {
-			result++;
-		}
-	}
-	return result === 0 ? "Fail!" : result > 2 ? "I smell a series!" : "Publish";
-};
+// const well = (x) => {
+// 	let result = 0;
+// 	for (let i = 0; i < x.length; i++) {
+// 		if (x[i] === "good") {
+// 			result++;
+// 		}
+// 	}
+// 	return result === 0 ? "Fail!" : result > 2 ? "I smell a series!" : "Publish";
+// };
 
-const well = (x) => {
-	const good_count = x.filter((x) => x == "good").length;
-	return good_count < 1
-		? "Fail!"
-		: good_count < 3
-		? "Publish"
-		: "I smell a series!";
-};
+// const well = (x) => {
+// 	const good_count = x.filter((x) => x == "good").length;
+// 	return good_count < 1
+// 		? "Fail!"
+// 		: good_count < 3
+// 		? "Publish"
+// 		: "I smell a series!";
+// };
 
-function well(x) {
-	switch (x.filter((i) => i === "good").length) {
-		case 0:
-			return "Fail!";
-		case 1:
-		case 2:
-			return "Publish!";
-		default:
-			return "I smell a series!";
+// function well(x) {
+// 	switch (x.filter((i) => i === "good").length) {
+// 		case 0:
+// 			return "Fail!";
+// 		case 1:
+// 		case 2:
+// 			return "Publish!";
+// 		default:
+// 			return "I smell a series!";
+// 	}
+// }
+
+// function well(x) {
+// 	let good = 0;
+
+// 	for (let i = 0; i < x.length; i++) {
+// 		if (x[i] == "good" && ++good > 2) return "I smell a series!";
+// 	}
+// 	return good ? "Publish" : "Fail!";
+// }
+
+// function well(x) {
+// 	const count = x.reduce((s, v) => s + (v == "good"), 0);
+// 	return count ? (count > 2 ? "I smell a series!" : "Publish") : "Fail!";
+// }
+
+function removeEveryOther(arr) {
+	let newArr = [];
+	for (let i = 0; i < arr.length; i += 2) {
+		newArr.push(arr[i]);
 	}
+	return newArr;
 }
 
-function well(x) {
-	let good = 0;
-
-	for (let i = 0; i < x.length; i++) {
-		if (x[i] == "good" && ++good > 2) return "I smell a series!";
-	}
-	return good ? "Publish" : "Fail!";
+function removeEveryOther(arr) {
+	return arr.filter(function (elem, index) {
+		return index % 2 === 0;
+	});
 }
 
-function well(x) {
-	const count = x.reduce((s, v) => s + (v == "good"), 0);
-	return count ? (count > 2 ? "I smell a series!" : "Publish") : "Fail!";
+function removeEveryOther(arr) {
+	for (let i = 1; i < arr.length; i++) {
+		arr.splice(i, 1);
+	}
+	return arr;
+}
+
+const removeEveryOther = (arr) => arr.filter((_, i) => !(i % 2));
+
+const removeEveryOther = (arr) => arr.filter((_, i) => i % 2 === 0);
+
+function removeEveryOther(arr) {
+	return arr.filter((_, i) => i % 2 == 0);
 }
