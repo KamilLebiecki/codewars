@@ -5792,31 +5792,45 @@
 // 	return num > 1;
 // }
 
-function moveZeros(arr) {
-	let newArray = [];
-	let countZeros = 0;
-	for (let i = 0; i < arr.length; i++) {
-		arr[i] !== 0 && newArray.push(arr[i]);
-		arr[i] === 0 && countZeros++;
-	}
-	for(let j = 0; j < countZeros; j++)[
-		newArray.push(0);
-	]
-	return newArray;
-}
+// function moveZeros(arr) {
+// 	let newArray = [];
+// 	let countZeros = 0;
+// 	for (let i = 0; i < arr.length; i++) {
+// 		arr[i] !== 0 && newArray.push(arr[i]);
+// 		arr[i] === 0 && countZeros++;
+// 	}
+// 	for(let j = 0; j < countZeros; j++)[
+// 		newArray.push(0);
+// 	]
+// 	return newArray;
+// }
 
-let moveZeros = arr => arr.filter(i => i !== 0).concat(arr.filter(i => i === 0 ));
+// let moveZeros = arr => arr.filter(i => i !== 0).concat(arr.filter(i => i === 0 ));
 
-let moveZeros = function (arr){
-	return arr.filter(function(x){
-		return x !== 0;
-	}).concat(arr.filter(function(x){
-		return x === 0;
-	}))
-}
+// let moveZeros = function (arr){
+// 	return arr.filter(function(x){
+// 		return x !== 0;
+// 	}).concat(arr.filter(function(x){
+// 		return x === 0;
+// 	}))
+// }
 
-let moveZeros = arr => {
-	let filteredList = arr.filter((num) => num !== 0);
-	let zeroList = arr.filter((num) => num === 0);
-	return filteredList.concat(zeroList);
-}
+// let moveZeros = arr => {
+// 	let filteredList = arr.filter((num) => num !== 0);
+// 	let zeroList = arr.filter((num) => num === 0);
+// 	return filteredList.concat(zeroList);
+// }
+
+// Maximum Multiple
+
+// const maxMultiple = (divisor, bound) => {
+// 	let maxDivisor = [];
+// 	for (let i = 0; i <= bound; i++) {
+// 		i % divisor === 0 && maxDivisor.push(i);
+// 	}
+// 	return Math.max(...maxDivisor);
+// };
+
+const maxMultiple = (divisor, bound) => {
+	return bound - (bound % divisor);
+};
