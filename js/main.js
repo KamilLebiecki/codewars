@@ -5781,13 +5781,42 @@
 
 // const stringy = (size) => Array.from(Array(size), (v, i) => +!(i % 2)).join("");
 
-const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+// const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
-function isPrime(num) {
-	for (let i = 2; num > i; i++) {
-		if (num % i == 0) {
-			return false;
-		}
+// function isPrime(num) {
+// 	for (let i = 2; num > i; i++) {
+// 		if (num % i == 0) {
+// 			return false;
+// 		}
+// 	}
+// 	return num > 1;
+// }
+
+function moveZeros(arr) {
+	let newArray = [];
+	let countZeros = 0;
+	for (let i = 0; i < arr.length; i++) {
+		arr[i] !== 0 && newArray.push(arr[i]);
+		arr[i] === 0 && countZeros++;
 	}
-	return num > 1;
+	for(let j = 0; j < countZeros; j++)[
+		newArray.push(0);
+	]
+	return newArray;
+}
+
+let moveZeros = arr => arr.filter(i => i !== 0).concat(arr.filter(i => i === 0 ));
+
+let moveZeros = function (arr){
+	return arr.filter(function(x){
+		return x !== 0;
+	}).concat(arr.filter(function(x){
+		return x === 0;
+	}))
+}
+
+let moveZeros = arr => {
+	let filteredList = arr.filter((num) => num !== 0);
+	let zeroList = arr.filter((num) => num === 0);
+	return filteredList.concat(zeroList);
 }
