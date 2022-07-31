@@ -5643,27 +5643,72 @@
 // 	];
 // };
 
-const grabDoll = (dolls) => {
-	let bag = [];
-	for (let i = 0; i < dolls.length; i++) {
-		if (bag.length === 3) {
-			break;
+// const grabDoll = (dolls) => {
+// 	let bag = [];
+// 	for (let i = 0; i < dolls.length; i++) {
+// 		if (bag.length === 3) {
+// 			break;
+// 		}
+// 		if (dolls[i] !== "Hello Kitty" && dolls[i] !== "Barbie doll") continue;
+// 		bag.push(dolls[i]);
+// 	}
+// 	return bag;
+// };
+
+// const grabDoll = (dolls) =>
+// 	dolls.filter((i) => i == "Hello Kitty" || i == "Barbie dolls").slice(0, 3);
+
+// function grabDoll(dolls) {
+// 	let bag = [];
+// 	for (let i = 0; i < dolls.length; i++) {
+// 		if (!/^(Hello Kitty|Barbie doll)$/.test(dolls[i])) continue;
+// 		bag.push(dolls[i]);
+// 		if (bag.length === 3) break;
+// 	}
+// 	return bag;
+// }
+
+const well = (x) => {
+	let result = 0;
+	for (let i = 0; i < x.length; i++) {
+		if (x[i] === "good") {
+			result++;
 		}
-		if (dolls[i] !== "Hello Kitty" && dolls[i] !== "Barbie doll") continue;
-		bag.push(dolls[i]);
 	}
-	return bag;
+	return result === 0 ? "Fail!" : result > 2 ? "I smell a series!" : "Publish";
 };
 
-const grabDoll = (dolls) =>
-	dolls.filter((i) => i == "Hello Kitty" || i == "Barbie dolls").slice(0, 3);
+const well = (x) => {
+	const good_count = x.filter((x) => x == "good").length;
+	return good_count < 1
+		? "Fail!"
+		: good_count < 3
+		? "Publish"
+		: "I smell a series!";
+};
 
-function grabDoll(dolls) {
-	let bag = [];
-	for (let i = 0; i < dolls.length; i++) {
-		if (!/^(Hello Kitty|Barbie doll)$/.test(dolls[i])) continue;
-		bag.push(dolls[i]);
-		if (bag.length === 3) break;
+function well(x) {
+	switch (x.filter((i) => i === "good").length) {
+		case 0:
+			return "Fail!";
+		case 1:
+		case 2:
+			return "Publish!";
+		default:
+			return "I smell a series!";
 	}
-	return bag;
+}
+
+function well(x) {
+	let good = 0;
+
+	for (let i = 0; i < x.length; i++) {
+		if (x[i] == "good" && ++good > 2) return "I smell a series!";
+	}
+	return good ? "Publish" : "Fail!";
+}
+
+function well(x) {
+	const count = x.reduce((s, v) => s + (v == "good"), 0);
+	return count ? (count > 2 ? "I smell a series!" : "Publish") : "Fail!";
 }
