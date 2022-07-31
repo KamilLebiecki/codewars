@@ -5831,6 +5831,27 @@
 // 	return Math.max(...maxDivisor);
 // };
 
-const maxMultiple = (divisor, bound) => {
-	return bound - (bound % divisor);
+// const maxMultiple = (divisor, bound) => {
+// 	return bound - (bound % divisor);
+// };
+
+// Find the middle element
+
+// gimme([2, 3, 1]) => 0;
+
+const gimme = (array) =>
+	array.indexOf(
+		+array.filter((e) => e < Math.max(...array) && e > Math.min(...array))
+	);
+
+function gimme(array) {
+	return array.indexOf(
+		a.concat().sort(function (a, b) {
+			return a - b;
+		})[1]
+	);
+}
+
+const gimme = function (array) {
+	return array.indexOf([...array].sort((x, y) => x > y)[1]);
 };
