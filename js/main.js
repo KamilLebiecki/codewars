@@ -5713,31 +5713,35 @@
 // 	return count ? (count > 2 ? "I smell a series!" : "Publish") : "Fail!";
 // }
 
-function removeEveryOther(arr) {
-	let newArr = [];
-	for (let i = 0; i < arr.length; i += 2) {
-		newArr.push(arr[i]);
-	}
-	return newArr;
-}
+// function removeEveryOther(arr) {
+// 	let newArr = [];
+// 	for (let i = 0; i < arr.length; i += 2) {
+// 		newArr.push(arr[i]);
+// 	}
+// 	return newArr;
+// }
 
-function removeEveryOther(arr) {
-	return arr.filter(function (elem, index) {
-		return index % 2 === 0;
-	});
-}
+// function removeEveryOther(arr) {
+// 	return arr.filter(function (elem, index) {
+// 		return index % 2 === 0;
+// 	});
+// }
 
-function removeEveryOther(arr) {
-	for (let i = 1; i < arr.length; i++) {
-		arr.splice(i, 1);
-	}
-	return arr;
-}
+// function removeEveryOther(arr) {
+// 	for (let i = 1; i < arr.length; i++) {
+// 		arr.splice(i, 1);
+// 	}
+// 	return arr;
+// }
 
-const removeEveryOther = (arr) => arr.filter((_, i) => !(i % 2));
+// const removeEveryOther = (arr) => arr.filter((_, i) => !(i % 2));
 
-const removeEveryOther = (arr) => arr.filter((_, i) => i % 2 === 0);
+// const removeEveryOther = (arr) => arr.filter((_, i) => i % 2 === 0);
 
-function removeEveryOther(arr) {
-	return arr.filter((_, i) => i % 2 == 0);
-}
+// function removeEveryOther(arr) {
+// 	return arr.filter((_, i) => i % 2 == 0);
+// }
+
+const trueOrFalse = (val) => (val ? "true" : "false");
+
+const trueOrFalse = (val = Boolean(val).toString());
