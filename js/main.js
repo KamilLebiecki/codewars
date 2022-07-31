@@ -5612,33 +5612,58 @@
 
 // const smallEnough = (a, limit) => Math.max(...a) <= limit;
 
-function howMuchILoveYou(nbPetals) {
-	let m = [
-		"I love you",
-		"A little",
-		"A lot",
-		"Passionately",
-		"Madly",
-		"Not at all",
-	];
-	return m[(nbPetals - 1) % 6];
-}
+// function howMuchILoveYou(nbPetals) {
+// 	let m = [
+// 		"I love you",
+// 		"A little",
+// 		"A lot",
+// 		"Passionately",
+// 		"Madly",
+// 		"Not at all",
+// 	];
+// 	return m[(nbPetals - 1) % 6];
+// }
 
-const phrases = [
-	"I love you",
-	"A little",
-	"A lot",
-	"Passionately",
-	"Madly",
-	"Not at all",
-];
+// const phrases = [
+// 	"I love you",
+// 	"A little",
+// 	"A lot",
+// 	"Passionately",
+// 	"Madly",
+// 	"Not at all",
+// ];
 
-function howMuchILoveYou(n) {
-	return phrases[(n - 1) % phrases.length];
-}
+// function howMuchILoveYou(n) {
+// 	return phrases[(n - 1) % phrases.length];
+// }
 
-const howMuchILoveYou = (n) => {
-	["Not at all", "I love you", "A little", "A lot", "Passionately", "Madly"][
-		n % 6
-	];
+// const howMuchILoveYou = (n) => {
+// 	["Not at all", "I love you", "A little", "A lot", "Passionately", "Madly"][
+// 		n % 6
+// 	];
+// };
+
+const grabDoll = (dolls) => {
+	let bag = [];
+	for (let i = 0; i < dolls.length; i++) {
+		if (bag.length === 3) {
+			break;
+		}
+		if (dolls[i] !== "Hello Kitty" && dolls[i] !== "Barbie doll") continue;
+		bag.push(dolls[i]);
+	}
+	return bag;
 };
+
+const grabDoll = (dolls) =>
+	dolls.filter((i) => i == "Hello Kitty" || i == "Barbie dolls").slice(0, 3);
+
+function grabDoll(dolls) {
+	let bag = [];
+	for (let i = 0; i < dolls.length; i++) {
+		if (!/^(Hello Kitty|Barbie doll)$/.test(dolls[i])) continue;
+		bag.push(dolls[i]);
+		if (bag.length === 3) break;
+	}
+	return bag;
+}
