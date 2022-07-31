@@ -5608,6 +5608,37 @@
 
 // Small enough? - Beginner
 
-const smallEnough = (a, limit) => a.every((e) => e <= limit);
+// const smallEnough = (a, limit) => a.every((e) => e <= limit);
 
-const smallEnough = (a, limit) => Math.max(...a) <= limit;
+// const smallEnough = (a, limit) => Math.max(...a) <= limit;
+
+function howMuchILoveYou(nbPetals) {
+	let m = [
+		"I love you",
+		"A little",
+		"A lot",
+		"Passionately",
+		"Madly",
+		"Not at all",
+	];
+	return m[(nbPetals - 1) % 6];
+}
+
+const phrases = [
+	"I love you",
+	"A little",
+	"A lot",
+	"Passionately",
+	"Madly",
+	"Not at all",
+];
+
+function howMuchILoveYou(n) {
+	return phrases[(n - 1) % phrases.length];
+}
+
+const howMuchILoveYou = (n) => {
+	["Not at all", "I love you", "A little", "A lot", "Passionately", "Madly"][
+		n % 6
+	];
+};
