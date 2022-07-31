@@ -5602,3 +5602,6 @@
 // Testing 1-2-3
 
 // const number = (a) => a.map((e, i) => `${i + 1}: ${e}`);
+
+// No oddities here
+const noOdds = (values) => values.filter((e) => e % 2 === 0);
