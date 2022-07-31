@@ -5754,29 +5754,40 @@
 // 	return arr;
 // }
 
-function stringy(size) {
-	let alternateString = "";
-	for (let i = 1; i <= size; i++) {
-		if (i % 2 !== 0) {
-			alternateString += 1;
-		}
-		if (i % 2 === 0) {
-			alternateString += 0;
+// function stringy(size) {
+// 	let alternateString = "";
+// 	for (let i = 1; i <= size; i++) {
+// 		if (i % 2 !== 0) {
+// 			alternateString += 1;
+// 		}
+// 		if (i % 2 === 0) {
+// 			alternateString += 0;
+// 		}
+// 	}
+// 	return alternateString;
+// }
+
+// function stringy(size) {
+// 	let str = "";
+// 	for (let i = 1; i <= size; i++) {
+// 		str += i % 2;
+// 	}
+// 	return str;
+// }
+
+// const stringy = (x) => "".padStart(x, "10");
+
+// const stringy = (size) => "10".repeat(size).slice(0, size);
+
+// const stringy = (size) => Array.from(Array(size), (v, i) => +!(i % 2)).join("");
+
+const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+function isPrime(num) {
+	for (let i = 2; num > i; i++) {
+		if (num % i == 0) {
+			return false;
 		}
 	}
-	return alternateString;
+	return num > 1;
 }
-
-function stringy(size) {
-	let str = "";
-	for (let i = 1; i <= size; i++) {
-		str += i % 2;
-	}
-	return str;
-}
-
-const stringy = (x) => "".padStart(x, "10");
-
-const stringy = (size) => "10".repeat(size).slice(0, size);
-
-const stringy = (size) => Array.from(Array(size), (v, i) => +!(i % 2)).join("");
