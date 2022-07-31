@@ -5742,6 +5742,14 @@
 // 	return arr.filter((_, i) => i % 2 == 0);
 // }
 
-const trueOrFalse = (val) => (val ? "true" : "false");
+// const trueOrFalse = (val) => (val ? "true" : "false");
 
-const trueOrFalse = (val = Boolean(val).toString());
+// const trueOrFalse = (val = Boolean(val).toString());
+
+const removeFirstSmallest(numbers){
+	let arr = [...numbers];
+	let min = Math.min(...numbers);
+	let index = arr.indexOf(min);
+	arr.splice(index, 1);
+	return arr;
+}
