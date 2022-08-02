@@ -5879,3 +5879,6 @@
 // const tail = (arr) => arr.slice(1, arr.length);
 // const init = (arr) => arr.slice(0, arr.length - 1);
 // const last = (arr) => arr[arr.length - 1];
+
+// Basic Training: Add item to an Array
+// websites.push("codewars");
