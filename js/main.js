@@ -1916,3 +1916,7 @@
 //
 // Convert to Binary
 // const toBinary = (n) => Number(n.toString(2));
+//
+// List Filtering
+//
+// const filter_list = (l) => l.filter((e) => typeof e === "number");
