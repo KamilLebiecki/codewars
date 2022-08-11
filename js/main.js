@@ -1950,3 +1950,12 @@
 // 	}
 // 	return alternateString;
 // }
+//
+// Simple Pig Latin
+// const pigIt = (str) => {
+// 	const arr = str.split(" ");
+// 	return arr
+// 		.map((w) => (w.match(/[A-z]/i) ? `${w.substr(1)}${w.substr(0, 1)}ay` : w))
+// 		.join(" ");
+// };
+1;
